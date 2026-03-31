@@ -1,0 +1,7 @@
+	
+/* MEDIA QUERIES 
+----------------- */
+
+@media screen and (max-width: 533px) {
+.logo {font-size:5em;}
+}

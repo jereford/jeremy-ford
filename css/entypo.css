@@ -1,0 +1,11 @@
+@font-face {
+  font-family:entypo-social;
+  src:url('../entypo/entypo-social.eot'),
+  url('../entypo/entypo-social.ttf');
+}
+
+@font-face {
+  font-family:entypo;
+  src:url('../entypo/entypo.eot'),
+  url('../entypo/entypo.ttf');
+}
