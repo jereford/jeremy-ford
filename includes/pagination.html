@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <nav class="pagination">
+    <div class="pagination-outer">
+      <div class="pagination-inner">
+        <div class="pagination-previous">
+          <a id="previous-link" href="#">
+            <p class="pagination-label">
+              <span class="material-symbols-outlined" style="margin-right: 8px; vertical-align: bottom;">west</span>Previous
+            </p>
+            <p id="previous-title" class="pagination-title"></p>
+          </a>
+        </div>
+        <div class="pagination-next">
+          <a id="next-link" href="#">
+            <p class="pagination-label">
+              Next<span class="material-symbols-outlined" style="margin-left: 8px; vertical-align: bottom;">east</span>
+            </p>
+            <p id="next-title" class="pagination-title"></p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <script>
+    var src = $("#pagination");
+    $("#previous-link").attr("href", src.data("previous-href"));
+    $("#previous-title").text(src.data("previous-title"));
+    $("#next-link").attr("href", src.data("next-href"));
+    $("#next-title").text(src.data("next-title"));
+  </script>
+
+</html> 
