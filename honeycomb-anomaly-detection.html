@@ -70,7 +70,7 @@
         <h3>Business opportunity</h3>
         <p>My team recognized a pivotal moment to: greatly reduce time to value (TTV) by getting started with alerts faster, reduce alert fatigue by highlighting only meaningful deviations, and lower mean time to resolution (MTTR) by enabing investigations with our complementary AI feature, Canvas. Paired with Canvas, users could investigate their anomalies without needing to write the perfect query; they could simply ask a question like, “Why are response times slower for these users?” We believed these improvements would put us in a position to <span class="highlight">increase adoption</span> for both new and existing teams and <span class="highlight">win more deals</span> with enterprise organizations who demanded out-of-the-box tooling.</p>
         
-        <img src="/images/honeycomb-anomaly-detection-ramp-vendor-assessment.png" class="image-border" style="margin-top: var(--spacing-5); margin-bottom: var(--spacing-0);">
+        <img src="images/honeycomb-anomaly-detection-ramp-vendor-assessment.png" class="image-border" style="margin-top: var(--spacing-5); margin-bottom: var(--spacing-0);">
         <p class="image-caption">As evidenced by Ramp.com's vendor assessment, Honeycomb's set up contributed towards its reputation as a tool best suited for advanced teams.</p>
 
         <h2 style="margin-top: 2rem;">Solution: continuousy learn what "normal" looks like and automatically send alerts when performance deviates</h2>
@@ -78,7 +78,7 @@
         
         <img class="image-border" style="margin-bottom: var(--spacing-0); margin-top: var(--spacing-5);" src="/images/honeycomb-anomaly-detection-lofi-query-dataset-selection.png">
         <p class="image-caption">An early vision proposed surfacing anomalies in the service selection dropdown menu on the Query page, to expedite the investigation workflow.</p>
-        <video width="100%" src="/images/honeycomb-anomaly-detection-lofi-anomalies-confirm-recipients.mov" autoplay loop muted playsinline class="image-border" style="margin-bottom: var(--spacing-0); margin-top: var(--spacing-10);"></video>
+        <video width="100%" src="images/honeycomb-anomaly-detection-lofi-anomalies-confirm-recipients.mov" autoplay loop muted playsinline class="image-border" style="margin-bottom: var(--spacing-0); margin-top: var(--spacing-10);"></video>
         <p class="image-caption">An early vision for an experience where users could review detected anomalies for accuracy and quickly configure their alerts.</p>
 
         <h3 style="margin-top: var(--spacing-5);">Requirements for our MVP</h3>
@@ -92,7 +92,7 @@
           <li class="li-body">Enable an investigative workflow by allowing users to run a query.</li>
           <li class="li-body">Email and Slack would be the first available notification channels; Pagerduty and Webhooks would be considered later.</li>
         </ul>
-        <img src="/images/honeycomb-anomaly-detection-story-mapping.png" class="image-border" style="margin-bottom: 0; margin-top: var(--spacing-5);">
+        <img src="images/honeycomb-anomaly-detection-story-mapping.png" class="image-border" style="margin-bottom: 0; margin-top: var(--spacing-5);">
         <p class="image-caption">Our Director of Product led a story mapping session to align the team on the user's journey, and start a discussion about acceptance criteria for the MVP and future milestones.</p>
         <p style="margin-top: var(--spacing-10);">We planned to instrument the code to understand user engagement by analyzing quantitative data like: service list page loads, service name clicks, recipient configurations, and 'Run Query' button clicks. From a qualitative standpoint, we would partner with the Sales and Customer Success teams to understand how Anomaly Detection influenced new deals and renewals.</p>
 
@@ -107,7 +107,7 @@
         </ul>
 
         <h2>Designing the experience</h2>
-        <img src="/images/honeycomb-anomaly-detection-explorations.png" class="image-border" style="margin-bottom: 0; margin-top: var(--spacing-5);">
+        <img src="images/honeycomb-anomaly-detection-explorations.png" class="image-border" style="margin-bottom: 0; margin-top: var(--spacing-5);">
         <p class="image-caption">Sampling of early sketches to explore information hierarchy and graphing for data presence.</p>
         <p style="margin-top: var(--spacing-10);">To reduce engineering effort and still provide a delightful experience, I proposed making use of our existing components and patterns wherever possible. This meant upcycling our list view, which was already being used for Triggers and SLOs. The previous quarter, another Product Designer contributed a drawer component to our design library, a panel that would slide in from the right over the top of a page. This panel was a great home for our anomaly detail content because it allowed the user to stay on the current page. During development, engineering ran into an issue where tool tips within the drawer didn't display. I worked with the App Enablement Team, who maintains our design library, to address this at the component level. This small investment allowed tool tips to be used in any future implementations of the drawer component, for all product teams.</p>
         <p>In order to indicate on the graph where an anomaly begins, we repurposed functionality and styling from markers; vertical bars on our Query page that denoted deployments. We represented the "normal" range using light gray shading, and highlighted anomalous time ranges using semi-transparent red shading.</p>
@@ -115,11 +115,11 @@
       </div> <!-- END PROJECT TITLE LEFT -->
 
       <div class="project-images" style="text-align: center;"> 
-        <img src="/images/honeycomb-anomalies-list-hero.png" class="image-border" style="margin-bottom: 0; margin-top: var(--spacing-10);">
+        <img src="images/honeycomb-anomalies-list-hero.png" class="image-border" style="margin-bottom: 0; margin-top: var(--spacing-10);">
         <p class="image-caption">The MVP we set out to implement and test with Customer Development Partners.</p>
-        <img src="/images/honeycomb-anomalies-detail-hero.png" class="image-border" style="margin-bottom: 0; margin-top: var(--spacing-10);">
+        <img src="images/honeycomb-anomalies-detail-hero.png" class="image-border" style="margin-bottom: 0; margin-top: var(--spacing-10);">
         <p class="image-caption">The MVP we set out to implement and test with Customer Development Partners.</p>
-        <img src="/images/honeycomb-anomaly-detection-mvp-specs.png" class="image-border" style="margin-bottom: 0; margin-top: var(--spacing-10);">
+        <img src="images/honeycomb-anomaly-detection-mvp-specs.png" class="image-border" style="margin-bottom: 0; margin-top: var(--spacing-10);">
         <p class="image-caption">Specifications delivered to our engineers, which included an interaction map and implementation details for each screen.</p>
       </div>
 
@@ -156,7 +156,7 @@
         <p>Alerting users about a drop in data or an absence of data was something we were particularly excited about because of its impact/effort ratio. Knowing whether events are flowing from a service is a valuable signal that can launch an investigation, and engineering estimated a relatively low level of effort to enable this.</p>
         <p>An important nuance of data presence is that an <span style="font-style: italic;">unsustained</span> lack of data isn't considered an anomaly. The UX challenge: <span class="highlight">how might we visually distinguish between an interruption in data that's anomalous and one that isn't?</span> Despite its many data visualizations, Honeycomb had never needed to graph binary data. It was crucial to graph data presence in an intuitive way, since our treatment would become the standard for graphing binary data elsewhere.</p>
         <p>To derisk, I worked with our tech lead to understand what data visualizations were supported by our charting library. With this constraint in mind, I mocked a fictitious scenario using three graph styles and posted them in a survey to our customer Slack space. We acknowledged a certain amount of bias from these responses given that many of them came from a small group of Honeycomb champions, but we felt they were still quite valuable and would increase our confidence. The feedback indicated that a categorical bar chart, where a lack of data was represented by a gap, was most intuitive (Opt A).</p>
-        <img src="/images/data-presence-user-test.png" class="image-border" style="margin-bottom: var(--spacing-0); margin-top: var(--spacing-5);">
+        <img src="images/data-presence-user-test.png" class="image-border" style="margin-bottom: var(--spacing-0); margin-top: var(--spacing-5);">
         <p class="image-caption" style="margin-bottom: var(--spacing-10);">I tested chart options for the data presence signal type to derisk our data visualization.</p>
         <p>I brought my research to the Design Team's weekly critique to get internal feedback about the styling and comprehensibility. This ensured my designs were aligned with our design library and consistent with other graphs in the product.</p>
 
@@ -168,7 +168,7 @@
           <iframe class="video" src="https://www.youtube.com/embed/2vL2f1o91MY?si=1eU8EdfN51G8gVmK" title="Introducing Honeycomb Intelligence Anomaly Detection" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
         <p class="image-caption">Product and marketing leaders demo'ed our Anomaly Detection MVP during AI Week, an online campaign that coincided with Observability Day.</p>
-        <img src="/images/o11y-day-sf-2025-audience.png" class="image-border" style="margin-bottom: var(--spacing-0); margin-top: var(--spacing-8);" alt="Software engineers listen intently to the presentations and demos given at Honeycomb's Observability Day 2025 in San Francisco">
+        <img src="images/o11y-day-sf-2025-audience.png" class="image-border" style="margin-bottom: var(--spacing-0); margin-top: var(--spacing-8);" alt="Software engineers listen intently to the presentations and demos given at Honeycomb's Observability Day 2025 in San Francisco">
         <p class="image-caption">Our co-founders and Developer Relations Team demo'ed Anomaly Detection at Observability Day, an AWS-sponsored event in San Francisco that coincided with AI Week.</p>
         
         <h3>Reception</h3>
