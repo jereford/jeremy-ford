@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="description" content="Honeycomb Trigger Scheduling">
+  <meta name="keywords" content="honeycomb, observability, triggers, product designer, enterprise, software">
+  <meta name="google-site-verification" content="XeGs8MgNhTUDK8nGOnW-h5o6sQU78Ri_9oqGGMFUIzg" />
+  <meta property="fb:admins" content="48809375" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jeremy Ford / Product Designer with a decade of complementary branding and art direction experience</title>
+  <link href="/css/styles_NEW.css" rel="stylesheet" type="text/css" />
+  <link href="/css/entypo-social.css" rel="stylesheet" type="text/css" />
+  <link href="/css/entypo.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" HREF="../favicon.ico">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!--[if lte IE 9]><script src="masonry.js"></script><![endif]-->
+</head>
+
+<body>
+
+<!-- START DIV CLASS WRAP -->
+<div class="wrap">
+
+  <!-- Start nav header -->
+  <div id="nav-header"></div>
+    <script>
+    $(function(){
+      $("#nav-header").load("/includes/header.html");
+    });
+    </script>
+  <!-- End nav header -->
+
+  <section class="project-hero">
+    <div class="project-hero-inner">
+      <!-- <span id="project-hero-eyebrow">Case study</span> -->
+      <p class="reveal-up">
+        <span class="project-tag">Case study</span>
+        <span class="project-tag">UI</span>
+        <span class="project-tag">UX</span>
+      </p>
+      <h1 class="reveal-up">Trigger scheduling: giving DevOps teams more control over their alerts</h1>
+      <p class="reveal-up">My team at Honeycomb shipped <a href="https://docs.honeycomb.io/notify/triggers/create#frequency" target="_blank">Custom Scheduling</a>, a new feature that gave teams more control over when their app's data was evaluated. This increased users' trust in Honeycomb's alerting capabilities by reducing false positives during expected spikes or downtime, and empowered SREs to isolate and investigate only <span style="font-style: italic">genuine</span> issues impacting their users.</p>
+      <p class="footnote reveal-up" style="margin-bottom: var(--spacing-0);">Honeycomb's software is property of Hound Technology, Inc. This case study is not sponsored by Honeycomb.</p>
+    </div>
+  </section>
+
+  <!-- START DIV PROJECT -->
+  <div class="project fade-in">
+    <div class="project_title">
+      <div class="project_title_left">
+        <div class="insight-box-with-icon">
+          <span class="material-symbols-outlined">workspace_premium</span>
+          <p style="margin-bottom: var(--spacing-0);">Honeycomb was named a finalist in the <a href="https://devops.com/devops-dozen-2025-finalists-announced/" target="_blank">DevOps Dozen 2025</a>, as 1 of only 8 platforms in the 'Best Observability Solution' category</p>
+        </div>
+        <h2>Background</h2>
+        <h3>Honeycomb Triggers</h3>
+        <p>Alerts in <a href="https://honeycomb.io" target="_blank">Honeycomb</a> are typically configured by a Site Reliability Engineer (SRE) who is responsible for the health and availability of their application. For these users, alerts are a critical entry point into a troubleshooting flow to address an underlying problem and ensure a smooth experience for their customers. The <a href="https://docs.honeycomb.io/working-with-your-data/triggers/trigger-examples/" target="_blank">most common scenarios</a> for alerting in Honeycomb revolve around latency ("I want to know when our application is performing slowly") and errors ("I want to know how often our customers encounter errors").</p>
+        <p>SREs configure their alerts using the <a href="https://docs.honeycomb.io/working-with-your-data/triggers/" target="_blank">Triggers feature</a>. When crafting a new Trigger, the user writes a query to be run and evaluated at a desired frequency. If the query result passes the threshold the user defines, recipients are notified via any combination of: Email, Slack, PagerDuty, or Webhooks.</p>
+        <!-- <p>Many DevOps teams sign up for Honeycomb in order to take advantage of its alerting capabilities. And those teams are quite active &mdash; between mid May and mid June 2023 (one month before this case study was written), <span class="highlight">~300 Triggers</span> were created across Enterprise and Self-Serve teams, by <span class="highlight">~150 unique users</span>, and the Trigger detail page (where alerts are created, edited, or viewed) was loaded over <span class="highlight">5,000 times</span>.</p> -->
+        <div class="project-images" style="text-align: center; padding-top: 80px;">
+          <img src="/images/trigger-scheduling-user-flow-diagram.png" class="image-border">
+          <p class="footnote">Various entry points for the Trigger detail page, where alerts are created or edited</p>
+        </div>
+      </div>
+    </div>
+
+      <div class="project_title" style="margin-top: 80px;">
+        <div class="project_title_left">
+          <h3>The noise problem</h3>
+            <p>Historically, when a Trigger's threshold was crossed, it pushed alerts to the user 24/7. This was sufficient for many DevOps teams, but over time we received a considerable amount of feedback from users who needed more control over their alerts. Users in the finance sector didn't want to be alerted outside of trading hours, users in education didn't want to be alerted outside of typical academic hours, etc. This pattern of feedback extended across several teams and industries &mdash; users wanted to reduce false positives by running their Trigger queries during specific times. The noisier the alerts, the harder it can be to identify the ones that deserve attention.</p>
+            <p>My team, which is responsible for alerting features like Triggers and SLOs, wrote a user story for the project: <span class="highlight">"As an SRE, I want to be able to configure a window of time when my Triggers will (and won't) alert me, without having to disable the Trigger, so that I'm not alerted during expected/unnecessary times."</span> This in turn helped us establish a north star for our MVP: Optimize DevOps teams' visibility into their alerts by providing the ability to define active/inactive time windows for their Triggers. This would eliminate ignorable noise from <em>expected</em> spikes and isolate <em>unexpected</em> spikes that need to be assessed.</p>
+          <div style="margin-top: 60px;" class="masonry">
+            <div class="quote_card">If we expect alerts to go off, is there a point to trigger?</div>
+            <div class="quote_card">We would like the ability to manage when a trigger is scheduled to evaluate e.g. set up times to disable a trigger during non business hours.</div>
+            <div class="quote_card">[Customer] wants to be able to place time ranges on triggers so that they can have different thresholds depending on the time of day. The group asking for this has a service that sees a dramatically higher volume during US business hours and would like to have finer control over the alert thresholds based on traffic volume.</div>
+            <div class="quote_card">Provide ability to control how often triggers notify, even if they are constantly in a triggered state. Some of our triggers don't page but only fire a Slack notification because they don't need immediate attention.. it would be good to be able to configure how often the trigger action should run.</div>
+            <div class="quote_card">Do you plan to add support for time ranges (i.e. trigger X is only active between 8am and 10pm)?</div>
+            <div class="quote_card">Is there an option to suspend triggers/SLOs per customer? What can be done in case of scheduled maintenance in Honeycomb in order not to trigger alerts and impact SLO/error budget?</div>
+          </div>
+          <div style="text-align:center; margin: 0 auto; width: 65%; line-height: 1.2em; margin-top: 10px">
+            <span class="footnote">Customer feedback requesting more control for their alerts.</span>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="project_title" style="margin-top: 80px;">
+        <div class="project_title_left">
+          <h2 style="margin-top: 80px;">Research</h2>
+            <p>Armed with a solid understanding of the problem and user need, my team kicked off the project by participating in a knowledge transfer with former members of another team, who began preliminary research on Trigger scheduling during the previous quarter. This meeting helped us gain insights from said research and understand where the team left off. We were able to leverage a great deal of information from their competitive analysis, initial user interviews, and technical spike, all of which helped us form a hypothesis, frame an approach, and kickstart additional research.</p>
+            <p>An interesting topic that came up during our discussion was around the use of <a href="https://docs.oracle.com/cd/E12058_01/doc/doc.1014/e12030/cron_expressions.htm" target="_blank"> cron</a>, which the team originally proposed as a way for users to write their Trigger schedules. Our team had a hunch that cron wasn't a universally-understood tool for our user base. We decided to test our hypothesis by conducting moderated interviews with users. While presenting a clickable low-fidelity prototype, we asked how they would customize a window of time for their Trigger query to run.</p>
+            <p>The usability study showed that cron raised more questions than it answered. While some participants were familiar with cron expressions and understood how to create a custom schedule, the majority were confused about how to write a cron expression and/or how it translated to the context of Honeycomb Trigger scheduling.</p>
+        </div>
+
+        <div class="project-images" style="text-align: center; margin-top: 60px;">
+          <img src="/images/honeycomb-trigger-scheduling-lofi-1.png" class="image-border">
+          <img src="/images/honeycomb-trigger-scheduling-lofi-2.png" class="image-border">
+          <video width="100%" src="/images/honeycomb-trigger-scheduling-lofi-prototype.mov" autoplay loop muted class="image-border"></video>
+          <p class="footnote">Low-fidelity designs, including a prototype we tested with users to understand the comprehensibility of cron.</p>
+        </div>
+        
+        <div class="project_title_left" style="margin-top: 80px;">
+          <h2>Our MVP: Custom Trigger Scheduling</h2>
+            <p>Based on our supplemental research, we determined that the engineering effort required to use text inputs instead of a cron expression was minimal (we also considered a date picker but decided it was not worth the additional cost). We iterated on the early designs to include inputs for the start and end times, alongside checkboxes for days of the week. This approach proved to be more easily understood in a subsequent round of usability testing when compared to the cron expression.</p>
+            <p>We also found in our user interviews that translating the Trigger's schedule into a simple sentence, prominently displayed at the top of the section, helped users quickly understand when their Trigger would run. This treatment was inspired by a tool from <a href="https://crontab.guru/" target="_blank">cronitor</a> and updated in real time as the user tweaked their time window.</p>
+
+            <div class="project-images" style="text-align: center; margin-top: var(--spacing-12);">
+              <img src="images/custom-alert-schedule-demo.gif" class="image-border">
+            </div>
+        
+            <!-- <h3>Supplemental improvements</h3>
+              <p>In addition to the custom scheduler, our team used the opportunity to make a couple small updates to the Triggers feature:
+                <ul class="ul-body">
+                  <li class="li-body">improve the layout of the Triggers detail page as well, which hadn't been touched in over a year. The page has lots of inputs and settings, so in an effort to improve the information hierarchy and make the density of content feel less intimidating, we grouped the content into three distinct sections: Query, Alerts, and Recipients.</li>
+                  <li class="li-body">We also added a new checkbox that would allow an alert's recipients to be notified <span style="italic">every time</span> the threshold is crossed, as opposed to once when it's first crossed and again when it's resolved (the default). For example, if a Trigger's query is evaluated every 5 min, this new checkbox would notify recipients every 5 min. [Why do some users want this?] Had been requested by users and we determined it would be quick to implement while we were in the code.</li>
+                </ul>
+              </p>
+            -->
+
+            <h3>Reception</h3>
+              <p>We released the MVP for Custom Trigger Scheduling behind a feature flag for the teams who had requested more control over their alert scheduling, and collected feedback over the next two weeks. We began to hear things like:</p>
+              <p><span class="highlight">"So far everything looks good 👍 UI was clear to set up and it's definitely producing less triggered states than without scheduling.."</span></p>
+              <p><span class="highlight">"Hey thanks, this feature seemed to come out of nowhere, just when we needed it!"</span></p>
+              <p>With net positive qualitative feedback, we were confident our MVP solved the immediate user need and <a href="https://docs.honeycomb.io/working-with-your-data/triggers/#custom-scheduling-option" target="_blank">released the feature to GA</a> shortly after. As the usage data continues to roll in, our team is excited to learn how sticky (or not) the feature has become, as well as what other enhancements could be made to improve it. We have already received wonderful feedback about the feature that may inform our strategy for version 2.0 (some of which we anticipated and some we did not).</p>
+          
+            <div style="margin-top: 60px;" class="masonry">
+              <div class="quote_card">We likely want to be able to set a different schedule on weekends to weekdays. I think right now we'd need multiple triggers to get the right combination of schedules to achieve this, which I can see being a nightmare to maintain.
+              </div>
+              <div class="quote_card">If I wanted a trigger that runs every day, but wanted to exclude a time period (for example, a maintenance window), then I would have to create multiple triggers, this is frustrating.
+              </div>
+              <div class="quote_card">Better timezone support; everything is in UTC which means users have to do their own calculations when crafting a trigger schedule.
+              </div>
+              <div class="quote_card">Is there a possibility to change the time zone, at least in the UI?
+              </div>
+            </div>
+            <div style="text-align:center; margin: 0 auto; width: 65%; line-height: 1.2em; margin-top: 10px">
+              <span class="footnote">Additional user feedback we received about the MVP, which captured opportunities for future iterations of the new Trigger Scheduling feature.</span>
+            </div>
+
+            <h2 style="margin-top: 80px;">The future of Honeycomb Triggers</h2>
+              <p>What might Honeycomb Triggers look like in the future? My team has recognized the demand for enhancements to other aspects of Triggers, beyond custom scheduling:</p>
+                <ul class="ul-body">
+                  <li class="li-body"><span class="bold">Updates to the Trigger list page</span>. Many Enterprise teams have dozens or even hundreds of Triggers, and extracting meaning out of a long list of them can be challenging. To help the user slice and dice their list and isolate specific groupings, we've discussed filters for things like recipient channel, status, and dataset.</li>
+                  <li class="li-body"><span class="bold">Updates to the Trigger detail page</span>. Despite recent improvements to the information hierarchy, the page is still quite dense. We've discussed accordions for each section and expandable advanced settings to hide controls that are used less frequently.</li>
+                  <li class="li-body"><span class="bold">Create a new trigger directly from a query.</span> In some scenarios, users want to create a Trigger directly from the context of the Query page rather than navigating to the Triggers feature and running the query there.</li>
+                  <li class="li-body"><span class="bold">A summary view</span>. Today, the Trigger detail page includes the form fields for creating and editing. But sometimes users just want to view a Trigger's details, quickly. A separate summary view would allow us to be more intentional about the layout of the content; where the most important details of the Trigger can be displayed at the top of the page.</li>
+                  <li class="li-body"><span class="bold">Trigger history</span>. Many users want to be able to see the history of a specific Trigger &mdash; created date, modified date, when it last ran, when an alert was last sent, when it was resolved etc.</li>
+                  <!-- <li class="li-body"><span class="bold">HAVING clause to QB trigger detail page</span></li> -->
+                  <li class="li-body"><span class="bold">Trigger Templates</span>. For a user who is new to observability or Honeycomb, creating a Trigger can be somewhat overwhelming because the creation form is lengthy. To reduce the cognitive load and time it might take to create a new Trigger, we recently added Trigger Templates to the list view's empty state (for teams who are sending data from their application). The templates allow a user to quickly create a new Trigger by simply selecting the "Error" or "Latency" options, which populate the query definition and form fields with commonly-used values.</li>
+                  <li class="li-body"><span class="bold">Product illustration</span>. For new users who may not yet understand what a Honeycomb Trigger is or how it can help them, a new product illustration can visually educate the user and steer them towards creating one.</li>
+                </ul>
+                <span class="footnote">Images below are exploratory mocks for demonstration purposes only.</span>
+              </p>
+        </div> <!-- END PROJECT TITLE LEFT -->
+
+        <div class="project-images" style="text-align: center;">
+          <img src="/images/triggers-list-templates.png" class="image-border" style="margin: 20px 0px 0px 0px;">
+          <p class="footnote">Trigger Templates for teams who are sending their application's data, but have not yet created a Trigger</p>
+
+          <img src="/images/triggers-empty-state-product-illo.png" class="image-border" style="margin: 20px 0px 0px 0px;">
+          <p class="footnote">A new empty state for teams who haven't yet sent their application's data features a branded product illustration</p>
+
+          <img src="/images/triggers-detail-new.png" class="image-border" style="margin: 20px 0px 0px 0px;">
+          <p class="footnote">A new Summary view of the Triggers detail page includes important details at the top and history in the sidebar</p>
+
+          <img src="/images/triggers-create-new-collapsed.png" class="image-border" style="margin: 20px 0px 0px 0px;">
+          <p class="footnote">An updated Create view includes accordions for each section and templates in the sidebar</p>
+        </div>  
+      </div>
+  </div>
+  <!-- END DIV PROJECT -->
+
+  <!-- PAGINATION START -->
+   <div id="pagination"
+     data-previous-href="all-it-takes.html"
+     data-previous-title="All It Takes featuring Little Vic song and artwork"
+     data-next-href="self-seekers.html"
+     data-next-title="Self Seekers: a conceptual hip hop album years in the making">
+  </div>
+
+  <script>
+  $(function(){
+    $("#pagination").load("/includes/pagination.html");
+  });
+  </script>
+  <!-- PAGINATION END -->
+
+  <!-- Start footer -->
+    <div id="footer"></div>
+      <script>
+      $(function(){
+        $("#footer").load("/includes/footer.html");
+      });
+      </script>
+  <!-- End footer -->
+
+</div><!-- END DIV WRAP -->
+
+<!-- GA -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75348845-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- GA -->
+
+</body>
+</html>

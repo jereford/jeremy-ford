@@ -1,0 +1,5 @@
+User-agent: Googlebot-Image
+# Repeated 'disallow' rules for each image:
+Disallow: /images/honeycomb-anomaly-detection-*.png
+Disallow: /images/honeycomb-anomaly-detection-*.mov
+Disallow: /images/logos/license2plate.jpg
