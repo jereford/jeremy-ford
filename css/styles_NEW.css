@@ -933,7 +933,7 @@ h2 a:hover {
 .grid-box img {
 	border-radius: 8px;
 	border: 1px solid var(--color-light-gray);
-	transition: all .1s ease-in-out;
+	transition: all .15s ease-in-out;
 	box-sizing: border-box;
 }
 
