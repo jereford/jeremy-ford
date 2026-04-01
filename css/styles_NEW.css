@@ -1091,7 +1091,8 @@ ul.writing-list li:hover {
 	background-size: 0% 85%;
 	animation: highlight-wipe 0.7s ease forwards;
 	animation-delay: 0.4s;
-	@keyframes highlight-wipe {
+}
+@keyframes highlight-wipe {
 		to {
 			background-size: 100% 85%;
 		}
