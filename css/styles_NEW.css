@@ -1484,7 +1484,7 @@ label {
   animation-iteration-count: infinite;  /* Never stop waving :) */
   transform-origin: bottom; /* Pivot around the bottom-left palm */
   display: inline-block;
-  margin-right: 16px;
+  margin: var(--spacing-0) var(--spacing-3);
 }
 
 @keyframes wave-animation {
