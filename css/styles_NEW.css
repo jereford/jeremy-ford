@@ -1301,6 +1301,10 @@ ul.writing-list li:hover {
 	line-height: 1;
 }
 
+.pagination-label .material-symbols-outlined {
+	font-size: 16px;
+}
+
 .pagination-title {
 	font-family: 'DM Sans', sans-serif;
 	font-size: 20px;
@@ -1606,6 +1610,10 @@ a.info-button:visited {
 	width: 90%;
 }
 
+.quote .material-symbols-outlined {
+	font-size: 36px !important;
+}
+
 }
 
 /* PHONE */
@@ -1749,7 +1757,7 @@ body {
 }
 
 .quote .material-symbols-outlined {
-	font-size: 36px !important;
+	font-size: 32px !important;
 }
 
 h1 {
@@ -1966,22 +1974,22 @@ p.image-caption {
 	width: 100%;
 	text-align: center;
 	padding: 0px;
-	}
+}
 
 .social a:link {
 	color: #7C8AA7;
 	text-decoration: none;
 	border-bottom: none;
-	}
+}
 
 .social a:visited {
 	color: #7C8AA7;
 	text-decoration: none;
 	border-bottom: none;
-	}
+}
 
 .masonry {
 	column-count: 1;
-	}
+}
 }
 /* MEDIA QUERIES END */
