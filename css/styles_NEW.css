@@ -1485,7 +1485,7 @@ label {
   transform-origin: bottom; /* Pivot around the bottom-left palm */
   display: inline-block;
   margin: var(--spacing-0) var(--spacing-3);
-  font-variation-settings: 'wght' 500;
+  font-variation-settings: 'wght' 700;
 }
 
 @keyframes wave-animation {
