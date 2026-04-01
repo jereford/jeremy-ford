@@ -1499,6 +1499,9 @@ label {
    60% { transform: rotate( 0.0deg) } /* Reset for the last half to pause */
   100% { transform: rotate( 0.0deg) }
 }
+.wave .material-symbols-outlined {
+	font-size: 48px !important;
+}
 /* HAND WAVE END */
 
 /* EMOJI HOVERS START */
@@ -1740,6 +1743,10 @@ body {
 
 .project-hero-inner{
 	width: 90%;
+}
+
+.wave .material-symbols-outlined {
+	font-size: 36px !important;
 }
 
 h1 {
