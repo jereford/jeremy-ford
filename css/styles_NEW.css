@@ -786,130 +786,6 @@ h2 a:hover {
 	margin: 0 0 1em;
 }
 
-#arrow_reveal {
-	display: none;
-	background-color: var(--color-blue);
-	color: var(--color-white);
-	padding: 10px 15px;
-	font-size: 20px;
-	margin-left: 75px;
-	}
-
-#arrow_previous {
-	font-family: 'entypo';
-	font-size: 72px;
-	z-index: 1;
-	position: fixed;
-	top: 50%;
-	height: 100%;
-	float: left;
-	padding: var(--spacing-0) var(--spacing-6);
-	}
-
-#arrow_previous:hover #arrow_reveal {
-	display: block;
-	}
-
-#arrow_next:hover #arrow_reveal {
-	display: block;
-	}
-
-#arrow_next {
-	font-family: 'entypo';
-	font-size: 72px;
-	z-index: 1;
-	position: fixed;
-	top: 50%;
-	height: 100%;
-	float: right;
-	right: 0;
-	padding: var(--spacing-0) var(--spacing-6);
-	}
-
-#arrow_next p a:link, #arrow_previous p a:link {
-	text-decoration: none;
-	color: var(--color-medium-gray);
-	}
-
-#arrow_next a:visited, #arrow_previous a:visited {
-	text-decoration: none;
-	color: var(--color-black);
-	}
-
-#arrow_next a:hover, #arrow_previous a:hover {
-	text-decoration: none;
-	color: var(--color-blue);
-	}
-
-#arrow_next .tooltip_text {
-	visibility: hidden;
-	background-color: var(--color-black);
-	color: var(--color-white);
-	text-align: center;
-	border-radius: 4px;
-	padding: var(--spacing-3) var(--spacing-4);
-	top: 16px;
-	right: 80%;
-	font-size: 16px;
-	font-family: Lato;
-	font-weight: 400;
-	letter-spacing: 0.3px;
-	white-space: nowrap;
-	opacity: 0;
-	
-	/* Position the tooltip */
-	position: absolute;
-	z-index: 1;
-	}
-
-#arrow_previous .tooltip_text {
-	visibility: hidden;
-	background-color: var(--color-black);
-	color: var(--color-white);
-	text-align: center;
-	border-radius: 4px;
-	padding: var(--spacing-3) var(--spacing-4);
-	top: 16px;
-	left: 80%;
-	font-size: 16px;
-	font-family: Lato;
-	font-weight: 400;
-	letter-spacing: 0.3px;
-	white-space: nowrap;
-	opacity: 0;
-	
-	/* Position the tooltip */
-	position: absolute;
-	z-index: 1;
-	}
-
-#arrow_next:hover .tooltip_text, #arrow_previous:hover .tooltip_text {
-	visibility: visible;
-	opacity: 1;
-	}
-
-#arrow_next .tooltip_text::after {
-	content: " ";
-	position: absolute;
-	top: 50%;
-	left: 100%; /* To the left of the tooltip */
-	margin-top: -5px;
-	border-width: 5px;
-	border-style: solid;
-	border-color: transparent transparent transparent var(--color-black);
-	}
-
-#arrow_previous .tooltip_text::after {
-	content: " ";
-	position: absolute;
-	top: 50%;
-	right: 100%; /* To the right of the tooltip */
-	margin-top: -5px;
-	border-width: 5px;
-	border-style: solid;
-	border-color: transparent var(--color-black) transparent transparent;
-	}
-
 .back_to_top {
 	font-family: 'entypo';
 	font-size: 2.5em;
@@ -1057,7 +933,7 @@ h2 a:hover {
 .grid-box img {
 	border-radius: 8px;
 	border: 1px solid var(--color-light-gray);
-	transition: all .2s ease-in-out;
+	transition: all .1s ease-in-out;
 	box-sizing: border-box;
 }
 
