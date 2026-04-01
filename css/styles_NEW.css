@@ -1088,6 +1088,13 @@ ul.writing-list li:hover {
 	/* background-color: rgba(80, 99, 138, 0.2); */
 	background-image: linear-gradient(to right, rgba(80, 99, 138, 0.1), rgba(124, 138, 167, 0.3));
 	border-radius: 4px;
+	background-size: 0% 85%;
+	animation: highlight-wipe 0.7s ease forwards;
+	animation-delay: 0.4s;
+	@keyframes highlight-wipe {
+		to {
+			background-size: 100% 85%;
+		}
 }
 
 .project img {
