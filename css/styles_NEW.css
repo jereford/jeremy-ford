@@ -516,7 +516,6 @@ h2 a:hover {
 	color: var(--color-black);
 	overflow: hidden;
 	padding: 75px 0px;
-	border-bottom: 1px solid var(--color-medium-gray);
 }
 
 .information_inner {
