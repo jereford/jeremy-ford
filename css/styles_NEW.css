@@ -1138,9 +1138,9 @@ li.social-list a:visited {
 
 .footnote {
 	font-size: 14px;
-	line-height: 1.6em;
+	line-height: 1.8em;
 	color: var(--color-dark-gray);
-	letter-spacing: 0.03em;
+	letter-spacing: 0.02em;
 	display: block;
 	}
 
