@@ -30,18 +30,17 @@
 
 <body>
 
-<!-- START DIV WRAP -->
-<div class="wrap fade-in" style="overflow:hidden;">
+  <!-- START DIV WRAP -->
+  <div class="wrap fade-in" style="overflow:hidden;">
 
-<!-- Start nav header -->
-  <div id="nav-header"></div>
-
-  <script>
-  $(function(){
-    $("#nav-header").load("/includes/header.html");
-  });
-  </script>
-<!-- end nav header -->
+    <!-- Start nav header -->
+    <div id="nav-header"></div>
+      <script>
+      $(function(){
+        $("#nav-header").load("/includes/header.html");
+      });
+      </script>
+    <!-- End nav header -->
 
     <!-- START DIV INFORMATION -->
     <div class="information" style="margin-top: 75px; min-height: 100vh;">
@@ -56,19 +55,16 @@
 
     </div><!-- END DIV INFORMATION -->
 
-<!-- <div class="back_to_top"><a href="#top">&#59239;</a></div> -->
+    <!-- Start footer -->
+    <div id="footer"></div>
+      <script>
+      $(function(){
+        $("#footer").load("includes/footer.html");
+      });
+      </script>
+    <!-- end footer -->
 
-<!-- Start footer -->
-<div id="footer"></div>
-
-<script>
-$(function(){
-  $("#footer").load("/includes/footer.html");
-});
-</script>
-<!-- end footer -->
-
-</div><!-- END DIV WRAP -->
+  </div><!-- END DIV WRAP -->
 
 </body>
 </html>
