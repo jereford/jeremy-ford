@@ -1091,14 +1091,14 @@ ul.writing-list li:hover {
 	background-position-y: center;
 	border-radius: 4px;
 	animation: highlight-wipe 0.5s ease forwards;
-	animation-delay: 0.5s;
+	animation-delay: 0.6s;
 }
 @keyframes highlight-wipe {
 		from {
-			background-size: 0% 100%;
+			background-size: 0% 90%;
 		}
 		to {
-			background-size: 100% 100%;
+			background-size: 100% 90%;
 		}
 }
 
