@@ -728,11 +728,11 @@ h2 a:hover {
 	}
 
 .hero {
-	padding: 98px 0px 115px 0px;
+	padding: 90px 0px;
 	width: 100%;
 	font-weight: 500;
 	margin: 0 auto;
-	margin-top: 80px;
+	margin-top: 60px;
 	background-color: var(--color-white);
 	color: var(--color-black);
 	}
