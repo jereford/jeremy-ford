@@ -737,10 +737,9 @@ h2 a:hover {
 
 .hero_inner {
 	width: 65%;
-	/* max-width: 1148px; */
-	max-width: 950px;
+	max-width: 980px;
 	margin: 0 auto;
-	text-align: center;
+	text-align: left;
 	font-size: 52px;
 	line-height: 1.1em;
 	}
