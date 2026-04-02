@@ -190,6 +190,7 @@ h4 {
 	font-weight: 500;
 	letter-spacing: -0.03em;
 	line-height: 1.2em;
+	max-width: 80%;
 }
 
 .quote .material-symbols-outlined {
@@ -736,10 +737,10 @@ h2 a:hover {
 	}
 
 .hero_inner {
-	width: 65%;
+	width: 85%;
 	max-width: 1148px;
 	margin: 0 auto;
-	text-align: center;
+	text-align: left;
 	font-size: 52px;
 	line-height: 1.1em;
 	}
@@ -1194,7 +1195,7 @@ ul.writing-list li:hover {
 }
 
 #myBtnContainer {
-	text-align: center;
+	text-align: left;
 }
 
 #myBtnContainer > button {
