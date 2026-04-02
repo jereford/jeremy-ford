@@ -191,6 +191,7 @@ h4 {
 	letter-spacing: -0.03em;
 	line-height: 1.2em;
 	max-width: 80%;
+	text-wrap: balance;
 }
 
 .quote .material-symbols-outlined {
@@ -1758,6 +1759,10 @@ body {
 
 .project-hero-inner{
 	width: 90%;
+}
+
+.quote {
+	max-width: 100%;
 }
 
 .quote .material-symbols-outlined {
