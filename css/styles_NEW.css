@@ -532,6 +532,14 @@ h2 a:hover {
 	width: 75%;
 }
 
+.credits-bar {
+	margin: 0 auto;
+	padding: 24px 0px;
+	border-top: 1px solid currentColor;
+	width: 100%;
+	max-width: 1148px;
+}
+
 .contact {
 	background-color: var(--color-white);
 	width: 100%;

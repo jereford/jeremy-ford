@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <link href="css/styles_NEW.css" rel="stylesheet" type="text/css" />
+        <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,500,300' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/mobilenav.js"></script>
+    </head>
+
+    <div class="credits-bar">
+        <p id="credits-bar-text" class="footnote"></p>
+    </div>
+
+    <script>
+        var src = $("#credits-bar");
+        $("#credits-bar-text").text(src.data("credits-bar-text"));
+    </script>
+
+</html> 
