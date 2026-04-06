@@ -540,6 +540,13 @@ h2 a:hover {
 	max-width: 1148px;
 }
 
+.credits-bar p {
+	margin-bottom: 0;
+	font-size: 14px;
+	line-height: 1.8em;
+	color: var(--color-dark-gray);
+}
+
 .contact {
 	background-color: var(--color-white);
 	width: 100%;
