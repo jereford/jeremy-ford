@@ -50,13 +50,13 @@
 
         <section class="project-hero">
             <div class="project-hero-inner">
-                    <p class="reveal-up">
-                        <span class="project-tag">UI</span>
-                        <span class="project-tag">UX</span>
-                    </p>
-                    <h1 class="reveal-up">NewsCred marketing website</h1>
-                    <p class="reveal-up">I worked with the Leadership, Marketing, Product, and Customer Success Teams to redesign NewsCred's website framework and update all of its content.
-                    <p class="footnote" style="margin-bottom: var(--spacing-0);">Property of NewsCred (Optimizely CMP)</p>
+                <p class="reveal-up">
+                    <span class="project-tag">UI</span>
+                    <span class="project-tag">UX</span>
+                </p>
+                <h1 class="reveal-up">NewsCred marketing website</h1>
+                <p class="reveal-up">I worked with the Leadership, Marketing, Product, and Customer Success Teams to redesign NewsCred's website framework and update all of its content.
+                <!-- <p class="footnote" style="margin-bottom: var(--spacing-0);">Property of NewsCred (Optimizely CMP)</p> -->
             </div>
         </section>
 
@@ -95,6 +95,18 @@
             </div>
 
         </div><!-- END DIV PROJECT -->
+
+        <!-- CREDITS START -->
+        <div id="credits-bar"
+        data-credits-bar-text="Property of NewsCred (Optimizely CMP).">
+        </div>
+
+        <script>
+        $(function(){
+        $("#credits-bar").load("includes/credits-bar.html");
+        });
+        </script>
+        <!-- CREDITS END -->
 
         <!-- PAGINATION START -->
         <div id="pagination"
