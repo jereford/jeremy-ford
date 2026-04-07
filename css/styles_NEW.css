@@ -1284,7 +1284,7 @@ ul.writing-list li:hover {
 	flex-direction: row;
 	align-items: center;
 	gap: 1em;
-	padding: 2em;
+	padding: 12px;
 	flex: 1;
 }
 
