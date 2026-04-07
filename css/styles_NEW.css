@@ -662,10 +662,10 @@ h2 a:hover {
 .project_title #project-title-eyebrow {
 	font-size: 16px;
 	font-family: 'DM Mono', monospace;
-	font-weight: 300;
+	font-weight: 400;
 	display: block;
 	color: var(--color-blue);
-}
+} /* WRITING PAGE */
 
 .project-hero #project-hero-eyebrow {
 	font-size: 16px;
