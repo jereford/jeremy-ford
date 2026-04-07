@@ -1288,11 +1288,6 @@ ul.writing-list li:hover {
 	flex: 1;
 }
 
-.pagination-previous > a:hover,
-.pagination-next > a:hover {
-	background-color: var(--color-light-blue);
-}
-
 .pagination-arrow {
 	font-size: 16px;
 	color: var(--color-blue);
