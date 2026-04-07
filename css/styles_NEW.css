@@ -1264,6 +1264,7 @@ ul.writing-list li:hover {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	gap: var(--spacing-8);
 }
 
 .pagination-previous {
@@ -1279,7 +1280,7 @@ ul.writing-list li:hover {
 
 .pagination-next {
 	width: 35%;
-	text-align: right;
+	text-align: left;
 	padding: 2em;
 	background-color: var(--color-light-gray);
 	border-radius: 8px;
