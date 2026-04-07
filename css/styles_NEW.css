@@ -1265,44 +1265,34 @@ ul.writing-list li:hover {
 	flex-direction: row;
 	justify-content: space-between;
 	gap: var(--spacing-8);
+	align-items: stretch;
 }
 
-.pagination-previous {
-	width: 35%;
-	text-align: left;
-	padding: 2em;
-	background-color: var(--color-light-gray);
-	border-radius: 8px;
-	flex: 1;
-	/* > a {
-		font-weight: 500;
-	} */
-}
-
+.pagination-previous,
 .pagination-next {
-	width: 35%;
 	text-align: left;
-	padding: 2em;
 	background-color: var(--color-light-gray);
 	border-radius: 8px;
 	flex: 1;
-	/* > a {
-		font-weight: 500;
-	} */
+	display: flex;
 }
 
-.pagination-label {
-	font-size: 14px;
-	font-family: 'DM Mono', monospace;
-	font-weight: 400;
-	color: var(--color-blue);
-	margin-bottom: 1em;
-	line-height: 1;
+.pagination-previous > a,
+.pagination-next > a {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 1em;
+	padding: 24px;
+	flex: 1;
 }
 
-.pagination-label .material-symbols-outlined {
+.pagination-arrow {
 	font-size: 16px;
-}
+	color: var(--color-blue);
+	flex-shrink: 0;
+	vertical-align: bottom;
+  }
 
 .pagination-title {
 	font-family: 'DM Sans', sans-serif;
