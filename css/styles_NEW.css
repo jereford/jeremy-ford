@@ -1268,19 +1268,10 @@ ul.writing-list li:hover {
 	align-items: stretch;
 }
 
-.pagination-previous {
-	width: 35%;
-	text-align: left;
-	padding: 2em;
-	background-color: var(--color-light-gray);
-	border-radius: 8px;
-	flex: 1;
-}
-
+.pagination-previous,
 .pagination-next {
 	width: 35%;
 	text-align: left;
-	padding: 2em;
 	background-color: var(--color-light-gray);
 	border-radius: 8px;
 	flex: 1;
@@ -1292,6 +1283,8 @@ ul.writing-list li:hover {
 	flex-direction: row;
 	align-items: center;
 	gap: 1em;
+	padding: 2em;
+	height: 100%;
 }
 
 .pagination-arrow {
