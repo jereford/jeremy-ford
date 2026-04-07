@@ -1265,6 +1265,7 @@ ul.writing-list li:hover {
 	flex-direction: row;
 	justify-content: space-between;
 	gap: var(--spacing-8);
+	align-items: stretch;
 }
 
 .pagination-previous {
