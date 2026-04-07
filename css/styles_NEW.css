@@ -1439,72 +1439,7 @@ ul.writing-list li:hover {
   	text-decoration: none;
 	}
 
-/* .mobilenav li:first-child {
-  	margin-top: 10px;
-	} */
 /* MOBILE NAV END */
-
-
-/* CONTACT FORM */
-#contact-area {
-	background-color: #EDEFF3;
-	padding: 50px;
-	border-radius: 4px;
-	margin-top: 60px;
-	margin-bottom: 60px;
-	}
-
-#contact-area input, #contact-area textarea {
-	padding: 15px;
-	width: 96%;
-	font-size: 18px;
-	float: left;
-	margin: 0px 0px 15px 0px;
-	font-family: 'Lato', sans-serif;
-	font-weight: 300;
-	border-radius: 4px;
-	}
-
-#contact-area input {
-	border: 0px;
-	}
-
-#contact-area input.submit-button {
-	width: 100%;
-	border-radius: 4px;
-	border: 1px solid #50638A;
-	color: #11182B;
-	padding: 8px 16px;
-	font-size: 20px;
-	text-align: center;
-	font-weight: 300;
-	font-family: 'Lato', sans-serif;
-	background-color: #EDEFF3;
-	margin-top: 30px;
-	letter-spacing: 0.02em;
-	transition: all 0.2s background-color linear;
-	}
-
-#contact-area input.submit-button:hover {
-	color: #ffffff;
-	background-color: #50638A;
-	cursor: pointer;
-	}
-
-#contact-area textarea {
-	height: 100px;
-	border: 0px !important;
-	}
-
-label {
-	float: left;
-	text-align: right;
-	margin-right: 15px;
-	width: 150px;
-	padding-top: 5px;
-	font-size: 1.4em;
-	}
-/* CONTACT FORM */
 
 /* HAND WAVE START */
 .wave {
@@ -1941,32 +1876,6 @@ a.info-button:visited {
 	width: 100%;
 }
 
-#contact-area {
-	background-color: #EDEFF3;
-	padding: 30px;
-	border-radius: 8px;
-	margin-top: 40px;
-	margin-bottom: 40px;
-}
-
-#contact-area input, #contact-area textarea {
-	padding: 15px;
-	width: 90%;
-	font-size: 18px;
-	margin: 0px 0px 15px 0px;
-	font-family: 'Lato', sans-serif;
-	font-weight: 300;
-	border-radius: 8px;
-}
-
-#arrow_next, #arrow_previous {
-	display: none;
-}
-
-#arrow_next:hover .tooltip_text, #arrow_previous:hover .tooltip_text {
-	visibility: hidden;
-}
-
 .project_title #project-title-eyebrow {
 	font-size: 0.9em;
 }
@@ -1987,6 +1896,10 @@ a.info-button:visited {
 p.image-caption {
 	font-size: 14px;
 	width: 100%;
+}
+
+.pagination-previous, .pagination-next {
+	width: 40%;
 }
 
 /* FOOTER */
