@@ -548,6 +548,7 @@ h2 a:hover {
 	line-height: 1.8em;
 	color: var(--color-dark-gray);
 	width: 75%;
+	text-align: center;
 }
 
 .footer {
