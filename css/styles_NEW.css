@@ -1269,6 +1269,9 @@ ul.writing-list li:hover {
 .pagination-previous {
 	width: 35%;
 	text-align: left;
+	padding: 2em;
+	background-color: var(--color-light-gray);
+	border-radius: 8px;
 	/* > a {
 		font-weight: 500;
 	} */
@@ -1277,6 +1280,9 @@ ul.writing-list li:hover {
 .pagination-next {
 	width: 35%;
 	text-align: right;
+	padding: 2em;
+	background-color: var(--color-light-gray);
+	border-radius: 8px;
 	/* > a {
 		font-weight: 500;
 	} */
