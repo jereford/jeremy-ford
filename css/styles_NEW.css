@@ -1277,15 +1277,23 @@ ul.writing-list li:hover {
 	display: flex;
 }
 
-.pagination-previous > a,
+.pagination-previous > a {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 1em;
+	padding: 28px 24px;
+	flex: 1;
+}
+
 .pagination-next > a {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: space-between;
 	gap: 1em;
 	padding: 28px 24px;
 	flex: 1;
+	justify-content: space-between;
 }
 
 .pagination-arrow {
