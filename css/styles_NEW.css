@@ -975,6 +975,7 @@ h2 a:hover {
 	color: var(--color-black);
 	text-align: left;
 	margin-right: var(--spacing-2);
+	letter-spacing: 0.02em;
 }
 
 .mobile-info {
