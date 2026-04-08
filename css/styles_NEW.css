@@ -93,7 +93,6 @@ body {
 }
 
 p {
-	/* margin: 0px 0px 24px 0px; */
 	margin: var(--spacing-0) var(--spacing-0) var(--spacing-6) var(--spacing-0);
 	padding: var(--spacing-0);
 	letter-spacing: 0.02em;
@@ -110,7 +109,6 @@ a {
   	-moz-transition: color .2s ease-in-out;
   	-webkit-transition: color .2s ease-in-out;
   	transition: color .2s ease-in-out;
-  	/* http://jsfiddle.net/Marcel/xejsM/52/ */
 }
 
 a:visited {
@@ -118,19 +116,12 @@ a:visited {
 }
 
 a:hover {
-	/* color: #50638A; */
 	color: var(--color-blue);
 	cursor: pointer !important;
 }
 
-.wrap {
-	width: 100%;
-	margin: 0 auto;
-}
-
 p a:link {
 	text-decoration: none;
-	/* border-bottom: 1px dotted #11182B; */
 	border-bottom: 1px dotted var(--color-black);
 	font-weight: 300;
 	cursor: pointer;
@@ -168,6 +159,21 @@ h2 {
 	letter-spacing: -0.02em;
 }
 
+h2 a:link {
+	text-decoration: none;
+	border-bottom: 1px solid var(--color-black);
+}
+
+h2 a:visited {
+	text-decoration: none;
+	border-bottom: 1px solid var(--color-black);
+}
+
+h2 a:hover {
+	text-decoration: none;
+	border: none;
+}
+
 h3 {
 	font-family: 'DM Sans', sans-serif;
 	padding: 32px 0px 16px 0px;
@@ -199,8 +205,13 @@ h4 {
 	font-size: 44px;
 }
 
+.wrap {
+	width: 100%;
+	margin: 0 auto;
+}
+
 .bold {
-	font-weight:400;
+	font-weight: 400;
 }
 
 a.info-button {
@@ -444,21 +455,6 @@ hr {
 
 .footnote a:hover {
 	color: var(--color-blue);
-	border: none;
-}
-
-h2 a:link {
-	text-decoration: none;
-	border-bottom: 1px solid var(--color-black);
-}
-
-h2 a:visited {
-	text-decoration: none;
-	border-bottom: 1px solid var(--color-black);
-}
-
-h2 a:hover {
-	text-decoration: none;
 	border: none;
 }
 
@@ -787,24 +783,24 @@ h2 a:hover {
 	margin: 0 auto;
 	border-top-left-radius: 2px;
 	border-top-right-radius: 2px;
-	}
+}
 
 .back_to_top a:link {
 	color: var(--color-light-blue);
-	}
+}
 
 .back_to_top a:visited {
 	color: var(--color-light-blue);
-	}
+}
 
 .back_to_top a:hover {
 	color: var(--color-blue);
-	}
+}
 
 .masonry {
 	column-count: 2;
 	column-gap: 0.8em;
-	}
+}
 
 .project-tag {
 	border-radius: 4px;
@@ -820,7 +816,7 @@ h2 a:hover {
 	white-space: nowrap;
 	line-height: 3em;
 	text-transform: uppercase;
-	}
+}
 
 .project-tag-home {
 	border-radius: 4px;
@@ -1220,6 +1216,7 @@ ul.writing-list li:hover {
 	margin: var(--spacing-10) var(--spacing-0);
 	display: flex; 
 	align-items: flex-start;
+	font-size: 16px;
 }	
 
 .insight-box-with-icon .material-symbols-outlined {
