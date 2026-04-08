@@ -1872,17 +1872,13 @@ a.info-button:visited {
 	margin-bottom: 24px;
 }
 
-.pagination-inner {
-	width: 90%;
+.pagination {
+	display: none;
 }
 
 p.image-caption {
 	font-size: 14px;
 	width: 100%;
-}
-
-.pagination-previous, .pagination-next {
-	width: 40%;
 }
 
 /* FOOTER */
