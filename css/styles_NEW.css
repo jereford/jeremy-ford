@@ -1265,7 +1265,6 @@ ul.writing-list li:hover {
 	justify-content: space-between;
 	gap: var(--spacing-8);
 	align-items: stretch;
-	transition: all 0.2s ease-in-out;
 }
 
 .pagination-previous,
@@ -1276,6 +1275,7 @@ ul.writing-list li:hover {
 	border-radius: 8px;
 	flex: 1;
 	display: flex;
+	transition: all 0.2s ease-in-out;
 }
 
 .pagination-previous:hover,
