@@ -71,54 +71,58 @@
       </div>
       
       <div class="project_title_left">
-        <h2 style="margin-top: 2rem;">Problem: alert configuration was a barrier for new and existing teams, and false positives eroded trust</h2>
-        <p>While Honeycomb's value was <a href="https://youtu.be/7UKfEhYFjuE?si=Np2xSUgD0FrLM0jh" target="_blank">well understood by the market</a>, my team found that friction in alert creation inhibited the realization of that value for some teams. Users like Site Reliability Engineers (SREs), whose primary motivation was to understand service health and be alerted about issues, were often confused and/or discouraged. Configuring useful alerts was complicated, as it required a deep understanding of an application's schema and the impact of nuanced user behavior on reliability.</p>
+        <section>
+          <h2 style="margin-top: 2rem;">Problem: alert configuration was a barrier for new and existing teams, and false positives eroded trust</h2>
+          <p>While Honeycomb's value was <a href="https://youtu.be/7UKfEhYFjuE?si=Np2xSUgD0FrLM0jh" target="_blank">well understood by the market</a>, my team found that friction in alert creation inhibited the realization of that value for some teams. Users like Site Reliability Engineers (SREs), whose primary motivation was to understand service health and be alerted about issues, were often confused and/or discouraged. Configuring useful alerts was complicated, as it required a deep understanding of an application's schema and the impact of nuanced user behavior on reliability.</p>
+          <h3>Business opportunity</h3>
+          <p>My team recognized a pivotal moment to: greatly reduce time to value (TTV) by getting started with alerts faster, reduce alert fatigue by highlighting only meaningful deviations, and lower mean time to resolution (MTTR) by enabing investigations with our complementary AI feature, Canvas. Paired with Canvas, users could investigate their anomalies without needing to write the perfect query; they could simply ask a question like, “Why are response times slower for these users?” We believed these improvements would put us in a position to <span class="highlight">increase adoption</span> for both new and existing teams and <span class="highlight">win more deals</span> with enterprise organizations who demanded out-of-the-box tooling.</p>
+          <img src="images/honeycomb-anomaly-detection-ramp-vendor-assessment.png" class="image-border" style="margin-top: var(--spacing-5); margin-bottom: var(--spacing-0);">
+          <p class="image-caption">As evidenced by Ramp.com's vendor assessment, Honeycomb's set up contributed towards its reputation as a tool best suited for advanced teams.</p>
+        </section>    
 
-        <h3>Business opportunity</h3>
-        <p>My team recognized a pivotal moment to: greatly reduce time to value (TTV) by getting started with alerts faster, reduce alert fatigue by highlighting only meaningful deviations, and lower mean time to resolution (MTTR) by enabing investigations with our complementary AI feature, Canvas. Paired with Canvas, users could investigate their anomalies without needing to write the perfect query; they could simply ask a question like, “Why are response times slower for these users?” We believed these improvements would put us in a position to <span class="highlight">increase adoption</span> for both new and existing teams and <span class="highlight">win more deals</span> with enterprise organizations who demanded out-of-the-box tooling.</p>
-        
-        <img src="images/honeycomb-anomaly-detection-ramp-vendor-assessment.png" class="image-border" style="margin-top: var(--spacing-5); margin-bottom: var(--spacing-0);">
-        <p class="image-caption">As evidenced by Ramp.com's vendor assessment, Honeycomb's set up contributed towards its reputation as a tool best suited for advanced teams.</p>
+        <section>
+          <h2 style="margin-top: 2rem;">Solution: continuousy learn what "normal" looks like and automatically send alerts when performance deviates</h2>
+          <p>We envisioned a world where Anomaly Detection eliminated long-standing friction for alert creation. By learning normal service behavior and improving over time, the algorithm would automatically detect true irregularities in signals like error rate and latency, before they impact our customers' customers. The value proposition: reduce false positives and alert fatigue for software developers.</p>
+          
+          <img class="image-border" style="margin-bottom: var(--spacing-0); margin-top: var(--spacing-5);" src="/images/honeycomb-anomaly-detection-lofi-query-dataset-selection.png">
+          <p class="image-caption">An early vision proposed surfacing anomalies in the service selection dropdown menu on the Query page, to expedite the investigation workflow.</p>
+          <video width="100%" src="images/honeycomb-anomaly-detection-lofi-anomalies-confirm-recipients.mov" autoplay loop muted playsinline class="image-border" style="margin-bottom: var(--spacing-0); margin-top: var(--spacing-10);"></video>
+          <p class="image-caption">An early vision for an experience where users could review detected anomalies for accuracy and quickly configure their alerts.</p>
 
-        <h2 style="margin-top: 2rem;">Solution: continuousy learn what "normal" looks like and automatically send alerts when performance deviates</h2>
-        <p>We envisioned a world where Anomaly Detection eliminated long-standing friction for alert creation. By learning normal service behavior and improving over time, the algorithm would automatically detect true irregularities in signals like error rate and latency, before they impact our customers' customers. The value proposition: reduce false positives and alert fatigue for software developers.</p>
-        
-        <img class="image-border" style="margin-bottom: var(--spacing-0); margin-top: var(--spacing-5);" src="/images/honeycomb-anomaly-detection-lofi-query-dataset-selection.png">
-        <p class="image-caption">An early vision proposed surfacing anomalies in the service selection dropdown menu on the Query page, to expedite the investigation workflow.</p>
-        <video width="100%" src="images/honeycomb-anomaly-detection-lofi-anomalies-confirm-recipients.mov" autoplay loop muted playsinline class="image-border" style="margin-bottom: var(--spacing-0); margin-top: var(--spacing-10);"></video>
-        <p class="image-caption">An early vision for an experience where users could review detected anomalies for accuracy and quickly configure their alerts.</p>
+          <h3 style="margin-top: var(--spacing-5);">Requirements for our MVP</h3>
+          <p>Informed by a story mapping session led by our Director of Product and a proof of concept from our data consultant, the triad converged on acceptance criteria. We felt confident that this scope sufficiently balanced impact and effort to: deliver just enough value, facilitate conversations with early access users to learn what else would be needed, and not be overly demanding on our backend:</p>
+          <ul class="ul-body">
+            <li class="li-body">Anomaly profiles for services would be spun up manually, and the early access teams would choose their services during onboarding.</li>
+            <li class="li-body">Deviations lasting more than 5 minutes would be considered an anomaly.</li>
+            <li class="li-body">Anomalies would be presented via two views: a list of services and their status (anomalous or normal), and a detail panel showing when anomalies occurred.</li>
+            <li class="li-body">Anomalies within a previous 2-hour window would be visualized on a graph.</li>
+            <li class="li-body">Start with the error rate signal type. Based on query data in Honeycomb, we understood this signal to be the most popular among the <a href="https://sre.google/sre-book/monitoring-distributed-systems/#xref_monitoring_golden-signals" target="_blank">four golden signals</a>.</li>
+            <li class="li-body">Enable an investigative workflow by allowing users to run a query.</li>
+            <li class="li-body">Email and Slack would be the first available notification channels; Pagerduty and Webhooks would be considered later.</li>
+          </ul>
+          <img src="images/honeycomb-anomaly-detection-story-mapping.png" class="image-border" style="margin-bottom: 0; margin-top: var(--spacing-5);">
+          <p class="image-caption">Our Director of Product led a story mapping session to align the team on the user's journey, and start a discussion about acceptance criteria for the MVP and future milestones.</p>
+          <p style="margin-top: var(--spacing-10);">We planned to instrument the code to understand user engagement by analyzing quantitative data like: service list page loads, service name clicks, recipient configurations, and 'Run Query' button clicks. From a qualitative standpoint, we would partner with the Sales and Customer Success teams to understand how Anomaly Detection influenced new deals and renewals.</p>
 
-        <h3 style="margin-top: var(--spacing-5);">Requirements for our MVP</h3>
-        <p>Informed by a story mapping session led by our Director of Product and a proof of concept from our data consultant, the triad converged on acceptance criteria. We felt confident that this scope sufficiently balanced impact and effort to: deliver just enough value, facilitate conversations with early access users to learn what else would be needed, and not be overly demanding on our backend:</p>
-        <ul class="ul-body">
-          <li class="li-body">Anomaly profiles for services would be spun up manually, and the early access teams would choose their services during onboarding.</li>
-          <li class="li-body">Deviations lasting more than 5 minutes would be considered an anomaly.</li>
-          <li class="li-body">Anomalies would be presented via two views: a list of services and their status (anomalous or normal), and a detail panel showing when anomalies occurred.</li>
-          <li class="li-body">Anomalies within a previous 2-hour window would be visualized on a graph.</li>
-          <li class="li-body">Start with the error rate signal type. Based on query data in Honeycomb, we understood this signal to be the most popular among the <a href="https://sre.google/sre-book/monitoring-distributed-systems/#xref_monitoring_golden-signals" target="_blank">four golden signals</a>.</li>
-          <li class="li-body">Enable an investigative workflow by allowing users to run a query.</li>
-          <li class="li-body">Email and Slack would be the first available notification channels; Pagerduty and Webhooks would be considered later.</li>
-        </ul>
-        <img src="images/honeycomb-anomaly-detection-story-mapping.png" class="image-border" style="margin-bottom: 0; margin-top: var(--spacing-5);">
-        <p class="image-caption">Our Director of Product led a story mapping session to align the team on the user's journey, and start a discussion about acceptance criteria for the MVP and future milestones.</p>
-        <p style="margin-top: var(--spacing-10);">We planned to instrument the code to understand user engagement by analyzing quantitative data like: service list page loads, service name clicks, recipient configurations, and 'Run Query' button clicks. From a qualitative standpoint, we would partner with the Sales and Customer Success teams to understand how Anomaly Detection influenced new deals and renewals.</p>
+          <h3>Flagging risks at the outset</h3>
+          <p>My team discussed and documented technical and UX risks before we embarked on the project. These reminded us about specific aspects of the implementation to evaluate throughout the project lifecycle.</p>
+          <ul class="ul-body">
+            <li class="li-body"><span class="bold">Noisy alerts</span>. A key value proposition of Anomaly Detection was to reduce false positives by providing intelligent, dynamic alerts based on <span style="font-style: italic;">genuine</span> issues. We understood the possibility that Anomaly Detection's algorithm, which wouldn't be adjustable by the user at first, could result in noise &mdash; therefore negating the entire purpose of the feature. Our algorithm would learn and adjust on the fly to accommodate varying use cases, but it would take some time to learn what "normal" looks like. Additionally, "normal" can vary across teams in different industries, with different traffic patterns. For example, one customer in the construction sector expected little to no traffic to their app on weekends. Automatically accounting for this flavor of seasonality would be critical to not generate noisy alerts. We agreed that adoption would be heavily influenced by users' first impressions, and inaccuracies would not do us any favors.</li>
+            <li class="li-body"><span class="bold">A disjointed workflow</span>. Since the feature was greenfield, it was most efficient to develop it in an isolated area of the platform &mdash; accessible via its own item in our main navigation. We acknowledged the primary risk of this being a fragmented user flow. We noted the need to revisit its home in the future to integrate it into a cohesive alerting flow.</li>
+            <li class="li-body"><span class="bold">Anomalies as another alert type</span>. Honeycomb's alerting suite thus far consisted of Service Level Objectives (SLOs) and Triggers. Would the addition of a third alert type confuse users? Would they understand the value of Anomalies and the use cases for each alert type?</li>
+            <li class="li-body"><span class="bold">Configuring notifications would be manual</span>. While anomalies would automatically detected, recipients who would receive alerts would need to configured manually. Could this result in frustration?</li>
+            <li class="li-body"><span class="bold">Statuses could be misleading.</span> We anticipated a scenario where a service, which was <span style="font-style: italic;">recently</span> anomalous, now read "normal." Technically, this would be accurate, but we felt some users might want additional context to understand the nuance. This sparked a discussion among the triad members about a potential third status.</li>
+          </ul>
+        </section>
 
-        <h3>Flagging risks at the outset</h3>
-        <p>My team discussed and documented technical and UX risks before we embarked on the project. These reminded us about specific aspects of the implementation to evaluate throughout the project lifecycle.</p>
-        <ul class="ul-body">
-          <li class="li-body"><span class="bold">Noisy alerts</span>. A key value proposition of Anomaly Detection was to reduce false positives by providing intelligent, dynamic alerts based on <span style="font-style: italic;">genuine</span> issues. We understood the possibility that Anomaly Detection's algorithm, which wouldn't be adjustable by the user at first, could result in noise &mdash; therefore negating the entire purpose of the feature. Our algorithm would learn and adjust on the fly to accommodate varying use cases, but it would take some time to learn what "normal" looks like. Additionally, "normal" can vary across teams in different industries, with different traffic patterns. For example, one customer in the construction sector expected little to no traffic to their app on weekends. Automatically accounting for this flavor of seasonality would be critical to not generate noisy alerts. We agreed that adoption would be heavily influenced by users' first impressions, and inaccuracies would not do us any favors.</li>
-          <li class="li-body"><span class="bold">A disjointed workflow</span>. Since the feature was greenfield, it was most efficient to develop it in an isolated area of the platform &mdash; accessible via its own item in our main navigation. We acknowledged the primary risk of this being a fragmented user flow. We noted the need to revisit its home in the future to integrate it into a cohesive alerting flow.</li>
-          <li class="li-body"><span class="bold">Anomalies as another alert type</span>. Honeycomb's alerting suite thus far consisted of Service Level Objectives (SLOs) and Triggers. Would the addition of a third alert type confuse users? Would they understand the value of Anomalies and the use cases for each alert type?</li>
-          <li class="li-body"><span class="bold">Configuring notifications would be manual</span>. While anomalies would automatically detected, recipients who would receive alerts would need to configured manually. Could this result in frustration?</li>
-          <li class="li-body"><span class="bold">Statuses could be misleading.</span> We anticipated a scenario where a service, which was <span style="font-style: italic;">recently</span> anomalous, now read "normal." Technically, this would be accurate, but we felt some users might want additional context to understand the nuance. This sparked a discussion among the triad members about a potential third status.</li>
-        </ul>
-
-        <h2>Designing the experience</h2>
-        <img src="images/honeycomb-anomaly-detection-explorations.png" class="image-border" style="margin-bottom: 0; margin-top: var(--spacing-5);">
-        <p class="image-caption">Sampling of early sketches to explore information hierarchy and graphing for data presence.</p>
-        <p style="margin-top: var(--spacing-10);">To reduce engineering effort and still provide a delightful experience, I proposed making use of our existing components and patterns wherever possible. This meant upcycling our list view, which was already being used for Triggers and SLOs. The previous quarter, another Product Designer contributed a drawer component to our design library, a panel that would slide in from the right over the top of a page. This panel was a great home for our anomaly detail content because it allowed the user to stay on the current page. During development, engineering ran into an issue where tool tips within the drawer didn't display. I worked with the App Enablement Team, who maintains our design library, to address this at the component level. This small investment allowed tool tips to be used in any future implementations of the drawer component, for all product teams.</p>
-        <p>In order to indicate on the graph where an anomaly begins, we repurposed functionality and styling from markers; vertical bars on our Query page that denoted deployments. We represented the "normal" range using light gray shading, and highlighted anomalous time ranges using semi-transparent red shading.</p>
-        <p>For our recipients table, where users configured destinations for their alerts (Slack, email) we decided to invest in a new pattern to quickly add, edit, remove, and test a recipient in-line, without leaving the table. Existing instances of recipients in the product required users to configure them in a modal, which we felt would detract from the user's flow. I paired with Engineering to iron out the details, and we worked with the App Enablement Team to contribute the new pattern to Honeycomb's design library. This investment empowered other product teams to use it in their own list views moving forward.</p>
+        <section>
+          <h2>Designing the experience</h2>
+          <img src="images/honeycomb-anomaly-detection-explorations.png" class="image-border" style="margin-bottom: 0; margin-top: var(--spacing-5);">
+          <p class="image-caption">Sampling of early sketches to explore information hierarchy and graphing for data presence.</p>
+          <p style="margin-top: var(--spacing-10);">To reduce engineering effort and still provide a delightful experience, I proposed making use of our existing components and patterns wherever possible. This meant upcycling our list view, which was already being used for Triggers and SLOs. The previous quarter, another Product Designer contributed a drawer component to our design library, a panel that would slide in from the right over the top of a page. This panel was a great home for our anomaly detail content because it allowed the user to stay on the current page. During development, engineering ran into an issue where tool tips within the drawer didn't display. I worked with the App Enablement Team, who maintains our design library, to address this at the component level. This small investment allowed tool tips to be used in any future implementations of the drawer component, for all product teams.</p>
+          <p>In order to indicate on the graph where an anomaly begins, we repurposed functionality and styling from markers; vertical bars on our Query page that denoted deployments. We represented the "normal" range using light gray shading, and highlighted anomalous time ranges using semi-transparent red shading.</p>
+          <p>For our recipients table, where users configured destinations for their alerts (Slack, email) we decided to invest in a new pattern to quickly add, edit, remove, and test a recipient in-line, without leaving the table. Existing instances of recipients in the product required users to configure them in a modal, which we felt would detract from the user's flow. I paired with Engineering to iron out the details, and we worked with the App Enablement Team to contribute the new pattern to Honeycomb's design library. This investment empowered other product teams to use it in their own list views moving forward.</p>
+        </section>
       </div> <!-- END PROJECT TITLE LEFT -->
 
       <div class="project-images" style="text-align: center;"> 
@@ -167,42 +171,43 @@
         <p class="image-caption" style="margin-bottom: var(--spacing-10);">I tested chart options for the data presence signal type to derisk our data visualization.</p>
         <p>I brought my research to the Design Team's weekly critique to get internal feedback about the styling and comprehensibility. This ensured my designs were aligned with our design library and consistent with other graphs in the product.</p>
 
-        <h2>Launch, impact, and key learnings</h2>
-        
-        <h3>Announcement of the early access release</h3>
-        <p>Anomaly Detection was unveiled during a coordinated, multi-channel launch in collaboration with the Product Marketing Team. In person, it was demo'ed at <span style="font-style: italic;">Observability Day San Francisco | What's Next: The Future of Observability in the Age of AI</span>, a live event for software developers sponsored by Amazon AWS. Digitally, it was launched via <span style="font-style: italic;">AI Week</span>, a LinkedIn campaign that raised awareness about each component of our new AI suite, Honeycomb Intelligence. Teams signed up for the early access program in person and by contacting their Customer Success representative.</p>
-        <div class="video-container" style="margin-top: var(--spacing-10); margin-bottom: var(--spacing-0);">
-          <iframe class="video" src="https://www.youtube.com/embed/2vL2f1o91MY?si=1eU8EdfN51G8gVmK" title="Introducing Honeycomb Intelligence Anomaly Detection" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        <p class="image-caption">Product and marketing leaders demo'ed our Anomaly Detection MVP during AI Week, an online campaign that coincided with Observability Day.</p>
-        <img src="images/o11y-day-sf-2025-audience.png" class="image-border" style="margin-bottom: var(--spacing-0); margin-top: var(--spacing-8);" alt="Software engineers listen intently to the presentations and demos given at Honeycomb's Observability Day 2025 in San Francisco">
-        <p class="image-caption">Our co-founders and Developer Relations Team demo'ed Anomaly Detection at Observability Day, an AWS-sponsored event in San Francisco that coincided with AI Week.</p>
-        
-        <h3>Reception</h3>
-        <p>The announcement reiterated interest in the feature and generated positive sentiment. Beyond the sign-ups, we captured feedback from DevOps professionals who posted on LinkedIn and wrote about Honeycomb Intelligence in various articles:</p>
-        <div style="margin-top: var(--spacing-10); margin-bottom: var(--spacing-8);" class="masonry">
-          <div class="quote-card">By tying real-time data, AI-guided investigation, and proactive detection into a single loop, Honeycomb is building toward something bigger: a world where systems explain themselves.</div>
-          <div class="quote-card">I think this is the right direction for the future: from traditional monitoring ("I know what I need"), to complementing it with observability ("let me explore my telemetry"), landing to this "what do I need to know?".</div>
-          <div class="quote-card">The approach to anomaly detection you're sharing really highlights how observability can transform the investigative process for engineers.</div>
-          <div class="quote-card">It sounds like a powerful way to simplify investigations.</div>
-          <div class="quote-card">Love how you're handling detection at the source instead of just patching symptoms. Proactive anomaly detection is so needed, especially as systems get more complex.</div>
-        </div>
+        <section>
+          <h2>Launch, impact, and key learnings</h2>
+          <h3>Announcement of the early access release</h3>
+          <p>Anomaly Detection was unveiled during a coordinated, multi-channel launch in collaboration with the Product Marketing Team. In person, it was demo'ed at <span style="font-style: italic;">Observability Day San Francisco | What's Next: The Future of Observability in the Age of AI</span>, a live event for software developers sponsored by Amazon AWS. Digitally, it was launched via <span style="font-style: italic;">AI Week</span>, a LinkedIn campaign that raised awareness about each component of our new AI suite, Honeycomb Intelligence. Teams signed up for the early access program in person and by contacting their Customer Success representative.</p>
+          <div class="video-container" style="margin-top: var(--spacing-10); margin-bottom: var(--spacing-0);">
+            <iframe class="video" src="https://www.youtube.com/embed/2vL2f1o91MY?si=1eU8EdfN51G8gVmK" title="Introducing Honeycomb Intelligence Anomaly Detection" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <p class="image-caption">Product and marketing leaders demo'ed our Anomaly Detection MVP during AI Week, an online campaign that coincided with Observability Day.</p>
+          <img src="images/o11y-day-sf-2025-audience.png" class="image-border" style="margin-bottom: var(--spacing-0); margin-top: var(--spacing-8);" alt="Software engineers listen intently to the presentations and demos given at Honeycomb's Observability Day 2025 in San Francisco">
+          <p class="image-caption">Our co-founders and Developer Relations Team demo'ed Anomaly Detection at Observability Day, an AWS-sponsored event in San Francisco that coincided with AI Week.</p>
+          
+          <h3>Reception</h3>
+          <p>The announcement reiterated interest in the feature and generated positive sentiment. Beyond the sign-ups, we captured feedback from DevOps professionals who posted on LinkedIn and wrote about Honeycomb Intelligence in various articles:</p>
+          <div style="margin-top: var(--spacing-10); margin-bottom: var(--spacing-8);" class="masonry">
+            <div class="quote-card">By tying real-time data, AI-guided investigation, and proactive detection into a single loop, Honeycomb is building toward something bigger: a world where systems explain themselves.</div>
+            <div class="quote-card">I think this is the right direction for the future: from traditional monitoring ("I know what I need"), to complementing it with observability ("let me explore my telemetry"), landing to this "what do I need to know?".</div>
+            <div class="quote-card">The approach to anomaly detection you're sharing really highlights how observability can transform the investigative process for engineers.</div>
+            <div class="quote-card">It sounds like a powerful way to simplify investigations.</div>
+            <div class="quote-card">Love how you're handling detection at the source instead of just patching symptoms. Proactive anomaly detection is so needed, especially as systems get more complex.</div>
+          </div>
 
-        <h3>Takeaways</h3>
-        <p>Time will tell how Anomaly Detection influences MTTR, sales, and adoption. Ongoing analysis of quantitative data combined with user interviews will help evaluate its effectiveness and inform future milestones. Reflecting on the project, a couple learnings come to mind:</p>
-        <ul class="ul-body">
-          <li class="li-body">The one-two punch of Observability Day and AI Week yielded more sign-ups than we were able to accommodate (a good problem to have!), given the overhead of manually onboarding teams' services during the early access phase. This was certainly not detrimental to the project, but additional usage would have provided more, helpful user data about our MVP's capabilities and usability.</li>
-          <li class="li-body">Despite the enthusiasm expressed by so many teams during the early access phase, we were surprised to see low and slow adoption over the remainder of the quarter. We believed these delays were a symptom of poor timing &mdash; the latter of half of Q4 is a challenging time given the holidays and competing end-of-year priorities like OKRs, reporting, and planning.</li>
-
-        <!-- <h2>Possible future iterations of Anomaly Detection</h2>
-        <p>Some potential functionality that came up in team discussions, included (note: concept only; not indicative of Honeycomb's roadmap in any way).</p>
-        <ul class="ul-body">
-          <li class="li-body"><span class="bold">Even better integration with Canvas</span>. Something.</li>
-          <li class="li-body"><span class="bold">Automatic onboarding of services</span>. Spin up profiles with zero effort.</li>
-          <li class="li-body"><span class="bold">Additional signals</span>. Latency, etc.</li>
-          <li class="li-body"><span class="bold">Fine tune the signal</span>. Threshold.</li>
-          <li class="li-body"><span class="bold">Global configuration and management of recipients</span>. Ex: all issues with X service should automatically be sent to this Slack channel.</li>
-        </ul> -->
+          <h3>Takeaways</h3>
+          <p>Time will tell how Anomaly Detection influences MTTR, sales, and adoption. Ongoing analysis of quantitative data combined with user interviews will help evaluate its effectiveness and inform future milestones. Reflecting on the project, a couple learnings come to mind:</p>
+          <ul class="ul-body">
+            <li class="li-body">The one-two punch of Observability Day and AI Week yielded more sign-ups than we were able to accommodate (a good problem to have!), given the overhead of manually onboarding teams' services during the early access phase. This was certainly not detrimental to the project, but additional usage would have provided more, helpful user data about our MVP's capabilities and usability.</li>
+            <li class="li-body">Despite the enthusiasm expressed by so many teams during the early access phase, we were surprised to see low and slow adoption over the remainder of the quarter. We believed these delays were a symptom of poor timing &mdash; the latter of half of Q4 is a challenging time given the holidays and competing end-of-year priorities like OKRs, reporting, and planning.</li>
+          </ul>
+          <!-- <h2>Possible future iterations of Anomaly Detection</h2>
+          <p>Some potential functionality that came up in team discussions, included (note: concept only; not indicative of Honeycomb's roadmap in any way).</p>
+          <ul class="ul-body">
+            <li class="li-body"><span class="bold">Even better integration with Canvas</span>. Something.</li>
+            <li class="li-body"><span class="bold">Automatic onboarding of services</span>. Spin up profiles with zero effort.</li>
+            <li class="li-body"><span class="bold">Additional signals</span>. Latency, etc.</li>
+            <li class="li-body"><span class="bold">Fine tune the signal</span>. Threshold.</li>
+            <li class="li-body"><span class="bold">Global configuration and management of recipients</span>. Ex: all issues with X service should automatically be sent to this Slack channel.</li>
+          </ul> -->
+        </section>
       </div> <!-- END PROJECT TITLE LEFT -->
 
     </div><!-- END PROJECT TITLE -->
