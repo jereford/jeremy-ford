@@ -984,20 +984,20 @@ ul.social {
 	padding: var(--spacing-0);
 	display: inline;
 	letter-spacing: 0.05em;
-	}
+}
 
 li.social-list {
 	display: inline;
 	padding-top: var(--spacing-6);
-	}
+}
 
 li.social-list a:link {
 	border-bottom: none;
-	}
+}
 
 li.social-list a:visited {
 	border-bottom: none;
-	}
+}
 
 .footnote {
 	font-size: 14px;
@@ -1005,7 +1005,7 @@ li.social-list a:visited {
 	color: var(--color-dark-gray);
 	letter-spacing: 0.02em;
 	display: block;
-	}
+}
 
 .footnote-thoughts {
 	font-size: 16px;
@@ -1013,14 +1013,14 @@ li.social-list a:visited {
 	color: var(--color-light-blue);
 	margin-bottom: 60px;
 	margin-top: var(--spacing-0);
-	}
+}
 
 .footnote-date {
 	font-size: 14px;
 	color: var(--color-blue);
 	font-family: 'DM Mono', monospace;
 	font-weight: 300;
-	}
+}
 
 .image-caption {
 	font-size: 14px;
@@ -1407,7 +1407,7 @@ ul.writing-list li:hover {
   	color: var(--color-white);
   	text-decoration: none;
   	width: 100%;
-	}
+}
 
 .mobilenav li a:visited {
   	color: var(--color-white);
