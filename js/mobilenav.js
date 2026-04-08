@@ -18,28 +18,24 @@ function togglescroll() {
 }
 
 $(document).ready(function() {
-  // We attach to the 'document' so it works even after the header is AJAX-loaded.
-  // .off('click') ensures we don't bind the same function multiple times.
-  $(document).off('click', '.mobilenav-icon').on('click', '.mobilenav-icon', function(e) {
-      // Prevent the browser from treating this as a link or a double-tap
-      e.preventDefault();
-      e.stopPropagation();
-
-      $(".mobilenav").fadeToggle(400);
-      $("body").toggleClass("noscroll");
-      
-      // Toggle animation classes
-      $(".top-menu").toggleClass("top-animate");
-      $(".mid-menu").toggleClass("mid-animate");
-      $(".bottom-menu").toggleClass("bottom-animate");
+  togglescroll()
+  $(".mobilenav-icon").click(function() {
+    $(".mobilenav").fadeToggle(400);
+    $(".top-menu").toggleClass("top-animate");
+    $("body").toggleClass("noscroll");
+    $(".mid-menu").toggleClass("mid-animate");
+    $(".bottom-menu").toggleClass("bottom-animate");
   });
+});
 
-  // PUSH ESC KEY TO EXIT
-  $(document).keydown(function(e) {
-      if (e.keyCode == 27 && $(".mobilenav").is(":visible")) {
-          $(".mobilenav").fadeOut(400);
-          $("body").removeClass("noscroll");
-          $(".top-menu, .mid-menu, .bottom-menu").removeClass("top-animate mid-animate bottom-animate");
-      }
-  });
+// PUSH ESC KEY TO EXIT
+
+$(document).keydown(function(e) {
+  if (e.keyCode == 27) {
+    $(".mobilenav").fadeOut(400);
+    $(".top-menu").removeClass("top-animate");
+    $("body").removeClass("noscroll");
+    $(".mid-menu").removeClass("mid-animate");
+    $(".bottom-menu").removeClass("bottom-animate");
+  }
 });
