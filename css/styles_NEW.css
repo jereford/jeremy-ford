@@ -1313,7 +1313,7 @@ ul.writing-list li:hover {
 /* PAGINATION */
 
 /* BACK TO TOP */
-.back-to-top {
+.back-to-top-new {
 	position: fixed;
 	bottom: 30px;
 	right: 30px;
@@ -1339,13 +1339,13 @@ ul.writing-list li:hover {
   }
   
   /* State when user has scrolled down */
-  .back-to-top.show {
+  .back-to-top-new.show {
 	opacity: 1;
 	visibility: visible;
 	transform: translateY(0);
   }
   
-  .back-to-top:hover {
+  .back-to-top-new:hover {
 	background: #000;
 	color: #fff;
 	transform: translateY(-3px); /* Subtle lift on hover */
