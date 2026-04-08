@@ -679,18 +679,18 @@ h2 a:hover {
 	padding: var(--spacing-6) var(--spacing-0);
 	border-top: 1px solid var(--color-light-gray);
 	border-bottom: 1px solid var(--color-light-gray);
-	}
+}
 
 .writing a {
 	letter-spacing: 0.02em;
-	}
+}
 
 .project_images {
 	margin: 0px auto;
 	padding-top: var(--spacing-12);
 	max-width: 1148px;
 	clear: both;
-	}
+}
 
 .project_images img {
 	border-radius: 8px;
@@ -700,15 +700,15 @@ h2 a:hover {
 	width: 75%;
 	padding-bottom: var(--spacing-0);
 	margin: 0 auto;
-	}
+}
 
 .col_left h2 {
 	display: inline-block;
-	}
+}
 
 .col_right {
 	float: right;
-	}
+}
 
 .hero {
 	padding: 90px 0px;
@@ -718,7 +718,7 @@ h2 a:hover {
 	margin-top: 60px;
 	background-color: var(--color-white);
 	color: var(--color-black);
-	}
+}
 
 .hero_inner {
 	width: 85%;
@@ -727,17 +727,16 @@ h2 a:hover {
 	text-align: left;
 	font-size: 52px;
 	line-height: 1.1em;
-	}
+}
 
 .hero_inner_about {
 	text-indent: 0;
 	min-height: 500px;
-	}
+}
 
 .quote_card {
 	background-color: var(--color-light-gray);
-	padding: var(--spacing-4) var(--spacing-5);
-	/* border: 1px solid #C2C8D6; */
+	padding: var(--spacing-5);
 	border-radius: 4px;
 	font-size: 20px;
 	letter-spacing: 0.02em;
@@ -745,7 +744,7 @@ h2 a:hover {
 	font-weight: 300;
 	display: inline-block;
 	margin: 0 0 1em;
-	}
+}
 
 .quote_card_negative {
 	background-color: var(--color-light-gray);
