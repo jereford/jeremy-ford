@@ -57,6 +57,10 @@
         </p>
         <h1 class="reveal-up">The path to SLO adoption begins with SLI creation</h1>
         <p class="reveal-up">As a member of Honeycomb's Signals Team, I leveraged user research to identify bottlenecks in the Service Level Objective creation workflow, and designed four improvements we shipped to increase effiency and conversion.</p>
+        <div class="insight-box-with-icon" style="margin-top: var(--spacing-16);">
+          <span class="material-symbols-outlined" style="margin-right: 12px;">trending_up</span>
+          <p style="margin-bottom: var(--spacing-0)">Our team's updates increased Service Level Indicator (SLI) conversion for new Enterprise users by <span class="bold">17%</span> in the five months after release, compared to the previous time period.</p>
+        </div>
       </div>
     </section>
 
@@ -68,11 +72,7 @@
           <p class="footnote">Honeycomb's SLO list view</p>
         </div>
         <div class="project_title_left">
-          <div class="insight-box-with-icon" style="margin-top: var(--spacing-16);">
-            <span class="material-symbols-outlined" style="margin-right: 12px;">trending_up</span>
-            <p style="margin-bottom: var(--spacing-0)">Our team's updates increased Service Level Indicator (SLI) conversion for new Enterprise users by 17% in the five months after release, compared to the previous time period.</p>
-          </div>
-          <h2>What are SLOs anyway?</h2>
+          <h2>What is an SLO anyway?</h2>
           <p>Honeycomb's definitive stance on <a href="https://sre.google/workbook/implementing-slos/" target="_blank">Service Level Objectives (SLOs)</a> is they're an essential complement to <a href="/honeycomb-alert-scheduling.html">traditional alerts</a>; a keystone of great observability with the power to align software companies around the business impact of their application's UX.</p>
           <p>With an SLO, stakeholders come together to define a critical user journey (i.e. a retail application might choose a 'checkout' flow), identify the associated services that journey touches, and agree upon the target reliability for those services. For example: "Over a period of 28 days, 98% of users can purchase an item without errors." For this SLO, the error budget, or tolerance for failures, is 2%. When the budget burns at a rate that would deplete it before the time period, teams are notified with Burn Rate Alerts. After being notified, SREs are empowered to troubleshoot the problem, reallocate resources, halt deployments, and/or begin a discussion about service reliability expectations.</p>
         </div>
