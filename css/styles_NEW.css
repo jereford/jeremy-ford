@@ -554,8 +554,8 @@ h2 a:hover {
 
 .footer {
 	width: 100%;
-	background-color: var(--color-light-gray);
-	color: var(--color-dark-gray);
+	background-color: var(--color-black);
+	color: var(--color-white);
 	display: block;
 	position: relative;
 	bottom: 0;
@@ -1248,7 +1248,7 @@ ul.writing-list li:hover {
 
 /* PAGINATION */
 .pagination-outer {
-	background-color: var(--color-white);
+	background-color: var(--color-light-gray);
 	border-top: 1px solid var(--color-light-gray);
 	width: 100%;
 	display: flex;
@@ -1270,7 +1270,7 @@ ul.writing-list li:hover {
 .pagination-previous,
 .pagination-next {
 	text-align: left;
-	background-color: var(--color-light-gray);
+	background-color: var(--color-white);
 	border-radius: 8px;
 	flex: 1;
 	display: flex;
