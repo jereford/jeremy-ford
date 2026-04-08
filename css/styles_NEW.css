@@ -1277,6 +1277,11 @@ ul.writing-list li:hover {
 	display: flex;
 }
 
+.pagination-previous:hover,
+.pagination-next:hover {
+	background-color: var(--color-white);
+}
+
 .pagination-previous > a {
 	display: flex;
 	flex-direction: row;
