@@ -1,17 +1,17 @@
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org/",
-  "@type": "Person",
-  "name": "Jeremy Ford",
-  "jobTitle": "Senior Product Designer",
-  "url": "https://jeremy-ford.com",
-  "knowsAbout": ["Product Design", "UX", "UI", "Branding"],
-  "workExample": [
-    {
-      "@type": "ProductDesign",
-      "name": "Honeycomb.io Anomaly Detection AI Feature",
-      "description": "Led end-to-end design for Anomaly Detection, one of three greenfield AI features included in a strategic, multi-channel launch campaign for Honeycomb Intelligence."
-    }
-  ]
-}
-</script>
+[
+  {
+    "@context": "https://schema.org/",
+    "@type": "Person",
+    "name": "Jeremy Ford",
+    "jobTitle": "Senior Product Designer",
+    "url": "https://jeremy-ford.com",
+    "knowsAbout": ["Product Design", "UX", "UI", "Branding"],
+    "workExample": [
+      {
+        "@type": "ProductDesign",
+        "name": "Honeycomb.io Anomaly Detection AI Feature",
+        "description": "Led end-to-end design for Anomaly Detection, one of three greenfield AI features included in a strategic, multi-channel launch campaign for Honeycomb Intelligence."
+      }
+    ]
+  }
+]
