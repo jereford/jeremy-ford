@@ -628,14 +628,15 @@ h2 a:hover {
 	width: 100%;
 }
 
-.project_title #project-title-eyebrow {
+.project_title #project-title-eyebrow { /* WRITING PAGE */
 	font-size: 16px;
 	font-family: 'DM Mono', monospace;
 	font-weight: 300;
 	display: block;
 	color: var(--color-blue);
 	text-transform: uppercase;
-} /* WRITING PAGE */
+	letter-spacing: 0.05em;
+}
 
 .project-hero #project-hero-eyebrow {
 	font-size: 16px;
@@ -645,6 +646,7 @@ h2 a:hover {
 	color: var(--color-blue);
 	margin-bottom: var(--spacing-1);
 	text-transform: uppercase;
+	letter-spacing: 0.05em;
 }
 
 .project_title_left {
@@ -813,7 +815,7 @@ h2 a:hover {
 	font-size: 12px;
 	text-align: left;
 	margin-right: var(--spacing-2);
-	letter-spacing: 0.02em;
+	letter-spacing: 0.05em;
 	padding: var(--spacing-1) var(--spacing-2);
 	white-space: nowrap;
 	line-height: 3em;
@@ -829,7 +831,7 @@ h2 a:hover {
 	font-size: 12px;
 	text-align: left;
 	margin-right: var(--spacing-2);
-	letter-spacing: 0.02em;
+	letter-spacing: 0.05em;
 	padding: var(--spacing-1) var(--spacing-2);
 	text-transform: uppercase;
 }
@@ -1025,6 +1027,7 @@ li.social-list a:visited {
 	font-family: 'DM Mono', monospace;
 	font-weight: 300;
 	text-transform: uppercase;
+	letter-spacing: 0.05em;
 }
 
 .image-caption {
@@ -1159,12 +1162,14 @@ ul.writing-list li:hover {
 	text-align: left;
 	background-color: var(--color-light-gray);
 	cursor: pointer;
+	letter-spacing: 0.05em;
 	-o-transition: all .2s ease-in-out;
 	-ms-transition: all .2s ease-in-out,;
 	-moz-transition: all .2s ease-in-out;
 	-webkit-transition: all .2s ease-in-out;
 	transition: all .2s ease-in-out;
 	text-transform: uppercase;
+	letter-spacing: 0.05em;
 }
   
 .button-tag:hover {
@@ -1191,7 +1196,6 @@ ul.writing-list li:hover {
 
 #myBtnContainer > button {
 	margin: var(--spacing-1) var(--spacing-1) var(--spacing-2) var(--spacing-1);
-	letter-spacing: 0.02em;
 }
 
 /* PAYPAL
