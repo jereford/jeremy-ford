@@ -111,22 +111,22 @@ a {
   	-webkit-transition: color .2s ease-in-out;
   	transition: color .2s ease-in-out;
   	/* http://jsfiddle.net/Marcel/xejsM/52/ */
- 	}
+}
 
 a:visited {
 	color: #11182B;
-	}
+}
 
 a:hover {
 	/* color: #50638A; */
 	color: var(--color-blue);
 	cursor: pointer !important;
-	}
+}
 
 .wrap {
 	width: 100%;
 	margin: 0 auto;
-	}
+}
 
 p a:link {
 	text-decoration: none;
@@ -1310,7 +1310,47 @@ ul.writing-list li:hover {
 	margin-bottom: 0;
 	letter-spacing: 0;
 }
-/* PAGINATION */	
+/* PAGINATION */
+
+/* BACK TO TOP */
+.back-to-top {
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	width: 50px;
+	height: 50px;
+	background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+	backdrop-filter: blur(10px);           /* Glassmorphism effect */
+	color: #333;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 50%;                    /* Circular shape */
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease;
+	
+	/* Start hidden */
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(10px);
+	z-index: 1000;
+  }
+  
+  /* State when user has scrolled down */
+  .back-to-top.show {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0);
+  }
+  
+  .back-to-top:hover {
+	background: #000;
+	color: #fff;
+	transform: translateY(-3px); /* Subtle lift on hover */
+  }
+/* BACK TO TOP END */
 
 /* MOBILE NAV START */
 .top-animate {
