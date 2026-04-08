@@ -734,7 +734,7 @@ h2 a:hover {
 	min-height: 500px;
 }
 
-.quote_card {
+.quote-card {
 	background-color: var(--color-light-gray);
 	padding: var(--spacing-5);
 	border-radius: 4px;
@@ -746,7 +746,7 @@ h2 a:hover {
 	margin: 0 0 1em;
 }
 
-.quote_card_negative {
+.quote-card_negative {
 	background-color: var(--color-light-gray);
 	padding: 16px 20px;
 	/* border: 1px solid #FF6663; */
@@ -759,7 +759,7 @@ h2 a:hover {
 	margin: 0 0 1em;
 }
 
-.quote_card_positive {
+.quote-card_positive {
 	background-color: var(--color-light-gray);
 	padding: var(--spacing-4) var(--spacing-5);
 	/* border: 1px solid #8ACB88; */
