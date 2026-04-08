@@ -1315,45 +1315,45 @@ ul.writing-list li:hover {
 /* MOBILE NAV START */
 .top-animate {
   	background: #fff !important;
-  	top: 13px !important;
+  	top: 14px !important;
   	-webkit-transform: rotate(45deg);
   	transform: rotate(45deg);
-	}
+}
 
-.mid-animate {
+/* .mid-animate {
   	opacity: 0;
-	}
+	} */
 
 .bottom-animate {
   	background: #fff !important;
-  	top: 13px !important;
-  	-webkit-transform: rotate(-225deg);
-  	transform: rotate(-225deg);
-	}
+  	top: 14px !important;
+  	-webkit-transform: rotate(-45deg);
+  	transform: rotate(-45deg);
+}
 
 .top-menu {
-  	top: 5px;
+  	top: 10px;
   	width: 25px;
   	height: 2px;
   	border-radius: 10px;
   	background-color: #fff;
-	}
+}
 
-.mid-menu {
+/* .mid-menu {
 	top: 13px;
   	width: 25px;
   	height: 2px;
   	border-radius: 10px;
   	background-color: #fff;
-	}
+	} */
 
 .bottom-menu {
-  	top: 21px;
+  	top: 18px;
   	width: 25px;
   	height: 2px;
   	border-radius: 10px;
   	background-color: #fff;
-	}
+}
 
 .menui {
   	background: #11182B;
@@ -1361,7 +1361,7 @@ ul.writing-list li:hover {
   	transition-timing-function: cubic-bezier(.75, 0, .29, 1.01);
   	margin-top: 8px;
   	position: absolute;
-	}
+}
 
 .mobilenav-icon {
   	position: fixed;
@@ -1372,7 +1372,7 @@ ul.writing-list li:hover {
   	margin: 0px;
   	top: var(--spacing-2);
   	right: var(--spacing-1);
-	}
+}
 
 .mobilenav {
 	background: var(--color-black);
@@ -1387,20 +1387,20 @@ ul.writing-list li:hover {
 	text-align: center;
 	top: 0;
 	width: 100%;
-	}
+}
 
 .mobilenav li:not(:last-child) {
   	color: #ffffff;
   	list-style-type: none;
   	margin-bottom: 2em;
-	}
+}
 
 .mobilenav li a {
   	font-size: 48px;
   	color: var(--color-white);
   	text-decoration: none;
   	width: 100%;
-	}
+}
 
 .mobilenav li a:link {
   	font-size: 48px;
@@ -1412,7 +1412,7 @@ ul.writing-list li:hover {
 .mobilenav li a:visited {
   	color: var(--color-white);
   	text-decoration: none;
-	}
+}
 
 /* MOBILE NAV END */
 
