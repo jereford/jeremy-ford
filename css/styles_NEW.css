@@ -624,8 +624,8 @@ hr {
 	width: 100%;
 }
 
-.project_title #project-title-eyebrow { /* WRITING PAGE */
-	font-size: 16px;
+.project_title #project-title-eyebrow {
+	font-size: 14px;
 	font-family: 'DM Mono', monospace;
 	font-weight: 300;
 	display: block;
@@ -635,7 +635,7 @@ hr {
 }
 
 .project-hero #project-hero-eyebrow {
-	font-size: 12px;
+	font-size: 14px;
 	font-family: 'DM Mono', monospace;
 	font-weight: 300;
 	display: block;
@@ -1476,6 +1476,14 @@ ul.writing-list li:hover {
 
 /* TABLET */
 @media screen and (max-width: 800px) {
+
+.nav {
+	display: none;
+}
+
+.mobilenav-icon {
+	display: block;
+}
 
 .hero {
 	padding: 70px 0px;
