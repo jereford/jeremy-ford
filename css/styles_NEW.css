@@ -1853,7 +1853,10 @@ img {
 }
 
 .mobilenav {
-	display: none;
+	/* display: none; */
+	display: flex;             /* Magic layout tool that centers things */
+	flex-direction: column;     /* Stacks items vertically */
+	justify-content: center;
 }
 
 .mobilenav-icon {
