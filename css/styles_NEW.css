@@ -1394,7 +1394,7 @@ ul.writing-list li:hover {
 	font-weight: 400;
 	height: 100%;
   	left: 0;
- 	display: none;
+ 	display: none; /* JS SETS THIS TO FLEX */
  	position: fixed;
   	opacity: 0.97;
 	text-align: left;
