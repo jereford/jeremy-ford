@@ -1,7 +1,7 @@
 // HAMBURGLERv2
 
 function togglescroll() {
-  $('body').on('touchstart click', function(e) {
+  $('body').on('click', function(e) {
     if (!$(e.target).closest('.mobilenav-icon').length && $('body').hasClass('noscroll')) {
       e.preventDefault();
     }
