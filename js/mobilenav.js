@@ -30,11 +30,10 @@ $(document).ready(function() {
 $(document).keydown(function(e) {
   if (e.keyCode == 27) {
     console.log("ESC key pressed");
-    $(".mobilenav").fadeOut(400, function() {
-      $(".mobilenav").css("display", "flex");
-    });
+    $(".mobilenav").fadeOut(400);
     $(".top-menu").removeClass("top-animate");
     $("body").removeClass("noscroll");
+    // $(".mid-menu").removeClass("mid-animate");
     $(".bottom-menu").removeClass("bottom-animate");
   }
 });

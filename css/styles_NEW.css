@@ -1386,7 +1386,6 @@ ul.writing-list li:hover {
   	margin: 0px;
   	top: var(--spacing-2);
   	right: var(--spacing-1);
-	z-index: 101;
 }
 
 .mobilenav {
@@ -1402,7 +1401,6 @@ ul.writing-list li:hover {
 	text-align: center;
 	top: 0;
 	width: 100%;
-	z-index: 99;
 }
 
 .mobilenav li:not(:last-child) {
@@ -1855,10 +1853,7 @@ img {
 }
 
 .mobilenav {
-	/* display: none; */
-	display: flex;             /* Magic layout tool that centers things */
-	flex-direction: column;     /* Stacks items vertically */
-	justify-content: center;
+	display: none;
 }
 
 .mobilenav-icon {
