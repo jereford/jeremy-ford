@@ -1397,10 +1397,11 @@ ul.writing-list li:hover {
  	display: none;
  	position: fixed;
   	opacity: 0.97;
-  	padding-top: 25%;
 	text-align: center;
 	top: 0;
 	width: 100%;
+	justify-content: center;
+	flex-direction: column;
 }
 
 .mobilenav li:not(:last-child) {
