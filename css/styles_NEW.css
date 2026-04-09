@@ -1430,6 +1430,7 @@ ul.writing-list li:hover {
 .mobilenav li a .material-symbols-outlined {
 	font-size: 36px;
 	color: var(--color-light-blue);
+	font-weight: 600;
 }
 /* MOBILE NAV END */
 
