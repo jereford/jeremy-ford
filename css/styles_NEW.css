@@ -812,7 +812,7 @@ hr {
 	text-align: left;
 	margin-right: var(--spacing-2);
 	letter-spacing: 0.05em;
-	padding: var(--spacing-1) var(--spacing-2);
+	padding: var(--spacing-2) var(--spacing-3);
 	white-space: nowrap;
 	line-height: 3em;
 	text-transform: uppercase;
@@ -828,7 +828,7 @@ hr {
 	text-align: left;
 	margin-right: var(--spacing-2);
 	letter-spacing: 0.05em;
-	padding: var(--spacing-1) var(--spacing-2);
+	padding: var(--spacing-2) var(--spacing-3);
 	text-transform: uppercase;
 }
 
@@ -1152,7 +1152,7 @@ ul.writing-list li:hover {
 	border-radius: 8px;
 	padding: var(--spacing-2) var(--spacing-3);
 	font-family: 'DM Mono', monospace;
-	font-size: 14px;
+	font-size: 12px;
 	font-weight: 300;
 	color: var(--color-black);
 	text-align: left;
