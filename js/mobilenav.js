@@ -14,7 +14,7 @@ $(document).ready(function() {
   $(document).on("click", ".mobilenav-icon", function() {
     console.log("Hamburger clicked!");
     
-    $(".mobilenav").fadeToggle(400);
+    $(".mobilenav").toggleClass(active);
     $(".top-menu").toggleClass("top-animate");
     $("body").toggleClass("noscroll");
     // $(".mid-menu").toggleClass("mid-animate");
