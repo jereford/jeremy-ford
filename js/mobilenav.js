@@ -11,7 +11,11 @@ function togglescroll() {
 $(document).ready(function() {
   console.log("mobilenav.js loaded - document ready");
   togglescroll()
-  $(document).on("click", ".mobilenav-icon", function() {
+
+  $(document).on("click", ".mobilenav-icon", function(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    
     console.log("Hamburger clicked!");
     console.log(".mobilenav element exists:", $(".mobilenav").length);
     console.log(".mobilenav display before:", $(".mobilenav").css('display'));
