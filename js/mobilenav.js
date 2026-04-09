@@ -1,5 +1,13 @@
 // HAMBURGLERv2
 
+function togglescroll() {
+  $('body').on('click', function(e) {
+    if (!$(e.target).closest('.mobilenav-icon').length && $('body').hasClass('noscroll')) {
+      e.preventDefault();
+    }
+  });
+}
+
 $(document).ready(function() {
   console.log("mobilenav.js loaded - document ready");
   togglescroll()
