@@ -17,7 +17,7 @@ $(document).ready(function() {
     $(".mobilenav").fadeToggle(400);
     $(".top-menu").toggleClass("top-animate");
     $("body").toggleClass("noscroll");
-    $(".mid-menu").toggleClass("mid-animate");
+    // $(".mid-menu").toggleClass("mid-animate");
     $(".bottom-menu").toggleClass("bottom-animate");
   });
 });
