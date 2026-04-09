@@ -1411,13 +1411,7 @@ ul.writing-list li:hover {
   	margin-bottom: 1em;
 }
 
-.mobilenav li a {
-  	font-size: 48px;
-  	color: var(--color-white);
-  	text-decoration: none;
-  	width: 100%;
-}
-
+.mobilenav li a,
 .mobilenav li a:link {
   	font-size: 48px;
   	color: var(--color-white);
