@@ -14,7 +14,11 @@ $(document).ready(function() {
   $(document).on("click", ".mobilenav-icon", function() {
     console.log("Hamburger clicked!");
     
-    $(".mobilenav").fadeToggle(400);
+    $(".mobilenav").fadeToggle(400, function() {
+      if ($(".mobilenav").is(":visible")) {
+          $(".mobilenav").css("display", "flex");
+      }
+    });
     $(".top-menu").toggleClass("top-animate");
     $("body").toggleClass("noscroll");
     // $(".mid-menu").toggleClass("mid-animate");
