@@ -1428,9 +1428,9 @@ ul.writing-list li:hover {
 }
 
 .mobilenav li a .material-symbols-outlined {
-	font-size: 36px;
+	font-size: 32px;
 	color: var(--color-light-blue);
-	font-weight: 600;
+	font-weight: 400;
 }
 /* MOBILE NAV END */
 
