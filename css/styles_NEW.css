@@ -1477,14 +1477,6 @@ ul.writing-list li:hover {
 /* TABLET */
 @media screen and (max-width: 800px) {
 
-.nav {
-	display: none;
-}
-
-.mobilenav-icon {
-	display: block;
-}
-
 .hero {
 	padding: 70px 0px;
 }	
