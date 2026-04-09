@@ -1853,7 +1853,9 @@ img {
 }
 
 .mobilenav {
-	display: none;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .mobilenav-icon {
