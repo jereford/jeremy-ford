@@ -2,7 +2,7 @@
 
 function togglescroll() {
   $('body').on('touchstart click', function(e) {
-    if (!$(e.target).hasClass('mobilenav-icon') && $('body').hasClass('noscroll')) {
+    if (!$(e.target).closest('mobilenav-icon').length && $('body').hasClass('noscroll')) {
       e.preventDefault();
     }
   });
@@ -13,9 +13,7 @@ $(document).ready(function() {
   togglescroll()
 
   $(document).on("click", ".mobilenav-icon", function() {
-
     console.log("Hamburger clicked!");
-    console.log(".mobilenav element exists:", $(".mobilenav").length);
     
     $(".mobilenav").fadeToggle(400);
     $(".top-menu").toggleClass("top-animate");
@@ -32,7 +30,7 @@ $(document).keydown(function(e) {
     $(".mobilenav").fadeOut(400);
     $(".top-menu").removeClass("top-animate");
     $("body").removeClass("noscroll");
-    $(".mid-menu").removeClass("mid-animate");
+    // $(".mid-menu").removeClass("mid-animate");
     $(".bottom-menu").removeClass("bottom-animate");
   }
 });
