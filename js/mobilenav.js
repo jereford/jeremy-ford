@@ -12,21 +12,18 @@ $(document).ready(function() {
   console.log("mobilenav.js loaded - document ready");
   togglescroll()
 
-  $(document).on("click", ".mobilenav-icon", function(event) {
-    event.preventDefault();
-    event.stopPropagation();
+  $(document).on("click", ".mobilenav-icon", function() {
 
     console.log("Hamburger clicked!");
     console.log(".mobilenav element exists:", $(".mobilenav").length);
     console.log(".mobilenav display before:", $(".mobilenav").css('display'));
+    console.log(".mobilenav display after:", $(".mobilenav").css('display'));
     
     $(".mobilenav").fadeToggle(400);
     $(".top-menu").toggleClass("top-animate");
     $("body").toggleClass("noscroll");
     $(".mid-menu").toggleClass("mid-animate");
     $(".bottom-menu").toggleClass("bottom-animate");
-    
-    console.log(".mobilenav display after:", $(".mobilenav").css('display'));
   });
 });
 
