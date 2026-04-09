@@ -1,7 +1,7 @@
 // HAMBURGLERv2
 
 function togglescroll() {
-  $('body').on('touchstart', 'vclick', function(e) {
+  $('body').on('touchstart click', function(e) {
     if (!$(e.target).hasClass('mobilenav-icon') && $('body').hasClass('noscroll')) {
       e.preventDefault();
     }
@@ -16,8 +16,6 @@ $(document).ready(function() {
 
     console.log("Hamburger clicked!");
     console.log(".mobilenav element exists:", $(".mobilenav").length);
-    console.log(".mobilenav display before:", $(".mobilenav").css('display'));
-    console.log(".mobilenav display after:", $(".mobilenav").css('display'));
     
     $(".mobilenav").fadeToggle(400);
     $(".top-menu").toggleClass("top-animate");
