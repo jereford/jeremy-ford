@@ -1428,8 +1428,8 @@ ul.writing-list li:hover {
 }
 
 .mobilenav li a .material-symbols-outlined {
-	font-size: 44px;
-	color: var(--color-medium-gray);
+	font-size: 36px;
+	color: var(--color-light-blue);
 }
 /* MOBILE NAV END */
 
