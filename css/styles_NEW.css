@@ -1854,13 +1854,6 @@ img {
 
 .mobilenav {
 	display: none;
-	opacity: 0;
-    visibility: hidden;
-}
-
-.mobilenav.active {
-    opacity: 1;
-    visibility: visible;
 }
 
 .mobilenav-icon {
