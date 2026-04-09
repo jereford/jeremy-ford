@@ -1394,10 +1394,7 @@ ul.writing-list li:hover {
 	font-weight: 400;
 	height: 100%;
   	left: 0;
- 	/* display: none; */
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+ 	display: none;
  	position: fixed;
   	opacity: 0.97;
   	padding-top: 25%;
@@ -1856,13 +1853,9 @@ img {
 }
 
 .mobilenav {
+	display: none;
 	opacity: 0;
     visibility: hidden;
-}
-
-.mobilenav.active {
-    opacity: 1;
-    visibility: visible;
 }
 
 .mobilenav-icon {
