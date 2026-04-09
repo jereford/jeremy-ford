@@ -15,12 +15,12 @@ $(document).ready(function() {
   $(document).on("click", ".mobilenav-icon", function(event) {
     event.preventDefault();
     event.stopPropagation();
-    
+
     console.log("Hamburger clicked!");
     console.log(".mobilenav element exists:", $(".mobilenav").length);
     console.log(".mobilenav display before:", $(".mobilenav").css('display'));
     
-    $(".mobilenav").fadeToggle(400);
+    $(".mobilenav").stop(true, false).fadeToggle(400);
     $(".top-menu").toggleClass("top-animate");
     $("body").toggleClass("noscroll");
     $(".mid-menu").toggleClass("mid-animate");
