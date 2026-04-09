@@ -19,7 +19,7 @@ function togglescroll() {
 
 $(document).ready(function() {
   togglescroll()
-  $(document).on("click", ".mobilenav-icon", function() {
+  $(".mobilenav-icon").click(function() {
     $(".mobilenav").fadeToggle(400);
     $(".top-menu").toggleClass("top-animate");
     $("body").toggleClass("noscroll");
