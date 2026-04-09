@@ -2,7 +2,7 @@
 
 function togglescroll() {
   $('body').on('touchstart click', function(e) {
-    if (!$(e.target).closest('mobilenav-icon').length && $('body').hasClass('noscroll')) {
+    if (!$(e.target).closest('.mobilenav-icon').length && $('body').hasClass('noscroll')) {
       e.preventDefault();
     }
   });
