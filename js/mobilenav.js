@@ -20,7 +20,7 @@ $(document).ready(function() {
     console.log(".mobilenav element exists:", $(".mobilenav").length);
     console.log(".mobilenav display before:", $(".mobilenav").css('display'));
     
-    $(".mobilenav").stop(true, false).fadeToggle(400);
+    $(".mobilenav").fadeToggle(400);
     $(".top-menu").toggleClass("top-animate");
     $("body").toggleClass("noscroll");
     $(".mid-menu").toggleClass("mid-animate");
