@@ -902,6 +902,7 @@ hr {
 	width: 100%;
 	position: relative;
 	display: block;
+	transition: tranform 0.3 ease-in-out;
 }
 
 .grid:after {content:'';
@@ -920,6 +921,19 @@ hr {
 	vertical-align: top;
 }
 
+.grid-box img {
+	border-radius: 8px;
+	border: 1px solid var(--color-light-gray);
+	transition: all .2s ease-in-out;
+	box-sizing: border-box;
+}
+
+.grid-box img:hover {
+	border-radius: 36px;
+	/* opacity: 0.7; */
+	transform: scale(1.1);
+}
+
 .info {
 	opacity: 0;
 	top: 0;
@@ -931,18 +945,6 @@ hr {
 	padding: var(--spacing-9);
 	transition: opacity 0.2s linear;
 	background-color: var(--color-black);
-}
-
-.grid-box img {
-	border-radius: 8px;
-	border: 1px solid var(--color-light-gray);
-	transition: all .15s ease-in-out;
-	box-sizing: border-box;
-}
-
-.grid-box img:hover {
-	border-radius: 36px;
-	opacity: 0.7;
 }
 
 .top-fadeout {
