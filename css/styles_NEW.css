@@ -1404,7 +1404,6 @@ ul.writing-list li:hover {
 	width: 100%;
 	justify-content: center;
 	flex-direction: column;
-	padding-left: 2em;
 	border-radius: 0 0 16px 16px;
 }
 
@@ -1435,7 +1434,7 @@ ul.writing-list li:hover {
 }
 
 .mobilenav li a .material-symbols-outlined {
-	font-size: 32px;
+	font-size: 28px;
 	color: var(--color-light-blue);
 	font-weight: 300;
 	transform: translateY(4px);
