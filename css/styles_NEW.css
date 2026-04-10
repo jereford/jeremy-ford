@@ -1394,8 +1394,7 @@ ul.writing-list li:hover {
 	background: var(--color-black);
 	font-family: 'DM Sans', sans-serif;
 	font-weight: 400;
-	/* height: 100%; */
-	height: 92vh;
+	height: 100%;
 	left: 0;
  	display: none; /* JS SETS THIS TO FLEX */
  	position: fixed;
@@ -1405,11 +1404,10 @@ ul.writing-list li:hover {
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
-	border-radius: 0 0 16px 16px;
 }
 
 .mobile-nav-inner {
-	width: 85%;
+	width: 90%;
 }
 
 .mobilenav li:not(:last-child) {
