@@ -1419,7 +1419,7 @@ ul.writing-list li:hover {
   	width: 100%;
 	display: flex;
 	align-items: center;
-	gap: var(--spacing-5);
+	gap: var(--spacing-4);
 }
 
 .mobilenav li a:visited {
@@ -1428,9 +1428,10 @@ ul.writing-list li:hover {
 }
 
 .mobilenav li a .material-symbols-outlined {
-	font-size: 32px;
+	font-size: 40px;
 	color: var(--color-light-blue);
-	font-weight: 400;
+	font-weight: 300;
+	transform: translateY(4px);
 }
 /* MOBILE NAV END */
 
