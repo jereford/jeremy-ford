@@ -654,7 +654,6 @@ hr {
 	background: linear-gradient(
 		to top,
 		rgba(124, 138, 167, 0.15) 0%,
-		rgba(255, 255, 255, 1.0) 20%,
 		rgba(255, 255, 255, 1.0) 100%
 		);
 	width: 100%;
@@ -1209,10 +1208,13 @@ ul.writing-list li:hover {
 }
 
 .insight-box-with-icon {
-	background-color: var(--color-light-gray);
+	background-color: var(--color-white);
 	padding: var(--spacing-5) var(--spacing-6);
 	border-radius: 4px;
 	border-left: 4px solid var(--color-blue);
+	border-top: 1px solid var(--color-light-gray);
+	border-right: 1px solid var(--color-light-gray);
+	border-bottom: 1px solid var(--color-light-gray);
 	margin: var(--spacing-12) var(--spacing-0);
 	display: flex; 
 	align-items: flex-start;
