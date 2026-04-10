@@ -1398,7 +1398,7 @@ ul.writing-list li:hover {
   	left: 0;
  	display: none; /* JS SETS THIS TO FLEX */
  	position: fixed;
-  	opacity: 0.97;
+  	/* opacity: 0.97; */
 	text-align: left;
 	top: 0;
 	width: 100%;
@@ -1432,7 +1432,7 @@ ul.writing-list li:hover {
 .mobilenav li a .material-symbols-outlined {
 	font-size: 32px;
 	color: var(--color-light-blue);
-	font-weight: 400;
+	font-weight: 300;
 	transform: translateY(4px);
 }
 /* MOBILE NAV END */
