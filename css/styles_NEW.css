@@ -1072,6 +1072,7 @@ ul.writing-list li {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	gap: var(--spacing-2);
 }
 
 ul.writing-list li:hover {
