@@ -1024,6 +1024,8 @@ li.social-list a:visited {
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
 	line-height: 1em;
+	display: inline-block; /* PREVENTS UNNECESSARY EXCESSIVE LINE HEIGHT */
+	line-height: 1.5em;
 }
 
 .image-caption {
