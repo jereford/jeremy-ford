@@ -465,7 +465,7 @@ hr {
 
 .button-outline {
 	padding: var(--spacing-1) var(--spacing-4);
-	border-radius: 4px;
+	border-radius: 8px;
 	border: 1px solid var(--color-medium-gray);
 	color: var(--color-black);
 	display: inline-block;
@@ -802,7 +802,7 @@ hr {
 }
 
 .project-tag {
-	border-radius: 4px;
+	border-radius: 8px;
 	border: 1px solid var(--color-medium-gray);
 	color: var(--color-black);
 	font-family: 'DM Mono', monospace;
@@ -818,7 +818,7 @@ hr {
 }
 
 .project-tag-home {
-	border-radius: 4px;
+	border-radius: 8px;
 	border: 1px solid var(--color-medium-gray);
 	color: var(--color-black);
 	font-family: 'DM Mono', monospace;
@@ -1219,7 +1219,7 @@ ul.writing-list li:hover {
 .insight-box-with-icon {
 	background-color: var(--color-white);
 	padding: var(--spacing-5) var(--spacing-6);
-	border-radius: 4px;
+	border-radius: 8px;
 	border-left: 4px solid var(--color-blue);
 	border-top: 1px solid var(--color-light-gray);
 	border-right: 1px solid var(--color-light-gray);
@@ -1240,7 +1240,7 @@ ul.writing-list li:hover {
 .paypal-button {
 	display: inline-block;
 	font-family: inherit;
-	border-radius: 4px;
+	border-radius: 8px;
 	font-size: 20px;
 	letter-spacing: 0.02em;
 	font-weight: 300;
@@ -1846,7 +1846,7 @@ img {
 	width: 100%;
 	display: inline-block;
 	font-family: inherit;
-	border-radius: 4px;
+	border-radius: 8px;
 	font-size: 20px;
 	letter-spacing: 0.02em !important;
 	font-weight: 300;
