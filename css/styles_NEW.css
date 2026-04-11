@@ -1023,6 +1023,7 @@ li.social-list a:visited {
 	font-weight: 300;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
+	line-height: 1em;
 }
 
 .image-caption {
