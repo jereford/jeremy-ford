@@ -685,6 +685,7 @@ hr {
 	border-radius: 8px;
 	width: 120px;
 	margin-bottom: 0;
+	border: 1px solid var(--color-light-gray);
 }
 
 .writing a {
