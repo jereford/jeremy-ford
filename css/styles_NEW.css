@@ -645,11 +645,12 @@ hr {
   
   .floating-toc a:hover {
 	background: var(--color-white);
+	color: #50638A;
   }
 
   .floating-toc .material-symbols-outlined {
-	vertical-align: text-bottom;
 	margin-left: var(--spacing-1);
+	font-size: 12px;
   }
 /* FLOATING TOC END */
 
