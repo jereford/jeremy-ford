@@ -613,10 +613,10 @@ hr {
 	transform: translateX(-50%);
 	display: flex;
 	align-items: center;
-	padding: 4px;
+	padding: 8px;
 	background: var(--color-light-gray);
 	border-radius: 100px;
-	box-shadow: 0 4px 8px rgba(17, 24, 43, 0.15);
+	box-shadow: 0 4px 8px rgba(124, 138, 167, 0.5);
 	z-index: 1000;
   
 	/* Hidden by default — fades in on scroll */
