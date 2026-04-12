@@ -42,76 +42,102 @@
 
 <body>
 
-<!-- START DIV CLASS WRAP -->
-<div class="wrap">
+  <!-- START DIV CLASS WRAP -->
+  <div class="wrap">
 
-  <!-- START HEADER -->
-  <div id="nav-header"></div>
+    <!-- START HEADER -->
+    <div id="nav-header"></div>
+      <script>
+      $(function(){
+        $("#nav-header").load("includes/header.html");
+      });
+      </script>
+    <!-- END HEADER -->
+
+    <section class="project-hero">
+      <div class="project-hero-inner">
+        <p class="reveal-up">
+          <span class="project-tag">Graphic design</span>
+          <span class="project-tag">UX</span>
+        </p>
+        <h1 class="reveal-up">Columbia Business School: Donor Report</h1>
+        <p class="reveal-up">Exploration for the <em>Report to Investors,</em> a responsive site that acknowledges and commends thousands of donors and volunteers who contributed towards Columbia's initiatives during the fiscal year, and provides ROI data to encourage ongoing support. The design is refreshed each year and promoted by a direct mail piece that is sent to students, staff, alumni and friends of the school.</p>
+        <!-- <p class="footnote" style="margin-bottom: 0;">Property of Suka Creative; creative direction by Jen Pressley</p> -->
+      </div>
+    </section>
+
+    <!-- START DIV PROJECT -->
+    <div class="project fade-in">
+      <div class="project_images" style="padding-top: 0;">
+        <img src="images/cbs_dr13_2.jpg" style="padding: 0px 0px 30px 0px">
+        <img src="images/cbs_dr13_1.jpg" style="padding: 30px 0px">
+        <img src="images/cbs_dr13_3.jpg" style="padding: 30px 0px">
+      </div>
+    </div><!-- END DIV PROJECT -->
+
+    <!-- CREDITS START -->
+    <div id="credits-bar"
+      data-credits-bar-text="Property of Suka Creative; creative direction by Jen Pressley.">
+    </div>
+
     <script>
     $(function(){
-      $("#nav-header").load("includes/header.html");
+    $("#credits-bar").load("includes/credits-bar.html");
     });
     </script>
-  <!-- END HEADER -->
+    <!-- CREDITS END -->
 
-  <section class="project-hero">
-    <div class="project-hero-inner">
-      <p class="reveal-up">
-        <span class="project-tag">Graphic design</span>
-        <span class="project-tag">UX</span>
-      </p>
-      <h1 class="reveal-up">Columbia Business School: Donor Report</h1>
-      <p class="reveal-up">Exploration for the <em>Report to Investors,</em> a responsive site that acknowledges and commends thousands of donors and volunteers who contributed towards Columbia's initiatives during the fiscal year, and provides ROI data to encourage ongoing support. The design is refreshed each year and promoted by a direct mail piece that is sent to students, staff, alumni and friends of the school.</p>
-      <!-- <p class="footnote" style="margin-bottom: 0;">Property of Suka Creative; creative direction by Jen Pressley</p> -->
+    <!-- PAGINATION START -->
+    <div id="pagination"
+      data-previous-href="greeting-cards.html"
+      data-previous-title="Greeting cards"
+      data-next-href="nvps_ar_2013.html"
+      data-next-title="New Visions for Public Schools: Annual Report">
     </div>
-  </section>
 
-  <!-- START DIV PROJECT -->
-  <div class="project fade-in">
-    <div class="project_images" style="padding-top: 0;">
-      <img src="images/cbs_dr13_2.jpg" style="padding: 0px 0px 30px 0px">
-      <img src="images/cbs_dr13_1.jpg" style="padding: 30px 0px">
-      <img src="images/cbs_dr13_3.jpg" style="padding: 30px 0px">
-    </div>
-  </div><!-- END DIV PROJECT -->
-
-  <!-- CREDITS START -->
-  <div id="credits-bar"
-    data-credits-bar-text="Property of Suka Creative; creative direction by Jen Pressley.">
-  </div>
-
-  <script>
-  $(function(){
-  $("#credits-bar").load("includes/credits-bar.html");
-  });
-  </script>
-  <!-- CREDITS END -->
-
-  <!-- PAGINATION START -->
-  <div id="pagination"
-    data-previous-href="greeting-cards.html"
-    data-previous-title="Greeting cards"
-    data-next-href="nvps_ar_2013.html"
-    data-next-title="New Visions for Public Schools: Annual Report">
-  </div>
-
-  <script>
-  $(function(){
-    $("#pagination").load("includes/pagination.html");
-  });
-  </script>
-  <!-- PAGINATION END -->
-
-  <!-- Start footer -->
-  <div id="footer"></div>
     <script>
     $(function(){
-      $("#footer").load("includes/footer.html");
+      $("#pagination").load("includes/pagination.html");
     });
     </script>
-  <!-- end footer -->
+    <!-- PAGINATION END -->
 
-</div><!-- END DIV WRAP -->
+    <!-- FOOTER START -->
+    <div id="footer"></div>
+      <script>
+      $(function(){
+        $("#footer").load("includes/footer.html");
+      });
+      </script>
+    <!-- FOOTER END -->
+
+    <!-- FLOATING TOC START -->
+    <nav class="floating-toc" id="floating-toc" aria-label="Page sections">
+      <a href="#top" class="smoothScroll">Top<span class="material-symbols-outlined">arrow_upward</span></a>
+    </nav>
+    <!-- FLOATING TOC END -->
+
+  </div><!-- END DIV WRAP -->
+
+    <!-- FLOATING TOC END -->
+    <script>
+      // Show the case study nav after the user scrolls 200px
+      (function () {
+      var nav = document.getElementById('floating-toc');
+      if (!nav) return;
+
+      function onScroll() {
+          if (window.scrollY > 200) {
+          nav.classList.add('is-visible');
+          } else {
+          nav.classList.remove('is-visible');
+          }
+      }
+
+      window.addEventListener('scroll', onScroll, { passive: true });
+      })();
+    </script>
+    <!-- FLOATING TOC END -->
 
 </body>
 </html>
