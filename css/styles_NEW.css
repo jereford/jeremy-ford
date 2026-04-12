@@ -1080,7 +1080,7 @@ ul.writing-list li {
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
-	gap: var(--spacing-4);
+	gap: var(--spacing-5);
 }
 
 ul.writing-list li:hover {
@@ -1091,6 +1091,7 @@ ul.writing-list li:hover {
 .writing-list .material-symbols-outlined {
 	font-size: 20px;
 	font-weight: 300;
+	margin-left: auto;
 }
 
 .writing-list p {
