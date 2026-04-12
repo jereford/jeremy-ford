@@ -72,7 +72,7 @@
       
       <div class="project_title_left">
         <section>
-          <h2 style="margin-top: 2rem;">Problem: alert configuration was a barrier for new and existing teams, and false positives eroded trust</h2>
+          <h2 id="section-problem" style="margin-top: 2rem;">Problem: alert configuration was a barrier for new and existing teams, and false positives eroded trust</h2>
           <p>While Honeycomb's value was <a href="https://youtu.be/7UKfEhYFjuE?si=Np2xSUgD0FrLM0jh" target="_blank">well understood by the market</a>, my team found that friction in alert creation inhibited the realization of that value for some teams. Users like Site Reliability Engineers (SREs), whose primary motivation was to understand service health and be alerted about issues, were often confused and/or discouraged. Configuring useful alerts was complicated, as it required a deep understanding of an application's schema and the impact of nuanced user behavior on reliability.</p>
           <h3>Business opportunity</h3>
           <p>My team recognized a pivotal moment to: greatly reduce time to value (TTV) by getting started with alerts faster, reduce alert fatigue by highlighting only meaningful deviations, and lower mean time to resolution (MTTR) by enabing investigations with our complementary AI feature, Canvas. Paired with Canvas, users could investigate their anomalies without needing to write the perfect query; they could simply ask a question like, “Why are response times slower for these users?” We believed these improvements would put us in a position to <span class="highlight">increase adoption</span> for both new and existing teams and <span class="highlight">win more deals</span> with enterprise organizations who demanded out-of-the-box tooling.</p>
@@ -81,7 +81,7 @@
         </section>    
 
         <section>
-          <h2 style="margin-top: 2rem;">Solution: continuousy learn what "normal" looks like and automatically send alerts when performance deviates</h2>
+          <h2 id="section-solution" style="margin-top: 2rem;">Solution: continuousy learn what "normal" looks like and automatically send alerts when performance deviates</h2>
           <p>We envisioned a world where Anomaly Detection eliminated long-standing friction for alert creation. By learning normal service behavior and improving over time, the algorithm would automatically detect true irregularities in signals like error rate and latency, before they impact our customers' customers. The value proposition: reduce false positives and alert fatigue for software developers.</p>
           
           <img class="image-border" style="margin-bottom: var(--spacing-0); margin-top: var(--spacing-5);" src="/images/honeycomb-anomaly-detection-lofi-query-dataset-selection.png">
@@ -172,7 +172,7 @@
         <p>I brought my research to the Design Team's weekly critique to get internal feedback about the styling and comprehensibility. This ensured my designs were aligned with our design library and consistent with other graphs in the product.</p>
 
         <section>
-          <h2>Launch, impact, and key learnings</h2>
+          <h2 id="section-results">Launch, impact, and key learnings</h2>
           <h3>Announcement of the early access release</h3>
           <p>Anomaly Detection was unveiled during a coordinated, multi-channel launch in collaboration with the Product Marketing Team. In person, it was demo'ed at <span style="font-style: italic;">Observability Day San Francisco | What's Next: The Future of Observability in the Age of AI</span>, a live event for software developers sponsored by Amazon AWS. Digitally, it was launched via <span style="font-style: italic;">AI Week</span>, a LinkedIn campaign that raised awareness about each component of our new AI suite, Honeycomb Intelligence. Teams signed up for the early access program in person and by contacting their Customer Success representative.</p>
           <div class="video-container" style="margin-top: var(--spacing-10); margin-bottom: var(--spacing-0);">
@@ -252,6 +252,9 @@
 
   <!-- FLOATING TOC START -->
   <nav class="floating-toc" id="floating-toc" aria-label="Page sections">
+    <a href="#section-problem" class="smoothScroll">Problem</a>
+    <a href="#section-solution" class="smoothScroll">Solution</a>
+    <a href="#section-results" class="smoothScroll">Results</a>
     <a href="#top" class="smoothScroll">Top<span class="material-symbols-outlined">arrow_upward</span></a>
   </nav>
   <!-- FLOATING TOC END -->
