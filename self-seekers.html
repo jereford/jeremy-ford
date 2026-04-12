@@ -316,5 +316,25 @@
 
   </div><!-- END DIV WRAP -->
 
+  <!-- FLOATING TOC END -->
+  <script>
+    // Show the case study nav after the user scrolls 200px
+    (function () {
+      var nav = document.getElementById('floating-toc');
+      if (!nav) return;
+
+      function onScroll() {
+        if (window.scrollY > 200) {
+          nav.classList.add('is-visible');
+        } else {
+          nav.classList.remove('is-visible');
+        }
+      }
+
+      window.addEventListener('scroll', onScroll, { passive: true });
+    })();
+  </script>
+  <!-- FLOATING TOC END -->
+
 </body>
 </html>
