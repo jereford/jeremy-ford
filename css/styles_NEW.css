@@ -1380,13 +1380,6 @@ li.li-body::marker {
 	justify-content: space-between;
 }
 
-.pagination-arrow {
-	font-size: 16px;
-	color: var(--color-blue);
-	flex-shrink: 0;
-	vertical-align: bottom;
-  }
-
 .pagination-title {
 	font-family: 'DM Sans', sans-serif;
 	font-size: 20px;
@@ -1394,6 +1387,10 @@ li.li-body::marker {
 	font-weight: 400;
 	margin-bottom: 0;
 	letter-spacing: 0;
+}
+
+.pagination .material-symbols-outlined {
+	font-size: 16px;
 }
 /* PAGINATION */
 
