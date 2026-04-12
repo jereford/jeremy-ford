@@ -1433,7 +1433,7 @@ li.li-body::marker {
 .mobilenav li:not(:last-child) {
   	color: #ffffff;
   	list-style-type: none;
-  	margin-bottom: 1em;
+  	margin-bottom: 0.75em;
 }
 
 .mobilenav li a,
