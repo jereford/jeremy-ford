@@ -608,7 +608,7 @@ hr {
 /* FLOATING TOC START */
 .floating-toc {
 	position: fixed;
-	bottom: 32px;
+	bottom: 45px;
 	left: 50%;
 	transform: translateX(-50%);
 	display: flex;

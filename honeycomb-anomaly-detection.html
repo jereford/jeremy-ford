@@ -250,6 +250,12 @@
     </script>
   <!-- END FOOTER -->
 
+  <!-- FLOATING TOC START -->
+  <nav class="floating-toc" id="floating-toc" aria-label="Page sections">
+    <a href="#top" class="smoothScroll">Top<span class="material-symbols-outlined">arrow_upward</span></a>
+  </nav>
+  <!-- FLOATING TOC END -->
+
 </div><!-- END DIV WRAP -->
 
 <!-- GA -->
@@ -264,6 +270,26 @@
 
 </script>
 <!-- GA -->
+
+<!-- FLOATING TOC END -->
+<script>
+  // Show the case study nav after the user scrolls 200px
+  (function () {
+    var nav = document.getElementById('floating-toc');
+    if (!nav) return;
+
+    function onScroll() {
+      if (window.scrollY > 200) {
+        nav.classList.add('is-visible');
+      } else {
+        nav.classList.remove('is-visible');
+      }
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+  })();
+</script>
+<!-- FLOATING TOC END -->
 
 </body>
 </html>
