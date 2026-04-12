@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
-  <title>Jeremy Ford / Product Designer with a decade of complementary branding and art direction experience</title>
+  <title>Jeremy Ford • Product Designer with a decade of complementary branding and art direction experience</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="description" content="Honeycomb SLOs">
   <meta name="keywords" content="honeycomb, observability, service level objectives, slos, product designer, enterprise, software">
@@ -85,8 +85,12 @@
 
       <div class="project_title" style="margin-top: 72px;">
         <div class="project_title_left">
-          <h2>Pinpointing friction</h2>
-          <p>Once configured, customers really see the value of SLOs. Our research revealed that <span style="font-style: italic;">getting to that value</span> was the issue. During discovery, we gathered feedback from users as well as Customer Success and Sales Teams, collected usage data from Honeycomb and Amplitude, and observed user behavior in Fullstory sessions. We learned that users found SLOs difficult to configure, which meant teams were missing out on their magic. Armed with boatloads of qualitative and quantitative insights, we synthesized and grouped the friction by theme:
+          <section>
+            <h2>Problem</h2>
+            <p>Once configured, customers really saw the value of SLOs. Our research revealed that <span style="font-style: italic;">getting to that value</span> was the issue.</p>
+          </section>
+          <h3>Pinpointing friction</h3>
+          <p>During discovery, we gathered feedback from users as well as Customer Success and Sales Teams, collected usage data from Honeycomb and Amplitude, and observed user behavior in Fullstory sessions. We learned that users found SLOs difficult to configure, which meant teams were missing out on their magic. Armed with boatloads of qualitative and quantitative insights, we synthesized and grouped the friction by theme:
             <ul class="ul-body">
               <li class="li-body">Service Level Indicators (SLIs), a required component of an SLO, were challenging to create and manage. SLIs are created using custom fields (which Honeycomb calls <a href="https://docs.honeycomb.io/investigate/query/build/use-custom-fields/#derived-column-editor" target="_blank">Derived Columns</a>). Users often struggle to write the Derived Column function because of the syntax. Secondly, Derived Columns could only be accessed via Data Settings, several pages removed from the SLO creation flow.</li>
               <li class="li-body">SLOs require organizational alignment when deciding which user journeys are business-critical and what an acceptable reliability should look like. We heard that cross-team consensus was arduous, time consuming, and contentious at times.</li>
@@ -97,7 +101,8 @@
           </p>
           <img src="/images/honeycomb-slo-creation-journey-map.png" class="image-border" style="margin-top: 20px; margin-bottom: 0px;">
           <p class="footnote">Journey mapping exercise to align the team around what the current SLO creation process looked like and where pain points resided</p>
-          <h2 style="margin-top: 36px;">Focusing on SLIs</h2>
+          
+          <h3 style="margin-top: 36px;">Focusing on SLIs</h3>
           <p>A Service Level Indicator (SLI) is a foundational element of an SLO; the mechanism by which success or failure is evaluated. Expressed as a formula, an SLI in Honeycomb looks like: <span class="highlight">Successful events ÷ Total (qualified) events × 100</span>.</p>
           <p>Our discovery showed that SLIs were a major deterrent for users to get started with SLOs, and following an impact/effort exercise to assess each friction theme, we felt confident that making them easier to understand, create, and manage would move the needle on SLO adoption.</p>
           <div style="margin-top: 40px;" class="masonry">
@@ -120,19 +125,21 @@
 
       <div class="project_title" style="margin-top: 80px;">
         <div class="project_title_left">
-          <h3>Improvements we shipped</h3>
-          <p>Our ideation centered around the classic UX principle, "don't make me think" (coined by <a href="https://sensible.com/dont-make-me-think/" target="_blank">Steve Krug</a>). While this tenet applies to <span style="font-style: italic;">all</span> of our work, it was especially important for SLIs given their complicated nature and current state in the product. We sought to reduce the amount of overhead required to create an SLI, which we hypothesized would result in increased SLO conversion.</p>
-          <!-- <video width="100%" src="/images/honeycomb-sli-mode-toggle.mov" autoplay loop muted playsinline class="image-border" style="margin-bottom: 20px;"></video> -->
-          <!-- <p class="footnote">Early design explorations included tabs to switch between the two SLI creation modes, which were tentatively called "Ratio of Events" and "Advanced."</p> -->
-          <!-- <img src="/images/honeycomb-sli-creation-modes-specs.png" class="image-border" style="margin-bottom: 20px;"> -->
-          <!-- <p class="footnote">Specifications UI implementation.</p> -->
-          <p>Over the course of H2 2024, our team conceived and shipped several MVPs to General Availability that directly addressed SLI friction, the results of which improved SLI creation and SLO adoption:</p>
-          <ul class="ul-body">
-            <li class="li-body"><span class="bold">SLI templates</span>. Nothing is more intimidating than a blank canvas. To alleviate the pressure of creating an SLI from scratch, we introduced templates for the most common indicators: Latency for span name, Latency for duration, and Latency and availability for endpoint. Each template includes a brief description, visible in a tool tip when hovering over the button. Selecting a template pre-populates the function editor, which provides a foundation for the user to build upon. <a href="https://changelog.honeycomb.io/starter-sli-templates-294381" target="_blank">Honeycomb Changelog</a></li>
-            <li class="li-body"><span class="bold">Inline creation and editing</span>. Because SLIs use Derived Columns, users previously had to create or edit their SLIs within Data Settings, where Derived Columns live. This meant users had to leave the context of the SLO, which resulted in lost context, wasted time, and overall frustration. We brought SLI creation and edit capabilities to a modal window that sits above the SLO creation page, so that users never have to leave their flow. <a href="https://changelog.honeycomb.io/inline-sli-edit-create-on-slos-289887" target="_blank">Honeycomb Changelog</a></li>
-            <li class="li-body"><span class="bold">New 'Build Query' creation mode</span>. We saw users continually start their SLI creation workflow by querying their application to understand service performance. Once they identified the current state of reliability for those services &mdash; which can take several iterations &mdash; all of that work was lost when the user navigated away from the Query Builder to translate their query to an SLI. To address this, we introduced a second SLI creation method, Build Query Mode, within the SLO creation page. Using this new mode, users could create their SLI using the Query Builder language and interface they were already familiar with. If a user needs to refine their expression in the code editor, switching from Build Query mode to Write Formula mode translates their SLI to code, where it can be refined. <a href="https://changelog.honeycomb.io/new-build-query-mode-for-slis-(slos)-297150" target="_blank">Honeycomb Changelog</a></li>
-            <li class="li-body"><span class="bold">Autoformat SLI</span>. For users who author their function using the code editor, we added a "Format" button that automatically cleans up an expression by adding line breaks and block indentation, making it easier to read. <a href="https://changelog.honeycomb.io/auto-format-on-derived-columns-291955" target="_blank">Honeycomb Changelog</a></li>
-          </ul>
+          <section>
+            <h2>Improvements we shipped</h2>
+            <p>Our ideation centered around the classic UX principle, "don't make me think" (coined by <a href="https://sensible.com/dont-make-me-think/" target="_blank">Steve Krug</a>). While this tenet applies to <span style="font-style: italic;">all</span> of our work, it was especially important for SLIs given their complicated nature and current state in the product. We sought to reduce the amount of overhead required to create an SLI, which we hypothesized would result in increased SLO conversion.</p>
+            <!-- <video width="100%" src="/images/honeycomb-sli-mode-toggle.mov" autoplay loop muted playsinline class="image-border" style="margin-bottom: 20px;"></video> -->
+            <!-- <p class="footnote">Early design explorations included tabs to switch between the two SLI creation modes, which were tentatively called "Ratio of Events" and "Advanced."</p> -->
+            <!-- <img src="/images/honeycomb-sli-creation-modes-specs.png" class="image-border" style="margin-bottom: 20px;"> -->
+            <!-- <p class="footnote">Specifications UI implementation.</p> -->
+            <p>Over the course of H2 2024, our team conceived and shipped several MVPs to General Availability that directly addressed SLI friction, the results of which improved SLI creation and SLO adoption:</p>
+            <ul class="ul-body">
+              <li class="li-body"><span class="bold">SLI templates</span>. Nothing is more intimidating than a blank canvas. To alleviate the pressure of creating an SLI from scratch, we introduced templates for the most common indicators: Latency for span name, Latency for duration, and Latency and availability for endpoint. Each template includes a brief description, visible in a tool tip when hovering over the button. Selecting a template pre-populates the function editor, which provides a foundation for the user to build upon. <a href="https://changelog.honeycomb.io/starter-sli-templates-294381" target="_blank">Honeycomb Changelog</a></li>
+              <li class="li-body"><span class="bold">Inline creation and editing</span>. Because SLIs use Derived Columns, users previously had to create or edit their SLIs within Data Settings, where Derived Columns live. This meant users had to leave the context of the SLO, which resulted in lost context, wasted time, and overall frustration. We brought SLI creation and edit capabilities to a modal window that sits above the SLO creation page, so that users never have to leave their flow. <a href="https://changelog.honeycomb.io/inline-sli-edit-create-on-slos-289887" target="_blank">Honeycomb Changelog</a></li>
+              <li class="li-body"><span class="bold">New 'Build Query' creation mode</span>. We saw users continually start their SLI creation workflow by querying their application to understand service performance. Once they identified the current state of reliability for those services &mdash; which can take several iterations &mdash; all of that work was lost when the user navigated away from the Query Builder to translate their query to an SLI. To address this, we introduced a second SLI creation method, Build Query Mode, within the SLO creation page. Using this new mode, users could create their SLI using the Query Builder language and interface they were already familiar with. If a user needs to refine their expression in the code editor, switching from Build Query mode to Write Formula mode translates their SLI to code, where it can be refined. <a href="https://changelog.honeycomb.io/new-build-query-mode-for-slis-(slos)-297150" target="_blank">Honeycomb Changelog</a></li>
+              <li class="li-body"><span class="bold">Autoformat SLI</span>. For users who author their function using the code editor, we added a "Format" button that automatically cleans up an expression by adding line breaks and block indentation, making it easier to read. <a href="https://changelog.honeycomb.io/auto-format-on-derived-columns-291955" target="_blank">Honeycomb Changelog</a></li>
+            </ul>
+          </section>
         </div>
 
         <div class="project-images" style="text-align: center; margin-top: 60px;">
@@ -150,22 +157,24 @@
         </div>
 
         <div class="project_title_left">
-          <h3>Outcomes and reception</h3>
-          <p>We saw some fascinating results over the next several months:
-            <ul class="ul-body">
-              <li class="li-body">SLI conversion for new Enterprise users increased 17% in the five months after release compared to the previous time period.</li>
-              <li class="li-body">SLO conversion for new Enterprise users increased 18% in the five months after release compared to the previous time period.</li>
-              <li class="li-body">In the five month period after release, 56% of SLIs created by new Pro users were made using our new Build Query mode.</li>
-              <li class="li-body">In the final quarter of 2024, 41% of SLI template clicks were Latency and Availability Endpoint, 35% were Latency Duration, and 24% were Latency Span Name.</li>
-              </p>
-          <div style="margin-top: 32px;" class="masonry">
-            <div class="quote-card">I think the new UI to define the SLI is really helpful when getting started with SLO/SLI definition. It guides the user to the desired outcome, explains the terms, and the preview helps understanding if the SLI is configured as expected. I thought the common indicator templates are also a good guide.</div>
-            <div class="quote-card">just dropping out of pat leave for a minute to say YAAAAAY OH MY GOD YEEEEE!! for multiline editing of derived columns.</div>
-            <div class="quote-card">[Customer] literally said they are jazzed about the SLI updates "nice work folks" they love they can switch between the two types of build windows (CS)</div>
-          </div>
-          <div style="text-align:center; margin: 0 auto; width: 65%; line-height: 1.2em; margin-top: 10px">
-            <span class="footnote">Initial feedback from users and internal field teams (CS and Sales) about the new SLI creation updates.</span>
-          </div>
+          <section>
+            <h2>Outcomes and reception</h2>
+            <p>We saw some fascinating results over the next several months:
+              <ul class="ul-body">
+                <li class="li-body">SLI conversion for new Enterprise users increased 17% in the five months after release compared to the previous time period.</li>
+                <li class="li-body">SLO conversion for new Enterprise users increased 18% in the five months after release compared to the previous time period.</li>
+                <li class="li-body">In the five month period after release, 56% of SLIs created by new Pro users were made using our new Build Query mode.</li>
+                <li class="li-body">In the final quarter of 2024, 41% of SLI template clicks were Latency and Availability Endpoint, 35% were Latency Duration, and 24% were Latency Span Name.</li>
+                </p>
+            <div style="margin-top: 32px;" class="masonry">
+              <div class="quote-card">I think the new UI to define the SLI is really helpful when getting started with SLO/SLI definition. It guides the user to the desired outcome, explains the terms, and the preview helps understanding if the SLI is configured as expected. I thought the common indicator templates are also a good guide.</div>
+              <div class="quote-card">just dropping out of pat leave for a minute to say YAAAAAY OH MY GOD YEEEEE!! for multiline editing of derived columns.</div>
+              <div class="quote-card">[Customer] literally said they are jazzed about the SLI updates "nice work folks" they love they can switch between the two types of build windows (CS)</div>
+            </div>
+            <div style="text-align:center; margin: 0 auto; width: 65%; line-height: 1.2em; margin-top: 10px">
+              <span class="footnote">Initial feedback from users and internal field teams (CS and Sales) about the new SLI creation updates.</span>
+            </div>
+          </section>
         </div>
           
         <div class="project_title_left" style="margin-top: 80px;">
