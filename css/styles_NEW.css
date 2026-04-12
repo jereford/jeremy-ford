@@ -625,12 +625,12 @@ hr {
 	transition: opacity 0.2s ease;
   }
   
-  .floating-toc.is-visible {
+.floating-toc.is-visible {
 	opacity: 1;
 	pointer-events: auto;
-  }
+}
   
-  .floating-toc a {
+.floating-toc a {
 	display: block;
 	padding: 8px 16px;
 	border-radius: 100px;
@@ -641,17 +641,17 @@ hr {
 	text-decoration: none;
 	white-space: nowrap;
 	transition: background 0.2s ease, color 0.2s ease;
-  }
+}
   
-  .floating-toc a:hover {
+.floating-toc a:hover {
 	background: var(--color-white);
 	color: #50638A;
-  }
+}
 
-  .floating-toc .material-symbols-outlined {
+.floating-toc .material-symbols-outlined {
 	margin-left: var(--spacing-1);
 	font-size: 12px;
-  }
+}
 /* FLOATING TOC END */
 
 .project {
