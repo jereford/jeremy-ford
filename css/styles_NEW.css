@@ -1445,6 +1445,7 @@ li.li-body::marker {
 	display: flex;
 	align-items: center;
 	gap: var(--spacing-2);
+	letter-spacing: -0.02em;
 }
 
 .mobilenav li a:visited {
