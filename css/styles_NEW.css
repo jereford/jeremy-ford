@@ -683,7 +683,8 @@ hr {
 
 .writing li img {
 	border-radius: 8px;
-	width: 200px;
+	width: 120px;
+	margin-bottom: 0;
 }
 
 .writing a {
