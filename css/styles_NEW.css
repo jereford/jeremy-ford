@@ -613,7 +613,6 @@ hr {
 	transform: translateX(-50%);
 	display: flex;
 	align-items: center;
-	gap: 4px;
 	padding: 6px;
 	background: var(--color-light-gray);
 	border-radius: 100px;
@@ -646,6 +645,11 @@ hr {
   
   .floating-toc a:hover {
 	background: var(--color-white);
+  }
+
+  .floating-toc .material-symbols-outlined {
+	vertical-align: text-bottom;
+	margin-left: var(--spacing-1);
   }
 /* FLOATING TOC END */
 
