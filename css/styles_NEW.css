@@ -645,8 +645,7 @@ hr {
 }
   
 .floating-toc a:hover {
-	background: var(--color-white);
-	color: #50638A;
+	background: var(--color-light-gray);
 }
 
 .floating-toc .material-symbols-outlined {
