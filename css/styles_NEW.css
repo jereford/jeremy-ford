@@ -500,6 +500,7 @@ hr {
 	flex-direction: row;
 	font-size: 14px;
 	color: var(--color-black);
+	border-radius: 50%;
 }
 
 .li-body a:link {
