@@ -496,11 +496,11 @@ hr {
 	padding: 8px;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	/* justify-content: space-between; */
 	flex-direction: row;
-	font-size: 14px;
+	font-size: 16px;
 	color: var(--color-black);
-	border-radius: 50%;
+	border-radius: 12%;
 }
 
 .li-body a:link {
