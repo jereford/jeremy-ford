@@ -1261,6 +1261,10 @@ li.li-body::marker {
 	transition: all .2s ease-in-out;
 }
 
+.button-tag .material-symbols-outlined {
+	font-size: 16px;
+}
+
 #myBtnContainer {
 	text-align: left;
 }
