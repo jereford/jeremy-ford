@@ -372,6 +372,10 @@ hr {
 	color: var(--color-blue);
 }
 
+.header_wrap .button-tag:hover { /* MAINTAIN BLACK FOR SPOTIFY PLAYLIST TEXT HOVER */
+	color: var(--color-black);
+}
+
 .header_inner {
 	width: 85%;
 	max-width: 1148px;
