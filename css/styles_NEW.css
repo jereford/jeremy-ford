@@ -1920,7 +1920,7 @@ img {
 	padding: 20px;
 }
 
-.paypal-button {
+/* .paypal-button {
 	width: 100%;
 	display: inline-block;
 	font-family: inherit;
@@ -1934,7 +1934,7 @@ img {
 	margin: 0!important;
 	cursor: pointer;
 	outline: none;
-}
+} */
 
 .share-box {
 	margin: 0 0 20px 0;
