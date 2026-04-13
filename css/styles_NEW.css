@@ -352,7 +352,7 @@ hr {
 ----------------- */
 .header_wrap {
 	width: 100%;
-	padding: 20px 0 0 0;
+	padding: 8px 0px;
 	top: 0;
 	position: fixed;
 	background-color: var(--color-white);
@@ -360,6 +360,7 @@ hr {
 	z-index: 3;
 	border-bottom: 1px solid var(--color-light-gray);
 /*	box-shadow: 0 0px 20px 0 #ddd;*/
+	display: flex;
 }
 
 .header_wrap a:link, .header_wrap a:visited {
@@ -377,6 +378,9 @@ hr {
 	margin: auto auto;
 	font-size: 1em;
 	word-spacing: -0.1em;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .logo {
