@@ -592,17 +592,17 @@ hr {
 	float: left;
 }
 
-.footer_inner_right:not(:last-child) { /* Applies to all but the last item */
+.footer_inner_right {
 	display: block;
 	float: right;
 	text-align: right;
-	margin-right: var(--spacing-5);
 }
 
 .footer a:link {
 	color: var(--color-light-gray);
 	text-decoration: none;
 	border: none;
+	margin-right: var(--spacing-5);
 }
 
 .footer a:visited {
