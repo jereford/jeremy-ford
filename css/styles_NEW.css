@@ -491,14 +491,6 @@ hr {
 	color: var(--color-white);
 }
 
-.button-playlist { /* SPOTIFY PLAYLIST HEADER */
-	background-color: var(--color-light-gray);
-	padding: 8px 12px;
-	font-size: 16px;
-	color: var(--color-black);
-	border-radius: 12px;
-}
-
 .li-body a:link {
 	border-bottom: 1px dotted var(--color-black);
 }
@@ -1242,6 +1234,8 @@ li.li-body::marker {
 	transition: all .2s ease-in-out;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
+	display: inline-flex;
+	gap: 4px;
 }
   
 .button-tag:hover {
