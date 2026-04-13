@@ -1088,7 +1088,7 @@ li.social-list a:visited {
 
 .footnote {
 	font-size: 14px;
-	line-height: 1.8em;
+	line-height: 1.7em;
 	color: var(--color-dark-gray);
 	letter-spacing: 0.02em;
 	display: block;
@@ -1096,7 +1096,7 @@ li.social-list a:visited {
 
 .footnote-thoughts {
 	font-size: 16px;
-	line-height: 1.8em;
+	line-height: 1.7em;
 	color: var(--color-light-blue);
 	margin-bottom: 60px;
 	margin-top: var(--spacing-0);
@@ -1126,7 +1126,7 @@ li.social-list a:visited {
 
 .ul-body {
 	font-weight: 300;
-	line-height: 1.7em;
+	line-height: 1.6em;
 	letter-spacing: 0.02em;
 	list-style: circle outside;
 	list-style-image: none;
@@ -1972,6 +1972,10 @@ p.image-caption {
 	display: none;
 }
 
+/* .floating-toc {
+	display: none;
+} */
+
 /* FOOTER */
 .footer_inner {
 	padding: var(--spacing-5) var(--spacing-0);
@@ -1992,10 +1996,6 @@ p.image-caption {
 	width: 100%;
 	text-align: center;
 	padding: 0px;
-}
-
-.floating-toc {
-	display: none;
 }
 
 .social a:link {
