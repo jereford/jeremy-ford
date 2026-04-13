@@ -1992,9 +1992,19 @@ p.image-caption {
 	display: none;
 }
 
-/* .floating-toc {
-	display: none;
-} */
+.button-container {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-top: var(--spacing-10);
+}
+
+.button-outline {
+	display: flex;
+	width: stretch;
+	align-items: center;
+	justify-content: center;
+}
 
 /* FOOTER */
 .footer_inner {
