@@ -491,6 +491,17 @@ hr {
 	color: var(--color-white);
 }
 
+.button-playlist { /* SPOTIFY PLAYLIST HEADER */
+	background-color: var(--color-light-gray);
+	padding: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: row;
+	font-size: 14px;
+	color: var(--color-black);
+}
+
 .li-body a:link {
 	border-bottom: 1px dotted var(--color-black);
 }
