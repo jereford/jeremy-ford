@@ -1267,6 +1267,7 @@ li.li-body::marker {
 
 .button-tag .material-symbols-outlined {
 	font-size: 16px;
+	color: var(--color-blue);
 }
 
 #myBtnContainer {
@@ -1655,6 +1656,10 @@ a.info-button:visited {
 
 .quote .material-symbols-outlined {
 	font-size: 36px !important;
+}
+
+.header_wrap .button-tag { /* HIDE SPOTIFY PLAYLIST FOR TABLET AND SMALLER */
+	display: none;
 }
 
 }
