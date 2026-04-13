@@ -592,10 +592,11 @@ hr {
 	float: left;
 }
 
-.footer_inner_right {
+.footer_inner_right:not(:last-child) { /* Applies to all but the last item */
 	display: block;
 	float: right;
 	text-align: right;
+	margin-right: var(--spacing-5);
 }
 
 .footer a:link {
