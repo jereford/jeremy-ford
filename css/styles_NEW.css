@@ -471,6 +471,13 @@ hr {
 	padding-left: var(--spacing-1);
 }
 
+.button-container {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	margin-top: var(--spacing-12);
+}
+
 .button-outline {
 	padding: var(--spacing-1) var(--spacing-4);
 	border-radius: 8px;
@@ -1988,13 +1995,6 @@ p.image-caption {
 
 .writing li img {
 	display: none;
-}
-
-.button-container {
-	display: flex;
-	align-items: center;
-	gap: 8px;
-	margin-top: var(--spacing-10);
 }
 
 .button-outline {
