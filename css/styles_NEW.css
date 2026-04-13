@@ -1236,6 +1236,7 @@ li.li-body::marker {
 	letter-spacing: 0.05em;
 	display: inline-flex;
 	gap: 4px;
+	align-items: center;
 }
   
 .button-tag:hover {
