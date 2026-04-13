@@ -493,11 +493,7 @@ hr {
 
 .button-playlist { /* SPOTIFY PLAYLIST HEADER */
 	background-color: var(--color-light-gray);
-	padding: 8px;
-	display: flex;
-	align-items: center;
-	/* justify-content: space-between; */
-	flex-direction: row;
+	padding: 8px 12px;
 	font-size: 16px;
 	color: var(--color-black);
 	border-radius: 12px;
