@@ -1930,22 +1930,6 @@ img {
 	padding: 20px;
 }
 
-/* .paypal-button {
-	width: 100%;
-	display: inline-block;
-	font-family: inherit;
-	border-radius: 8px;
-	font-size: 20px;
-	letter-spacing: 0.02em !important;
-	font-weight: 300;
-	color: #11182B;
-	text-align: center;
-	padding: 12px 18px;
-	margin: 0!important;
-	cursor: pointer;
-	outline: none;
-} */
-
 .share-box {
 	margin: 0 0 20px 0;
 	background-color: #EDEFF3;
@@ -2002,7 +1986,7 @@ p.image-caption {
 
 .button-outline {
 	display: flex;
-	width: stretch;
+	width: 50%;
 	align-items: center;
 	justify-content: center;
 }
