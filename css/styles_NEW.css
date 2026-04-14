@@ -915,7 +915,6 @@ ul.writing-list li:hover {
 	letter-spacing: 0.05em;
 	padding: var(--spacing-2) var(--spacing-3);
 	white-space: nowrap;
-	line-height: 3em;
 	text-transform: uppercase;
 }
 
@@ -1068,7 +1067,7 @@ ul.writing-list li:hover {
 	padding-bottom: 0;
 	line-height: normal;
 	display: flex;
-	gap: var(--spacing-2);
+	gap: var(--spacing-3);
 	align-items: center;
 	flex-wrap: wrap;
 }
