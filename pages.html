@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -42,14 +41,14 @@
   <!-- START DIV CLASS WRAP -->
   <div class="wrap">
 
-    <!-- Start nav header -->
-    <div id="nav-header"></div>
-      <script>
-      $(function(){
-        $("#nav-header").load("includes/header.html");
-      });
-      </script>
-    <!-- End nav header -->
+    <header> <!-- Start nav header -->
+      <div id="nav-header"></div>
+        <script>
+        $(function(){
+          $("#nav-header").load("includes/header.html");
+        });
+        </script> <!-- End nav header -->
+    </header>
 
     <section class="project-hero">
       <div class="project-hero-inner">
@@ -61,12 +60,10 @@
           <p class="reveal-up">Cover artwork and social assets for <span style="font-style: italic;">Pages</span> a self-produced <a href="https://soundcloud.com/jford-4/pages-feat-sadatx" target="_blank">hip hop song</a> featuring Sadat X of Brand Nubian. I designed a handmade collage to represent the various references to paper made throughout the track. This aesthetic was also a visual representation of the art of sampling, where pieces of existing music are meticulously cut and reassembled to create an entirely new composition.</p>
       </div>
     </section>
+    
+    <div class="project fade-in"> <!-- START DIV PROJECT -->
       
-    <!-- START DIV PROJECT -->
-    <div class="project fade-in">
-
-      <!-- START PROJECT TITLE -->
-      <div class="project_title">
+      <div class="project_title"> <!-- START PROJECT TITLE -->
         <div class="project_title_left">
           <p>To tease the song prior to its release, I created a series of three images for Instagram. Each image utilized a cropped portion of the collage and featured an impactful and memorable lyric from the song.</p>
         </div>
@@ -91,35 +88,30 @@
     $(function(){
       $("#pagination").load("includes/pagination.html");
     });
-    </script>
-    <!-- PAGINATION END -->
+    </script> <!-- PAGINATION END -->
     
-    <!-- FOOTER START -->
-    <div id="footer"></div>
+    <div id="footer"></div> <!-- FOOTER START -->
       <script>
       $(function(){
         $("#footer").load("includes/footer.html");
       });
-      </script>
-    <!-- FOOTER END -->
+      </script> <!-- FOOTER END -->
 
-    <!-- FLOATING TOC START -->
-    <nav class="floating-toc" id="floating-toc" aria-label="Page sections">
+    <nav class="floating-toc" id="floating-toc" aria-label="Page sections"> <!-- FLOATING TOC START -->
       <a href="#top" class="smoothScroll">Top<span class="material-symbols-outlined">arrow_upward</span></a>
-    </nav>
-    <!-- FLOATING TOC END -->
+    </nav> <!-- FLOATING TOC END -->
 
   </div><!-- END DIV WRAP -->
 
-  <!-- FLOATING TOC END -->
+  <!-- FLOATING TOC START -->
   <script>
-    // Show the case study nav after the user scrolls 200px
+    // Show the case study nav after the user scrolls 300px
     (function () {
       var nav = document.getElementById('floating-toc');
       if (!nav) return;
   
       function onScroll() {
-        if (window.scrollY > 200) {
+        if (window.scrollY > 300) {
           nav.classList.add('is-visible');
         } else {
           nav.classList.remove('is-visible');
