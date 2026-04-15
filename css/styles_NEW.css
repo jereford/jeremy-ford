@@ -842,7 +842,7 @@ ul.writing-list li:hover {
 	border-radius: 4px;
 	font-size: 20px;
 	letter-spacing: 0.02em;
-	line-height: 1.7em;
+	line-height: 1.6em;
 	font-weight: 300;
 	display: inline-block;
 	margin: 0 0 1em;
@@ -855,7 +855,7 @@ ul.writing-list li:hover {
 	border-radius: 4px;
 	font-size: 20px;
 	letter-spacing: 0.02em;
-	line-height: 1.7em;
+	line-height: 1.6em;
 	font-weight: 300;
 	display: inline-block;
 	margin: 0 0 1em;
@@ -868,34 +868,10 @@ ul.writing-list li:hover {
 	border-radius: 4px;
 	font-size: 20px;
 	letter-spacing: 0.02em;
-	line-height: 1.7em;
+	line-height: 1.6em;
 	font-weight: 300;
 	display: inline-block;
 	margin: 0 0 1em;
-}
-
-.back_to_top {
-	font-family: 'entypo';
-	font-size: 2.5em;
-	padding: 5px 5px 0px 5px;
-	background-color: var(--color-black);
-	text-align: center;
-	width: 50px;
-	margin: 0 auto;
-	border-top-left-radius: 2px;
-	border-top-right-radius: 2px;
-}
-
-.back_to_top a:link {
-	color: var(--color-light-blue);
-}
-
-.back_to_top a:visited {
-	color: var(--color-light-blue);
-}
-
-.back_to_top a:hover {
-	color: var(--color-blue);
 }
 
 .masonry {
