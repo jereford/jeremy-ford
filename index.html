@@ -22,35 +22,28 @@
   <script type="module">
     import data from './assets/id-card.json' with { type: 'json' };
     console.log(data);
-  </script>
-  <!-- END ID CARD LINKED DATA -->
+  </script> <!-- END ID CARD LINKED DATA -->
 </head>
 
 <body>
-
-  <!-- START DIV WRAP -->
-  <div class="wrap fade-in">
-
-    <!-- START NAV HEADER -->
-    <div id="nav-header"></div>
+  <div class="wrap fade-in"> <!-- START DIV WRAP -->
+    <header> <!-- START NAV HEADER -->
+      <div id="nav-header"></div>
       <script>
       $(function(){
         $("#nav-header").load("includes/header.html");
       });
       </script>
-    <!-- END NAV HEADER -->
-
+    </header> <!-- END NAV HEADER -->
+    <main role="main"> 
       <div class="hero">
         <div class="hero_inner" id="content-1">
           <p class="quote reveal-up">I'm Jeremy<span class="wave material-symbols-outlined">front_hand</span>a curious, collaborative <span class="highlight">senior product designer</span> creating efficient user experiences that produce meaningful results.</p>
         </div>
       </div>
-
       <div class="work">
         <a id="work"></a>          
-
           <div class="grid">
-
             <div id="myBtnContainer">
               <button class="button-tag active" onclick="filterSelection('all')"> All</button>
               <button class="button-tag" onclick="filterSelection('branding')"> Branding</button>
@@ -62,7 +55,6 @@
               <button class="button-tag" onclick="filterSelection('ui')"> UI</button>
               <button class="button-tag" onclick="filterSelection('ux')"> UX</button>
             </div>
-
             <!-- START GRID1 -->
             <a href="honeycomb-anomaly-detection.html">
               <article class="grid-box filterDiv case-study ui ux" id="grid1">
@@ -78,7 +70,6 @@
               </article>
             </a>
             <!-- END GRID1 -->
-
             <!-- START GRID2 -->
             <a href="honeycomb-slos.html">
               <article class="grid-box filterDiv case-study ui ux" id="grid2">
@@ -94,7 +85,6 @@
               </article>
             </a>
             <!-- END GRID2 -->
-
             <!-- START GRID3 -->
             <a href="human-made-seal-system.html">
               <article class="grid-box filterDiv branding personal ui" id="grid3">
@@ -110,7 +100,6 @@
               </article>
             </a>
             <!-- END GRID3 -->
-
             <!-- START GRID4 -->
             <a href="the-wean-foundation.html">
               <article class="grid-box filterDiv branding graphic-design ui" id="grid4">
@@ -126,7 +115,6 @@
               </article>
             </a>
             <!-- END GRID4 -->
-
             <!-- START GRID5 -->
             <a href="all-it-takes.html">
               <article class="grid-box filterDiv graphic-design music-production personal" id="grid5">
@@ -142,7 +130,6 @@
               </article>
             </a>
             <!-- END GRID5 -->
-
             <!-- START GRID6 -->
             <a href="honeycomb-alert-scheduling.html">
               <article class="grid-box filterDiv case-study ui ux" id="grid6">
@@ -158,7 +145,6 @@
               </article>
             </a>
             <!-- END GRID6 -->
-
             <!-- START GRID7 -->
             <a href="self-seekers.html">
               <article class="grid-box filterDiv branding music-production personal ui" id="grid7">
@@ -175,7 +161,6 @@
               </article>
             </a>
             <!-- END GRID7 -->
-
             <!-- START GRID8 -->
             <a href="newscred-cmp-campaigns-case-study.html">
               <article class="grid-box filterDiv case-study ui ux" id="grid8">
@@ -191,7 +176,6 @@
               </article>
             </a>
             <!-- END GRID8 -->
-
             <!-- START GRID9 -->
             <a href="newscred-cmp-homepage-case-study.html">
               <article class="grid-box filterDiv case-study ui ux" id="grid9">
@@ -207,7 +191,6 @@
               </article>
             </a>
             <!-- END GRID9 -->
-
             <!-- START GRID10 -->
             <a href="progressive-punctuation.html">
               <article class="grid-box filterDiv branding personal ui ux" id="grid10">
@@ -224,7 +207,6 @@
               </article>
             </a>
             <!-- END GRID10 -->
-
             <!-- START GRID11 -->
             <a href="newscred-cmp.html">
               <article class="grid-box filterDiv ui" id="grid11">
@@ -238,7 +220,6 @@
               </article>
             </a>
             <!-- END GRID11 -->
-
             <!-- START GRID12 -->
             <a href="her-poster.html">
               <article class="grid-box filterDiv graphic-design illustration personal" id="grid12">
@@ -254,7 +235,6 @@
               </article>
             </a>
             <!-- END GRID12 -->
-
             <!-- START GRID13 -->
             <a href="greeting-cards.html">
               <article class="grid-box filterDiv graphic-design illustration personal" id="grid13">
@@ -270,7 +250,6 @@
               </article>
             </a>
             <!-- END GRID13 -->
-
             <!-- START GRID14 -->
             <a href="cbs_dr_2013.html">
               <article class="grid-box filterDiv ui ux" id="grid14">
@@ -285,7 +264,6 @@
               </article>
             </a>
             <!-- END GRID14 -->
-
             <!-- START GRID15 -->
             <a href="nvps_ar_2013.html">
               <article class="grid-box filterDiv graphic-design" id="grid15">
@@ -299,7 +277,6 @@
               </article>
             </a>
             <!-- END GRID15 -->
-
             <!-- START GRID16 -->
             <a href="cbs_ad_2014.html">
               <article class="grid-box filterDiv ui ux" id="grid16">
@@ -314,7 +291,6 @@
              </article>
             </a>
             <!-- END GRID16 -->
-
             <!-- START GRID17 -->
             <a href="qwill.html">
               <article class="grid-box filterDiv graphic-design music-production" id="grid17">
@@ -329,7 +305,6 @@
               </article>
             </a>
             <!-- END GRID17 -->
-
             <!-- START GRID18 -->
             <a href="logos.html">
               <article class="grid-box filterDiv branding" id="grid18">
@@ -343,7 +318,6 @@
               </article>
             </a>
             <!-- END GRID18 -->
-
             <!-- START GRID19 -->
             <a href="mock-it.html">
               <article class="grid-box filterDiv graphic-design illustration personal" id="grid19">
@@ -359,7 +333,6 @@
               </article>
             </a> 
             <!-- END GRID19 -->
-
             <!-- START GRID20 -->
             <a href="pages.html">
               <article class="grid-box filterDiv graphic-design music-production" id="grid20">
@@ -374,7 +347,6 @@
               </article>
             </a>
             <!-- END GRID20 -->
-
             <!-- START GRID21 -->
             <a href="newscred.html">
               <article class="grid-box filterDiv ui ux" id="grid21">
@@ -397,9 +369,9 @@
           </div>
           <!-- END GRID -->
 
-      </div><!-- END DIV WORK --> 
-
-      <!-- Start footer -->
+      </div><!-- END DIV WORK -->
+    </main>
+    <footer> <!-- Start footer -->
       <div id="footer">
         <script>
         $(function(){
@@ -407,18 +379,16 @@
         });
         </script>
       </div>
-      <!-- END FOOTER -->
+    </footer> <!-- END FOOTER -->
 
-      <!-- FLOATING TOC START -->
-      <nav class="floating-toc" id="floating-toc" aria-label="Page sections">
-        <a href="#top" class="smoothScroll">Top<span class="material-symbols-outlined">arrow_upward</span></a>
-      </nav>
-      <!-- FLOATING TOC END -->
+    <!-- FLOATING TOC START -->
+    <nav class="floating-toc" id="floating-toc" aria-label="Page sections">
+      <a href="#top" class="smoothScroll">Top<span class="material-symbols-outlined">arrow_upward</span></a>
+    </nav> <!-- FLOATING TOC END -->
 
-  </div>
-  <!-- END DIV WRAP -->
+  </div> <!-- END DIV WRAP -->
 
-  <!-- FLOATING TOC END -->
+  <!-- FLOATING TOC START -->
   <script>
     // Show the case study nav after the user scrolls 300px
     (function () {
@@ -435,8 +405,7 @@
 
       window.addEventListener('scroll', onScroll, { passive: true });
     })();
-  </script>
-  <!-- FLOATING TOC END -->
+  </script> <!-- FLOATING TOC END -->
 
 </body>
 </html>
