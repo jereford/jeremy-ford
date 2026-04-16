@@ -16,7 +16,6 @@
   <meta name="google-site-verification" content="XeGs8MgNhTUDK8nGOnW-h5o6sQU78Ri_9oqGGMFUIzg" />
   <meta property="fb:admins" content="48809375" />
   <link rel="shortcut icon" href="../favicon.ico">
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
   <!-- START ID CARD LINKED DATA -->
   <script type="module">
@@ -29,11 +28,6 @@
   <div class="wrap fade-in"> <!-- START DIV WRAP -->
     <header> <!-- START NAV HEADER -->
       <div id="nav-header"></div>
-      <script>
-      $(function(){
-        $("#nav-header").load("includes/header.html");
-      });
-      </script>
     </header> <!-- END NAV HEADER -->
     <main role="main"> 
       <div class="hero">
@@ -371,15 +365,15 @@
 
       </div><!-- END DIV WORK -->
     </main>
-    <footer> <!-- Start footer -->
-      <div id="footer">
-        <script>
+
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      <script>
         $(function(){
+          $("#nav-header").load("includes/header.html");
           $("#footer").load("includes/footer.html");
         });
-        </script>
-      </div>
-    </footer> <!-- END FOOTER -->
+      </script>
+      <script type="text/javascript" src="js/filter.js"></script>
 
     <!-- FLOATING TOC START -->
     <nav class="floating-toc" id="floating-toc" aria-label="Page sections">
