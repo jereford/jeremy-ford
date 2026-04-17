@@ -14,7 +14,7 @@ $(document).ready(function() {
   $(document).on("click", ".mobilenav-icon", function() {
     console.log("Hamburger clicked!");
     
-    $(".mobilenav").css("display", "flex").hide().fadeIn(400, function() {
+    $(".mobilenav").fadeIn(400, function() {
       if ($(".mobilenav").is(":visible")) {
           $(".mobilenav").css("display", "flex");
       }
