@@ -14,13 +14,9 @@ $(document).ready(function() {
   $(document).on("click", ".mobilenav-icon", function() {
     console.log("Hamburger clicked!");
     
-    $(document).on("click", ".mobilenav-icon", function() {
-      // If the menu is hidden, set to flex immediately then fade in
-      if ($(".mobilenav").is(":hidden")) {
-        $(".mobilenav").css("display", "flex").hide().fadeIn(400);
-      } else {
-        // If it's already open, fade it out
-        $(".mobilenav").fadeOut(400);
+    $(".mobilenav").fadeToggle(400, function() {
+      if ($(".mobilenav").is(":visible")) {
+          $(".mobilenav").css("display", "flex");
       }
     });
     $(".top-menu").toggleClass("top-animate");
