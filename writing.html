@@ -7,15 +7,16 @@
   <title>Jeremy Ford • Product Designer with a decade of complementary branding and art direction experience | Writing</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="css/styles_NEW.css" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0" rel="stylesheet">
-  <meta property="fb:admins" content="48809375" />
+  <link href="css/styles_NEW.css" rel="stylesheet" type="text/css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- CASCADING FADE IN EFFECT -->
   <link rel="shortcut icon" HREF="../favicon.ico">
   <meta name="description" content="A collection of essays, blog posts, and interviews focused on user experience, industry trends, rebrands, and other (mostly design-related) topics.">
   <meta name="keywords" content="blog, thoughts, writing, article, design, thinking, newscred, honeycomb">
   <meta name="google-site-verification" content="XeGs8MgNhTUDK8nGOnW-h5o6sQU78Ri_9oqGGMFUIzg" />
+  <meta property="fb:admins" content="48809375" />
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
   <!-- START ID CARD LINKED DATA -->
@@ -60,18 +61,18 @@
             <div class="project_title_left writing">
               <p class="reveal-up">When time allows, I capture and publish my observations as essays. I've also had the priviledge of publishing blog posts about design processes at technology startups and interviews with design leaders from companies like Squarespace and IBM.</p>
               <ul class="writing-list">
-                <a href="https://www.linkedin.com/posts/jeremyfordesign_my-friendformer-colleague-and-i-often-talk-activity-7446647856159014913-QTo4" target="_blank">
+                <a href="https://www.linkedin.com/posts/jeremyfordesign_my-friendformer-colleague-and-i-often-talk-activity-7446647856159014913-QTo4" target="_blank" data-aos="fade-up" data-aos-delay="0">
                   <li style="border-bottom: 0px;">
                     <img src="images/writing/writing-260406-cinepick-thumb.png">
                     <div>
-                      <!-- <span class="inline-new-badge">New</span> -->
+                      <span class="inline-new-badge">New</span>
                       <span class="footnote-date">Apr 6, 2026 &#183; LinkedIn &#183; 1 min</span>
                       <p>Prototyping CinePick, a conceptual mobile app for film recommendations, using Figma Make AI</p>
                     </div>
                     <span class="material-symbols-outlined">arrow_outward</span>
                   </li>
                 </a>
-                <a href="https://www.linkedin.com/posts/jeremyfordesign_like-many-of-us-i-cant-stop-thinking-about-activity-7440585964575543296-OOqg" target="_blank">
+                <a href="https://www.linkedin.com/posts/jeremyfordesign_like-many-of-us-i-cant-stop-thinking-about-activity-7440585964575543296-OOqg" target="_blank" data-aos="fade-up" data-aos-delay="150">
                   <li style="border-bottom: 0px;">
                     <img src="images/writing/writing-260323-human-made-thumb.png">
                     <div>
@@ -278,6 +279,16 @@
       window.addEventListener('scroll', onScroll, { passive: true });
     })();
   </script> <!-- FLOATING TOC END -->
+    <!-- START CASCADE SCROLL-->
+    <script type="text/javascript" src="js/filter.js"></script>
+  </script> <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true, // Only animate once per scroll
+      duration: 800, // Smooth 0.8s animation
+      offset: 50 // Starts the animation a bit earlier
+    });
+  </script> <!-- END CASCADE SCROLL-->
 
 </body>
 </html>
