@@ -421,7 +421,6 @@ hr {
 	text-transform: uppercase;
 	margin-right: var(--spacing-2);
 	letter-spacing: 0.03em;
-	vertical-align: bottom;
 }
 
 .mobilenav {
