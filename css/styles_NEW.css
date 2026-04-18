@@ -1073,13 +1073,13 @@ ul.writing-list li:hover {
 	letter-spacing: 0.02em;
 	list-style: circle outside;
 	list-style-image: none;
-	margin-left: 10px;
+	margin-left: var(--spacing-2);
 	padding: var(--spacing-0);
 }
 
 .li-body {
-	margin: 12px 12px 8px 12px;
-	list-style: circle outside;
+	margin-top: var(--spacing-3);
+	margin-bottom: var(--spacing-2);
 }
 
 .li-body p {
