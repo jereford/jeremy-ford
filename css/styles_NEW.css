@@ -836,18 +836,6 @@ ul.writing-list li:hover {
 	min-height: 500px;
 }
 
-.quote-card {
-	background-color: var(--color-light-gray);
-	padding: var(--spacing-5);
-	border-radius: 4px;
-	font-size: 20px;
-	letter-spacing: 0.02em;
-	line-height: 1.6em;
-	font-weight: 300;
-	display: inline-block;
-	margin: 0 0 1em;
-}
-
 .masonry {
 	column-count: 2;
 	column-gap: 0.8em;
@@ -856,6 +844,18 @@ ul.writing-list li:hover {
 .masonry .quote-card:first-child {
     column-span: all;
 	display: block;
+}
+
+.quote-card {
+	background-color: var(--color-light-gray);
+	padding: var(--spacing-6);
+	border-radius: 4px;
+	font-size: 20px;
+	letter-spacing: 0.02em;
+	line-height: 1.6em;
+	font-weight: 300;
+	display: inline-block;
+	margin: 0 0 1em;
 }
 
 .project-tag {
