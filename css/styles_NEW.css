@@ -207,24 +207,30 @@ h4 {
 
 .quote-large { /* ABOUT PG TESTIMONIALS */
 	width: 100%;
-	background-color: var(--color-dark-gray);
-	padding: 3em 0;
+	background-color: var(--color-medium-gray);
+	padding: 4em 0;
+	margin: 0 auto;
 }
 
 .quote-large-inner {
-	width: 85%;
+	max-width: 860px;
+	text-align: center;
 }
 
 .quote-large-inner h1 {
-	color: var(--color-white);
+	color: var(--color-black);
 }
 
 .quote-large-inner p {
-	color: var(--color-light-gray);
+	color: var(--color-dark-gray);
 }
 
 .quote-large-inner p.eyebrow {
 	font-family: 'DM Mono', monospace;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 300;
+	letter-spacing: 0.05em;
 }
 
 .wrap {
