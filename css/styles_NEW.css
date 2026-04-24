@@ -207,8 +207,9 @@ h4 {
 
 .quote-large { /* ABOUT PG TESTIMONIALS */
 	width: 100%;
-	background-color: var(--color-medium-gray);
+	/* background-color: var(--color-medium-gray); */
 	padding: 6em 0;
+	background: linear-gradient(to top, var(--color-medium-gray), var(--color-light-gray));
 }
 
 .quote-large-inner {
