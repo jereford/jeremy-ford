@@ -207,7 +207,7 @@ h4 {
 
 .quote-large { /* ABOUT PG TESTIMONIALS */
 	width: 100%;
-	background-color: var(--color-medium-gray);
+	background-color: var(--color-light-gray);
 	padding: 6em 0;
 }
 
@@ -227,12 +227,12 @@ h4 {
 	font-size: 14px;
 	font-weight: 300;
 	letter-spacing: 0.05em;
-	color: var(--color-dark-gray);
+	color: var(--color-blue);
 	margin-bottom: var(--spacing-5);
 }
 
-.quote-large-inner h4 {
-	color: var(--color-dark-gray);
+.quote-large-inner p {
+	color: var(--color-black);
 	padding: 0;
 }
 
