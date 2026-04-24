@@ -853,6 +853,10 @@ ul.writing-list li:hover {
 	column-gap: 0.8em;
 }
 
+.masonry .quote-card:first-child {
+    column-span: all;
+}
+
 .project-tag {
 	border-radius: 8px;
 	border: 1px solid var(--color-medium-gray);
