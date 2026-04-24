@@ -205,6 +205,28 @@ h4 {
 	font-size: 44px;
 }
 
+.quote-large { /* ABOUT PG TESTIMONIALS */
+	width: 100%;
+	background-color: var(--color-dark-gray);
+	padding: 3em 0;
+}
+
+.quote-large-inner {
+	width: 85%;
+}
+
+.quote-large-inner h1 {
+	color: var(--color-white);
+}
+
+.quote-large-inner p {
+	color: var(--color-light-gray);
+}
+
+.quote-large-inner p.eyebrow {
+	font-family: 'DM Mono', monospace;
+}
+
 .wrap {
 	width: 100%;
 	margin: 0 auto;
