@@ -222,7 +222,7 @@ h4 {
 }
 
 .quote-large-inner h4 {
-	color: var(--color-light-gray);
+	color: var(--color-medium-gray);
 	padding: 0;
 }
 
@@ -232,7 +232,7 @@ h4 {
 	font-size: 14px;
 	font-weight: 300;
 	letter-spacing: 0.05em;
-	color: var(--color-light-gray);
+	color: var(--color-medium-gray);
 	margin-bottom: var(--spacing-5);
 }
 
