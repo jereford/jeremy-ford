@@ -234,6 +234,9 @@ h4 {
 .quote-large-inner p {
 	color: var(--color-black);
 	padding: 0;
+	font-size: 20px;
+	letter-spacing: 0.02em;
+	line-height: 1.6em;
 }
 
 .wrap {
