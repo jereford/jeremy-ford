@@ -265,8 +265,19 @@
       </div><!-- END DIV PROJECT -->
     </main>
 
+    <!-- CREDITS START -->
+    <div id="credits-bar"
+      data-credits-bar-text="Web development by Arti Villa">
+    </div>
+
+    <script>
+    $(function(){
+      $("#credits-bar").load("includes/credits-bar.html");
+    });
+    </script> <!-- CREDITS END -->
+
     <!-- PAGINATION START -->
-   <div id="pagination"
+    <div id="pagination"
      data-previous-href="honeycomb-anomaly-detection.html"
      data-previous-title="Anomaly Detection: proactive, reliable alerting powered by AI"
      data-next-href="honeycomb-slos.html"
@@ -281,12 +292,13 @@
 
     <footer>
       <div id="footer"></div> <!-- START footer -->
-        <script>
-        $(function(){
-          $("#footer").load("includes/footer.html");
-        });
-        </script> <!-- END FOOTER -->
+      <script>
+      $(function(){
+        $("#footer").load("includes/footer.html");
+      });
+      </script> <!-- END FOOTER -->
     </footer>
+
     <nav class="floating-toc" id="floating-toc" aria-label="Page sections"> <!-- FLOATING TOC START -->
       <a href="#top" class="smoothScroll">Top<span class="material-symbols-outlined">arrow_upward</span></a>
     </nav> <!-- FLOATING TOC END -->
