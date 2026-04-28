@@ -49,161 +49,162 @@
       });
       </script>
     <!-- end nav header -->
-
-    <section class="project-hero">
-      <div class="project-hero-inner">
-        <p class="reveal-up">
-          <span class="project-tag">Case study</span>
-          <span class="project-tag">UI</span>
-          <span class="project-tag">UX</span>
-        </p>
-        <h1 class="reveal-up">The path to SLO adoption begins with SLI creation</h1>
-        <p class="reveal-up">As a member of Honeycomb's Signals Team, I leveraged user research to identify bottlenecks in the Service Level Objective creation workflow, and designed four improvements we shipped to increase effiency and conversion.</p>
-        <div class="insight-box-with-icon reveal-up" style="margin-bottom: 0;">
-          <span class="material-symbols-outlined" style="margin-right: 12px;">trending_up</span>
-          <p style="margin-bottom: var(--spacing-0)">Our team's updates <span class="bold">increased Service Level Indicator (SLI) conversion for new Enterprise users by 17%</span> in the five months after release, compared to the previous time period.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- START DIV PROJECT -->
-    <div class="project fade-in">
-      <div class="project_title">
-        <div class="project-images" style="text-align: center; padding-top: var(--spacing-6);">
-          <img src="images/honeycomb-slo-list.png" class="image-border" style="margin-bottom: var(--spacing-0);" alt="Honeycomb.io's Service Level Objective (SLO) list view">
-          <p class="footnote">Honeycomb's SLO list view</p>
-        </div>
-        <div class="project_title_left">
-          <h2>What is an SLO anyway?</h2>
-          <p>Honeycomb's definitive stance on <a href="https://sre.google/workbook/implementing-slos/" target="_blank">Service Level Objectives (SLOs)</a> is they're an essential complement to <a href="/honeycomb-alert-scheduling.html">traditional alerts</a>; a keystone of great observability with the power to align software companies around the business impact of their application's UX.</p>
-          <p>With an SLO, stakeholders come together to define a critical user journey (i.e. a retail application might choose a 'checkout' flow), identify the associated services that journey touches, and agree upon the target reliability for those services. For example: "Over a period of 28 days, 98% of users can purchase an item without errors." For this SLO, the error budget, or tolerance for failures, is 2%. When the budget burns at a rate that would deplete it before the time period, teams are notified with Burn Rate Alerts. After being notified, SREs are empowered to troubleshoot the problem, reallocate resources, halt deployments, and/or begin a discussion about service reliability expectations.</p>
-        </div>
-      </div>
-
-      <div class="project_title" style="margin-top: 72px;">
-        <div class="project_title_left">
-          <section>
-            <h2 id="section-problem">Problem</h2>
-            <p>Once configured, customers really saw the value of SLOs. Our research revealed that <span style="font-style: italic;">getting to that value</span> was the issue.</p>
-          </section>
-          <h3>Pinpointing friction</h3>
-          <p>During discovery, we gathered feedback from users as well as Customer Success and Sales Teams, collected usage data from Honeycomb and Amplitude, and observed user behavior in Fullstory sessions. We learned that users found SLOs difficult to configure, which meant teams were missing out on their magic. Armed with boatloads of qualitative and quantitative insights, we synthesized and grouped the friction by theme:
-            <ul class="ul-body">
-              <li class="li-body">Service Level Indicators (SLIs), a required component of an SLO, were challenging to create and manage. SLIs are created using custom fields (which Honeycomb calls <a href="https://docs.honeycomb.io/investigate/query/build/use-custom-fields/#derived-column-editor" target="_blank">Derived Columns</a>). Users often struggle to write the Derived Column function because of the syntax. Secondly, Derived Columns could only be accessed via Data Settings, several pages removed from the SLO creation flow.</li>
-              <li class="li-body">SLOs require organizational alignment when deciding which user journeys are business-critical and what an acceptable reliability should look like. We heard that cross-team consensus was arduous, time consuming, and contentious at times.</li>
-              <li class="li-body">Many customers are more familiar with the concept of traditional alerts and therefore tend to reach for Triggers, ignoring our SLOs feature altogether.</li>
-              <li class="li-body">Set up and iteration can be laborious and feel like guesswork. Even teams that were highly motivated to get started with SLOs were deterred by the configuration cost.</li>            
-              <li class="li-body">Users expressed feeling anxiety during SLO configuration because they're worried the Burn Alert notifications will ping team members unnecessarily.</li>
-            </ul>
+    <main>
+      <section class="project-hero">
+        <div class="project-hero-inner">
+          <p class="reveal-up">
+            <span class="project-tag">Case study</span>
+            <span class="project-tag">UI</span>
+            <span class="project-tag">UX</span>
           </p>
-          <img src="/images/honeycomb-slo-creation-journey-map.webp" class="image-border" style="margin-top: 20px; margin-bottom: 0px;" alt="Journey mapping exercise for Honeycomb.io's SLOs">
-          <p class="footnote">Journey mapping exercise to align the team around what the current SLO creation process looked like and where pain points resided</p>
-          
-          <h3 style="margin-top: 36px;">Focusing on SLIs</h3>
-          <p>A Service Level Indicator (SLI) is a foundational element of an SLO; the mechanism by which success or failure is evaluated. Expressed as a formula, an SLI in Honeycomb looks like: <span class="highlight">Successful events ÷ Total (qualified) events × 100</span>.</p>
-          <p>Our discovery showed that SLIs were a major deterrent for users to get started with SLOs, and following an impact/effort exercise to assess each friction theme, we felt confident that making them easier to understand, create, and manage would move the needle on SLO adoption.</p>
-          <div style="margin-top: 40px;" class="masonry">
-            <div class="quote-card">By leveraging Honeycomb's SLOs, we've gained the ability to detect and address problems before users even notice. In the last five months, alone, we've identified 45 incidents using Honeycomb SLOs&mdash;before anyone reported them.</div>
-            <div class="quote-card">We've been able to find patterns that would have been difficult to surface in other tools and the SLO functionality provides a good target for your application.</div>
-            <div class="quote-card">Functionalities like SLO and bubble up make it easy not only to track issues important to your business and services but also to easily figure out where issues are coming from.</div>
-            <div class="quote-card">I've been spending the last couple weeks fine tuning our SLOs in honeycomb. The more you put into them, the more you get out.</div>
-            <div class="quote-card">Creating SLOs is difficult in Honeycomb compared to other tools. The experience of editing derived columns is difficult. In another tool, I liked that I could go straight from a query and the core workflow and make that into an SLO easily.</div>
-            <div class="quote-card">[Customer] is one of our power users and she is continuously frustrated with the Derived Columns workflow: Is that possible to make the query using the UI and then convert it for us to a derived column? (CS)</div>
-            <div class="quote-card">It was hard to understand the syntax to create an SLI.</div>
-            <div class="quote-card">If possible I think it would be awesome if when creating a new SLO, it would create the SLI column for us on the background and just provide a simple UI to filter and specify the conditions of the SLI and keep the derived column updated whenever we make a change.</div>
-            <div class="quote-card">Can we make these easier for folks to develop and troubleshoot somehow? (CS)</div>
-            <div class="quote-card">It would be great to copy the SLI being used as part of an SLO without having to jump to the derived columns or have a link back to the derived column.</div>
-          </div>
-          <div style="text-align:center; margin: 0 auto; width: 65%; line-height: 1.2em; margin-top: 10px">
-            <span class="footnote">A mix of feedback from users and internal field teams (CS and Sales) that reiterate the value of SLOs and challenges setting up the required SLIs.</span>
+          <h1 class="reveal-up">The path to SLO adoption begins with SLI creation</h1>
+          <p class="reveal-up">As a member of Honeycomb's Signals Team, I leveraged user research to identify bottlenecks in the Service Level Objective creation workflow, and designed four improvements we shipped to increase effiency and conversion.</p>
+          <div class="insight-box-with-icon reveal-up" style="margin-bottom: 0;">
+            <span class="material-symbols-outlined" style="margin-right: 12px;">trending_up</span>
+            <p style="margin-bottom: var(--spacing-0)">Our team's updates <span class="bold">increased Service Level Indicator (SLI) conversion for new Enterprise users by 17%</span> in the five months after release, compared to the previous time period.</p>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="project_title" style="margin-top: 80px;">
-        <div class="project_title_left">
-          <section>
-            <h2 id="section-solution">Improvements we shipped</h2>
-            <p>Our ideation centered around the classic UX principle, "don't make me think" (coined by <a href="https://sensible.com/dont-make-me-think/" target="_blank">Steve Krug</a>). While this tenet applies to <span style="font-style: italic;">all</span> of our work, it was especially important for SLIs given their complicated nature and current state in the product. We sought to reduce the amount of overhead required to create an SLI, which we hypothesized would result in increased SLO conversion.</p>
-            <!-- <video width="100%" src="/images/honeycomb-sli-mode-toggle.mov" autoplay loop muted playsinline class="image-border" style="margin-bottom: 20px;"></video> -->
-            <!-- <p class="footnote">Early design explorations included tabs to switch between the two SLI creation modes, which were tentatively called "Ratio of Events" and "Advanced."</p> -->
-            <!-- <img src="/images/honeycomb-sli-creation-modes-specs.png" class="image-border" style="margin-bottom: 20px;"> -->
-            <!-- <p class="footnote">Specifications UI implementation.</p> -->
-            <p>Over the course of H2 2024, our team conceived and shipped several MVPs to General Availability that directly addressed SLI friction, the results of which improved SLI creation and SLO adoption:</p>
-            <ul class="ul-body">
-              <li class="li-body"><span class="bold">SLI templates</span>. Nothing is more intimidating than a blank canvas. To alleviate the pressure of creating an SLI from scratch, we introduced templates for the most common indicators: Latency for span name, Latency for duration, and Latency and availability for endpoint. Each template includes a brief description, visible in a tool tip when hovering over the button. Selecting a template pre-populates the function editor, which provides a foundation for the user to build upon. <a href="https://changelog.honeycomb.io/starter-sli-templates-294381" target="_blank">Honeycomb Changelog</a></li>
-              <li class="li-body"><span class="bold">Inline creation and editing</span>. Because SLIs use Derived Columns, users previously had to create or edit their SLIs within Data Settings, where Derived Columns live. This meant users had to leave the context of the SLO, which resulted in lost context, wasted time, and overall frustration. We brought SLI creation and edit capabilities to a modal window that sits above the SLO creation page, so that users never have to leave their flow. <a href="https://changelog.honeycomb.io/inline-sli-edit-create-on-slos-289887" target="_blank">Honeycomb Changelog</a></li>
-              <li class="li-body"><span class="bold">New 'Build Query' creation mode</span>. We saw users continually start their SLI creation workflow by querying their application to understand service performance. Once they identified the current state of reliability for those services &mdash; which can take several iterations &mdash; all of that work was lost when the user navigated away from the Query Builder to translate their query to an SLI. To address this, we introduced a second SLI creation method, Build Query Mode, within the SLO creation page. Using this new mode, users could create their SLI using the Query Builder language and interface they were already familiar with. If a user needs to refine their expression in the code editor, switching from Build Query mode to Write Formula mode translates their SLI to code, where it can be refined. <a href="https://changelog.honeycomb.io/new-build-query-mode-for-slis-(slos)-297150" target="_blank">Honeycomb Changelog</a></li>
-              <li class="li-body"><span class="bold">Autoformat SLI</span>. For users who author their function using the code editor, we added a "Format" button that automatically cleans up an expression by adding line breaks and block indentation, making it easier to read. <a href="https://changelog.honeycomb.io/auto-format-on-derived-columns-291955" target="_blank">Honeycomb Changelog</a></li>
-            </ul>
-          </section>
+      <!-- START DIV PROJECT -->
+      <div class="project fade-in">
+        <div class="project_title">
+          <div class="project-images" style="text-align: center; padding-top: var(--spacing-6);">
+            <img src="images/honeycomb-slo-list.png" class="image-border" style="margin-bottom: var(--spacing-0);" alt="Honeycomb.io's Service Level Objective (SLO) list view">
+            <p class="footnote">Honeycomb's SLO list view</p>
+          </div>
+          <div class="project_title_left">
+            <h2>What is an SLO anyway?</h2>
+            <p>Honeycomb's definitive stance on <a href="https://sre.google/workbook/implementing-slos/" target="_blank">Service Level Objectives (SLOs)</a> is they're an essential complement to <a href="/honeycomb-alert-scheduling.html">traditional alerts</a>; a keystone of great observability with the power to align software companies around the business impact of their application's UX.</p>
+            <p>With an SLO, stakeholders come together to define a critical user journey (i.e. a retail application might choose a 'checkout' flow), identify the associated services that journey touches, and agree upon the target reliability for those services. For example: "Over a period of 28 days, 98% of users can purchase an item without errors." For this SLO, the error budget, or tolerance for failures, is 2%. When the budget burns at a rate that would deplete it before the time period, teams are notified with Burn Rate Alerts. After being notified, SREs are empowered to troubleshoot the problem, reallocate resources, halt deployments, and/or begin a discussion about service reliability expectations.</p>
+          </div>
         </div>
 
-        <div class="project-images" style="text-align: center; margin-top: 60px;">
-          <!-- <img src="/images/honeycomb-slo-sli-templates.png" class="image-border" style="margin-bottom: 0; margin-top: 20px;"> -->
-          <video width="100%" src="images/trimmed-sli-template.mov" autoplay loop muted playsinline class="image-border" style="margin-top: 20px; margin-bottom: 0px;"></video>
-          <p class="footnote">To alleviate the pressure of creating an SLI from scratch, we introduced templates for the most common indicators.</p>
-          <!-- <img src="/images/honeycomb-slo-sli-build-query-mode.png" class="image-border" style="margin-bottom: 0; margin-top: 20px;"> -->
-          <video width="100%" src="images/trimmed-sli-build-query-mode.mov" autoplay loop muted playsinline class="image-border" style="margin-top: 20px; margin-bottom: 0px;"></video>
-          <p class="footnote">Using the new Build Query mode, users can create their SLI using the Query Builder language and interface they're already familiar with.</p>
-          <!-- <img src="/images/honeycomb-slo-sli-format-button.png" class="image-border" style="margin-bottom: 0; margin-top: 20px;"> -->
-          <video width="100%" src="images/trimmed-sli-edit-in-line-and-format.mov" autoplay loop muted playsinline class="image-border" style="margin-top: 20px; margin-bottom: 0px"></video>
-          <p class="footnote">We added a "Format" button that automatically cleans up an expression by adding line breaks and block indentation.</p>
-          <img src="/images/honeycomb-slo-sli-edit-inline.png" class="image-border" style="margin-bottom: 0; margin-top: 20px; margin-bottom: 0px;" alt="Inline editing pattern for Honeycomb.io's Service Level Indicators (SLIs)">
-          <p class="footnote">We brought SLI creation and edit capabilities to a modal window that sits above the SLO creation page, so that users never have to leave their flow.</p>
-        </div>
-
-        <div class="project_title_left">
-          <section>
-            <h2 id="section-results">Results</h2>
-            <h3>Quantitative outcomes</h3>
-            <p>We saw some fascinating results over the next several months:
+        <div class="project_title" style="margin-top: 72px;">
+          <div class="project_title_left">
+            <section>
+              <h2 id="section-problem">Problem</h2>
+              <p>Once configured, customers really saw the value of SLOs. Our research revealed that <span style="font-style: italic;">getting to that value</span> was the issue.</p>
+            </section>
+            <h3>Pinpointing friction</h3>
+            <p>During discovery, we gathered feedback from users as well as Customer Success and Sales Teams, collected usage data from Honeycomb and Amplitude, and observed user behavior in Fullstory sessions. We learned that users found SLOs difficult to configure, which meant teams were missing out on their magic. Armed with boatloads of qualitative and quantitative insights, we synthesized and grouped the friction by theme:
               <ul class="ul-body">
-                <li class="li-body">SLI conversion for new Enterprise users increased 17% in the five months after release compared to the previous time period.</li>
-                <li class="li-body">SLO conversion for new Enterprise users increased 18% in the five months after release compared to the previous time period.</li>
-                <li class="li-body">In the five month period after release, 56% of SLIs created by new Pro users were made using our new Build Query mode.</li>
-                <li class="li-body">In the final quarter of 2024, 41% of SLI template clicks were Latency and Availability Endpoint, 35% were Latency Duration, and 24% were Latency Span Name.</li>
+                <li class="li-body">Service Level Indicators (SLIs), a required component of an SLO, were challenging to create and manage. SLIs are created using custom fields (which Honeycomb calls <a href="https://docs.honeycomb.io/investigate/query/build/use-custom-fields/#derived-column-editor" target="_blank">Derived Columns</a>). Users often struggle to write the Derived Column function because of the syntax. Secondly, Derived Columns could only be accessed via Data Settings, several pages removed from the SLO creation flow.</li>
+                <li class="li-body">SLOs require organizational alignment when deciding which user journeys are business-critical and what an acceptable reliability should look like. We heard that cross-team consensus was arduous, time consuming, and contentious at times.</li>
+                <li class="li-body">Many customers are more familiar with the concept of traditional alerts and therefore tend to reach for Triggers, ignoring our SLOs feature altogether.</li>
+                <li class="li-body">Set up and iteration can be laborious and feel like guesswork. Even teams that were highly motivated to get started with SLOs were deterred by the configuration cost.</li>            
+                <li class="li-body">Users expressed feeling anxiety during SLO configuration because they're worried the Burn Alert notifications will ping team members unnecessarily.</li>
               </ul>
             </p>
-            <h3>Qualitative outcomes</h3>
-            <div style="margin-top: 32px;" class="masonry">
-              <div class="quote-card">I think the new UI to define the SLI is really helpful when getting started with SLO/SLI definition. It guides the user to the desired outcome, explains the terms, and the preview helps understanding if the SLI is configured as expected. I thought the common indicator templates are also a good guide.</div>
-              <div class="quote-card">just dropping out of pat leave for a minute to say YAAAAAY OH MY GOD YEEEEE!! for multiline editing of derived columns.</div>
-              <div class="quote-card">[Customer] literally said they are jazzed about the SLI updates "nice work folks" they love they can switch between the two types of build windows (CS)</div>
+            <img src="/images/honeycomb-slo-creation-journey-map.webp" class="image-border" style="margin-top: 20px; margin-bottom: 0px;" alt="Journey mapping exercise for Honeycomb.io's SLOs">
+            <p class="footnote">Journey mapping exercise to align the team around what the current SLO creation process looked like and where pain points resided</p>
+            
+            <h3 style="margin-top: 36px;">Focusing on SLIs</h3>
+            <p>A Service Level Indicator (SLI) is a foundational element of an SLO; the mechanism by which success or failure is evaluated. Expressed as a formula, an SLI in Honeycomb looks like: <span class="highlight">Successful events ÷ Total (qualified) events x 100</span>.</p>
+            <p>Our discovery showed that SLIs were a major deterrent for users to get started with SLOs, and following an impact/effort exercise to assess each friction theme, we felt confident that making them easier to understand, create, and manage would move the needle on SLO adoption.</p>
+            <div style="margin-top: 40px;" class="masonry">
+              <div class="quote-card">"By leveraging Honeycomb's SLOs, we've gained the ability to detect and address problems before users even notice. In the last five months, alone, we've identified 45 incidents using Honeycomb SLOs&mdash;before anyone reported them."</div>
+              <div class="quote-card">"We've been able to find patterns that would have been difficult to surface in other tools and the SLO functionality provides a good target for your application."</div>
+              <div class="quote-card">"Functionalities like SLO and bubble up make it easy not only to track issues important to your business and services but also to easily figure out where issues are coming from."</div>
+              <div class="quote-card">"I've been spending the last couple weeks fine tuning our SLOs in honeycomb. The more you put into them, the more you get out."</div>
+              <div class="quote-card">"Creating SLOs is difficult in Honeycomb compared to other tools. The experience of editing derived columns is difficult. In another tool, I liked that I could go straight from a query and the core workflow and make that into an SLO easily."</div>
+              <div class="quote-card">"[Customer] is one of our power users and she is continuously frustrated with the Derived Columns workflow: Is that possible to make the query using the UI and then convert it for us to a derived column?" (via Customer Success)</div>
+              <div class="quote-card">"It was hard to understand the syntax to create an SLI."</div>
+              <div class="quote-card">"If possible I think it would be awesome if when creating a new SLO, it would create the SLI column for us on the background and just provide a simple UI to filter and specify the conditions of the SLI and keep the derived column updated whenever we make a change."</div>
+              <div class="quote-card">"Can we make these easier for folks to develop and troubleshoot somehow?" (via Customer Success)</div>
+              <div class="quote-card">"It would be great to copy the SLI being used as part of an SLO without having to jump to the derived columns or have a link back to the derived column."</div>
             </div>
             <div style="text-align:center; margin: 0 auto; width: 65%; line-height: 1.2em; margin-top: 10px">
-              <span class="footnote">Initial feedback from users and internal field teams (CS and Sales) about the new SLI creation updates.</span>
+              <span class="footnote">A mix of feedback from users and internal field teams (CS and Sales) that reiterate the value of SLOs and challenges setting up the required SLIs.</span>
             </div>
-          </section>
+          </div>
         </div>
-          
-        <div class="project_title_left" style="margin-top: 80px;">
-          <h2 style="margin-top: 80px;">A vision for Honeycomb SLOs</h2>
-          <p>What might Honeycomb SLOs look like in the future? The team continues to think about how we can make SLO creation simpler and recognizes opportunities for additional enhancements:</p>
-          <span class="footnote">Features and images are conceptual and exploratory, for demonstration purposes only.</span>
-          <ul class="ul-body">
-            <li class="li-body"><span class="bold">SLO templates</span>. Taking SLI templates a step further, what if users could create an SLO for common use cases with a single click? This would significantly reduce time and effort by pre-populating the target and time period, and automatically generating an SLI behind the scenes.</li>
-            <li class="li-body"><span class="bold">Recommendations</span>. Sometimes it can be difficult to prioritize user journeys because everything is important. Could we reduce cognitive load and provide focus by recommending user journeys that have poor service performance? Or suggest a target percentage or time period for an SLO based on industry benchmarks or historical data?</li>
-            <li class="li-body"><span class="bold">More intuitive entry point</span>. Could our Service Map serve as the starting point for SLO creation? Here, users can quickly understand service dependencies and select or tag a group of them based on user journeys.</li>
-            <li class="li-body"><span class="bold">Tailored experience based on user's responsibilities</span>. If we capture a new user's title during their onboarding flow, could we serve up a default view of SLOs that resonates with their specific responsibilites and needs? For example, an SRE would likely want to monitor and respond, whereas an Engineering Manager might be more interested in a reporting view.</li>
-            <li class="li-body"><span class="bold">Better onboarding experience</span>. We know SLOs are difficult to grasp for teams who are new to them. There is likely something we can do to better onboard them into the feature; whether it's a video walkthrough or a creation wizard.</li>
-            <li class="li-body"><span class="bold">Artificial Intelligence</span>. While AI is quite the buzzword lately, we do see the potential value in applying Large Language Models to SLO creation to make them easier to create. Imagine a world where a user can simply type: "I want to monitor X user journey to ensure that X" and Honeycomb selects the services, defines success, and sets up burn alerts automatically.</li>
-            <li class="li-body"><span class="bold">Historical compliance</span>. There are specific user personas who need to visualize service performance over time in order to: evaluate past decisions, prioritize future work, allocate resources accordingly, and justify investment in our tool.</li>
-            <li class="li-body"><span class="bold">SLO history</span>. Oftentimes, users ask questions like: Who reset an error budget and why? When was the SLI tweaked? When was the target percentage updated and what was the previous value? To increase transparency and facilitate collaboration, could we bring historical SLO context into the details page?</li>
-          </ul>
-          </p>
-        </div> <!-- END PROJECT TITLE LEFT -->
 
-        <div class="project-images" style="text-align: center;">
-          <img src="images/honeycomb-ai-assistant.png" class="image-border" style="margin-top: 20px; margin-bottom: 0px;" alt="Honeycomb.io SLOs AI assistant concept">
-          <p class="footnote">There may be value for users to create an SLO by simply summarizing what they want.</p>
-          <img src="images/honeycomb-slo-detail-history.png" class="image-border" style="margin-top: 20px; margin-bottom: 0px;" alt="Honeycomb.io SLOs">
-          <p class="footnote">SLO history to gather context about error budget resets, SLI updates, and target tweaks.</p>
-          <img src="images/honeycomb-service-map-entry.png" class="image-border" style="margin-top: 20px; margin-bottom: 0px;" alt="Honeycomb.io service map entry points">
-          <p class="footnote">Critical User Journey and SLO creation from the Service Map, where users gather context about service health and interdependencies.</p>
-        </div>  
-      </div>
-    </div> <!-- END DIV PROJECT -->
+        <div class="project_title" style="margin-top: 80px;">
+          <div class="project_title_left">
+            <section>
+              <h2 id="section-solution">Improvements we shipped</h2>
+              <p>Our ideation centered around the classic UX principle, "don't make me think" (coined by <a href="https://sensible.com/dont-make-me-think/" target="_blank">Steve Krug</a>). While this tenet applies to <span style="font-style: italic;">all</span> of our work, it was especially important for SLIs given their complicated nature and current state in the product. We sought to reduce the amount of overhead required to create an SLI, which we hypothesized would result in increased SLO conversion.</p>
+              <!-- <video width="100%" src="/images/honeycomb-sli-mode-toggle.mov" autoplay loop muted playsinline class="image-border" style="margin-bottom: 20px;"></video> -->
+              <!-- <p class="footnote">Early design explorations included tabs to switch between the two SLI creation modes, which were tentatively called "Ratio of Events" and "Advanced."</p> -->
+              <!-- <img src="/images/honeycomb-sli-creation-modes-specs.png" class="image-border" style="margin-bottom: 20px;"> -->
+              <!-- <p class="footnote">Specifications UI implementation.</p> -->
+              <p>Over the course of H2 2024, our team conceived and shipped several MVPs to General Availability that directly addressed SLI friction, the results of which improved SLI creation and SLO adoption:</p>
+              <ul class="ul-body">
+                <li class="li-body"><span class="bold">SLI templates</span>. Nothing is more intimidating than a blank canvas. To alleviate the pressure of creating an SLI from scratch, we introduced templates for the most common indicators: Latency for span name, Latency for duration, and Latency and availability for endpoint. Each template includes a brief description, visible in a tool tip when hovering over the button. Selecting a template pre-populates the function editor, which provides a foundation for the user to build upon. <a href="https://changelog.honeycomb.io/starter-sli-templates-294381" target="_blank">Honeycomb Changelog</a></li>
+                <li class="li-body"><span class="bold">Inline creation and editing</span>. Because SLIs use Derived Columns, users previously had to create or edit their SLIs within Data Settings, where Derived Columns live. This meant users had to leave the context of the SLO, which resulted in lost context, wasted time, and overall frustration. We brought SLI creation and edit capabilities to a modal window that sits above the SLO creation page, so that users never have to leave their flow. <a href="https://changelog.honeycomb.io/inline-sli-edit-create-on-slos-289887" target="_blank">Honeycomb Changelog</a></li>
+                <li class="li-body"><span class="bold">New 'Build Query' creation mode</span>. We saw users continually start their SLI creation workflow by querying their application to understand service performance. Once they identified the current state of reliability for those services &mdash; which can take several iterations &mdash; all of that work was lost when the user navigated away from the Query Builder to translate their query to an SLI. To address this, we introduced a second SLI creation method, Build Query Mode, within the SLO creation page. Using this new mode, users could create their SLI using the Query Builder language and interface they were already familiar with. If a user needs to refine their expression in the code editor, switching from Build Query mode to Write Formula mode translates their SLI to code, where it can be refined. <a href="https://changelog.honeycomb.io/new-build-query-mode-for-slis-(slos)-297150" target="_blank">Honeycomb Changelog</a></li>
+                <li class="li-body"><span class="bold">Autoformat SLI</span>. For users who author their function using the code editor, we added a "Format" button that automatically cleans up an expression by adding line breaks and block indentation, making it easier to read. <a href="https://changelog.honeycomb.io/auto-format-on-derived-columns-291955" target="_blank">Honeycomb Changelog</a></li>
+              </ul>
+            </section>
+          </div>
+
+          <div class="project-images" style="text-align: center; margin-top: 60px;">
+            <!-- <img src="/images/honeycomb-slo-sli-templates.png" class="image-border" style="margin-bottom: 0; margin-top: 20px;"> -->
+            <video width="100%" src="images/trimmed-sli-template.mov" autoplay loop muted playsinline class="image-border" style="margin-top: 20px; margin-bottom: 0px;"></video>
+            <p class="footnote">To alleviate the pressure of creating an SLI from scratch, we introduced templates for the most common indicators.</p>
+            <!-- <img src="/images/honeycomb-slo-sli-build-query-mode.png" class="image-border" style="margin-bottom: 0; margin-top: 20px;"> -->
+            <video width="100%" src="images/trimmed-sli-build-query-mode.mov" autoplay loop muted playsinline class="image-border" style="margin-top: 20px; margin-bottom: 0px;"></video>
+            <p class="footnote">Using the new Build Query mode, users can create their SLI using the Query Builder language and interface they're already familiar with.</p>
+            <!-- <img src="/images/honeycomb-slo-sli-format-button.png" class="image-border" style="margin-bottom: 0; margin-top: 20px;"> -->
+            <video width="100%" src="images/trimmed-sli-edit-in-line-and-format.mov" autoplay loop muted playsinline class="image-border" style="margin-top: 20px; margin-bottom: 0px"></video>
+            <p class="footnote">We added a "Format" button that automatically cleans up an expression by adding line breaks and block indentation.</p>
+            <img src="/images/honeycomb-slo-sli-edit-inline.png" class="image-border" style="margin-bottom: 0; margin-top: 20px; margin-bottom: 0px;" alt="Inline editing pattern for Honeycomb.io's Service Level Indicators (SLIs)">
+            <p class="footnote">We brought SLI creation and edit capabilities to a modal window that sits above the SLO creation page, so that users never have to leave their flow.</p>
+          </div>
+
+          <div class="project_title_left">
+            <section>
+              <h2 id="section-results">Results</h2>
+              <h3>Quantitative outcomes</h3>
+              <p>We saw some fascinating results over the next several months:
+                <ul class="ul-body">
+                  <li class="li-body">SLI conversion for new Enterprise users increased 17% in the five months after release compared to the previous time period.</li>
+                  <li class="li-body">SLO conversion for new Enterprise users increased 18% in the five months after release compared to the previous time period.</li>
+                  <li class="li-body">In the five month period after release, 56% of SLIs created by new Pro users were made using our new Build Query mode.</li>
+                  <li class="li-body">In the final quarter of 2024, 41% of SLI template clicks were Latency and Availability Endpoint, 35% were Latency Duration, and 24% were Latency Span Name.</li>
+                </ul>
+              </p>
+              <h3>Qualitative outcomes</h3>
+              <div style="margin-top: 32px;" class="masonry">
+                <div class="quote-card">"I think the new UI to define the SLI is really helpful when getting started with SLO/SLI definition. It guides the user to the desired outcome, explains the terms, and the preview helps understanding if the SLI is configured as expected. I thought the common indicator templates are also a good guide."</div>
+                <div class="quote-card">"just dropping out of pat leave for a minute to say YAAAAAY OH MY GOD YEEEEE!! for multiline editing of derived columns."</div>
+                <div class="quote-card">"[Customer] literally said they are jazzed about the SLI updates "nice work folks" they love they can switch between the two types of build windows" (via Customer Success)</div>
+              </div>
+              <div style="text-align:center; margin: 0 auto; width: 65%; line-height: 1.2em; margin-top: 10px">
+                <span class="footnote">Initial feedback from users and internal field teams (CS and Sales) about the new SLI creation updates.</span>
+              </div>
+            </section>
+          </div>
+            
+          <div class="project_title_left" style="margin-top: 80px;">
+            <h2 style="margin-top: 80px;">A vision for Honeycomb SLOs</h2>
+            <p>What might Honeycomb SLOs look like in the future? The team continues to think about how we can make SLO creation simpler and recognizes opportunities for additional enhancements:</p>
+            <span class="footnote">Features and images are conceptual and exploratory, for demonstration purposes only.</span>
+            <ul class="ul-body">
+              <li class="li-body"><span class="bold">SLO templates</span>. Taking SLI templates a step further, what if users could create an SLO for common use cases with a single click? This would significantly reduce time and effort by pre-populating the target and time period, and automatically generating an SLI behind the scenes.</li>
+              <li class="li-body"><span class="bold">Recommendations</span>. Sometimes it can be difficult to prioritize user journeys because everything is important. Could we reduce cognitive load and provide focus by recommending user journeys that have poor service performance? Or suggest a target percentage or time period for an SLO based on industry benchmarks or historical data?</li>
+              <li class="li-body"><span class="bold">More intuitive entry point</span>. Could our Service Map serve as the starting point for SLO creation? Here, users can quickly understand service dependencies and select or tag a group of them based on user journeys.</li>
+              <li class="li-body"><span class="bold">Tailored experience based on user's responsibilities</span>. If we capture a new user's title during their onboarding flow, could we serve up a default view of SLOs that resonates with their specific responsibilites and needs? For example, an SRE would likely want to monitor and respond, whereas an Engineering Manager might be more interested in a reporting view.</li>
+              <li class="li-body"><span class="bold">Better onboarding experience</span>. We know SLOs are difficult to grasp for teams who are new to them. There is likely something we can do to better onboard them into the feature; whether it's a video walkthrough or a creation wizard.</li>
+              <li class="li-body"><span class="bold">Artificial Intelligence</span>. While AI is quite the buzzword lately, we do see the potential value in applying Large Language Models to SLO creation to make them easier to create. Imagine a world where a user can simply type: "I want to monitor X user journey to ensure that X" and Honeycomb selects the services, defines success, and sets up burn alerts automatically.</li>
+              <li class="li-body"><span class="bold">Historical compliance</span>. There are specific user personas who need to visualize service performance over time in order to: evaluate past decisions, prioritize future work, allocate resources accordingly, and justify investment in our tool.</li>
+              <li class="li-body"><span class="bold">SLO history</span>. Oftentimes, users ask questions like: Who reset an error budget and why? When was the SLI tweaked? When was the target percentage updated and what was the previous value? To increase transparency and facilitate collaboration, could we bring historical SLO context into the details page?</li>
+            </ul>
+            </p>
+          </div> <!-- END PROJECT TITLE LEFT -->
+
+          <div class="project-images" style="text-align: center;">
+            <img src="images/honeycomb-ai-assistant.png" class="image-border" style="margin-top: 20px; margin-bottom: 0px;" alt="Honeycomb.io SLOs AI assistant concept">
+            <p class="footnote">There may be value for users to create an SLO by simply summarizing what they want.</p>
+            <img src="images/honeycomb-slo-detail-history.png" class="image-border" style="margin-top: 20px; margin-bottom: 0px;" alt="Honeycomb.io SLOs">
+            <p class="footnote">SLO history to gather context about error budget resets, SLI updates, and target tweaks.</p>
+            <img src="images/honeycomb-service-map-entry.png" class="image-border" style="margin-top: 20px; margin-bottom: 0px;" alt="Honeycomb.io service map entry points">
+            <p class="footnote">Critical User Journey and SLO creation from the Service Map, where users gather context about service health and interdependencies.</p>
+          </div>  
+        </div>
+      </div> <!-- END DIV PROJECT -->
+    </main>
 
     <!-- CREDITS START -->
     <div id="credits-bar"
@@ -233,12 +234,14 @@
     <!-- PAGINATION END -->
 
     <!-- Start footer -->
-    <div id="footer"></div>
+    <footer>
+      <div id="footer"></div>
       <script>
       $(function(){
         $("#footer").load("includes/footer.html");
       });
       </script>
+    </footer>
     <!-- end footer -->
 
     <!-- FLOATING TOC START -->
