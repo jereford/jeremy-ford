@@ -350,6 +350,22 @@ a.info-button:visited {
   }
 }
 
+.line {
+	opacity: 0; /* Starts invisible */
+	animation: fadeIn 1s ease-out forwards; /* Runs the animation */
+}
+
+/* These tell each line how long to wait before starting */
+.first  { animation-delay: 1.0s; }
+.second { animation-delay: 1.5s; }
+.third  { animation-delay: 2.0s; }
+.fourth  { animation-delay: 2.5s; }
+.fifth  { animation-delay: 3.0s; }
+.sixth  { animation-delay: 3.5s; }
+.seventh  { animation-delay: 4.0s; }
+.eighth  { animation-delay: 4.5s; }
+.ninth  { animation-delay: 5.0s; }
+
 hr {
 	border-top: 1px solid (var(--color-light-gray));
   	margin: 3em auto; /* Sets top/bottom margin and centers the line */
