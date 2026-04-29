@@ -356,15 +356,15 @@ a.info-button:visited {
 }
 
 /* These tell each line how long to wait before starting */
-.first  { animation-delay: 1.0s; }
-.second { animation-delay: 1.5s; }
-.third  { animation-delay: 2.0s; }
-.fourth  { animation-delay: 2.5s; }
-.fifth  { animation-delay: 3.0s; }
-.sixth  { animation-delay: 3.5s; }
-.seventh  { animation-delay: 4.0s; }
-.eighth  { animation-delay: 4.5s; }
-.ninth  { animation-delay: 5.0s; }
+.first  { animation-delay: 0.25s; }
+.second { animation-delay: 0.5s; }
+.third  { animation-delay: 0.75s; }
+.fourth  { animation-delay: 1.0s; }
+.fifth  { animation-delay: 1.25s; }
+.sixth  { animation-delay: 1.5s; }
+.seventh  { animation-delay: 1.75s; }
+.eighth  { animation-delay: 2.0s; }
+.ninth  { animation-delay: 2.25s; }
 
 hr {
 	border-top: 1px solid (var(--color-light-gray));
