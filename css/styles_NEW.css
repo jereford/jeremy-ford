@@ -352,19 +352,19 @@ a.info-button:visited {
 
 .line {
 	opacity: 0; /* Starts invisible */
-	animation: fadeIn 1s ease-out forwards; /* Runs the animation */
+	animation: fadeIn 0.5s ease-out forwards; /* Runs the animation */
 }
 
 /* These tell each line how long to wait before starting */
-.first  { animation-delay: 0.25s; }
-.second { animation-delay: 0.5s; }
-.third  { animation-delay: 0.75s; }
-.fourth  { animation-delay: 1.0s; }
-.fifth  { animation-delay: 1.25s; }
-.sixth  { animation-delay: 1.5s; }
-.seventh  { animation-delay: 1.75s; }
-.eighth  { animation-delay: 2.0s; }
-.ninth  { animation-delay: 2.25s; }
+.first  { animation-delay: 0.1s; }
+.second { animation-delay: 0.2s; }
+.third  { animation-delay: 0.3s; }
+.fourth  { animation-delay: 0.4s; }
+.fifth  { animation-delay: 0.5s; }
+.sixth  { animation-delay: 0.6s; }
+.seventh  { animation-delay: 0.7s; }
+.eighth  { animation-delay: 0.8s; }
+.ninth  { animation-delay: 0.9s; }
 
 hr {
 	border-top: 1px solid (var(--color-light-gray));
