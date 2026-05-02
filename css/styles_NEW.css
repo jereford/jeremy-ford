@@ -785,9 +785,10 @@ hr {
 }
 
 .about-photo-gallery {
-	background: var(--color-light-blue);
+	background: var(--color-medium-gray);
 	width: 100%;
 	padding: 6em 0em;
+	font-size: 1.25em;
 }
 
 .about-photo-gallery-inner {
