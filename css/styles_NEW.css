@@ -785,7 +785,7 @@ hr {
 }
 
 .about-photo-gallery {
-	background: var(--color-medium-gray);
+	background: var(--color-white);
 	width: 100%;
 	padding: 6em 0em;
 	font-size: 1.25em;
