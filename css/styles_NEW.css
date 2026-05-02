@@ -791,9 +791,9 @@ hr {
 }
 
 .about-photo-gallery-inner {
-	width: 62%;
+	width: 85%;
 	margin: 0 auto;
-	max-width: 860px;
+	max-width: 1148px;
 }
 
 .writing ul {
@@ -914,10 +914,15 @@ ul.writing-list li:hover {
 	display: block;
 }
 
+.masonry img {
+	border-radius: 8px;
+	display: block;
+}
+
 .quote-card {
 	background-color: var(--color-light-gray);
 	padding: var(--spacing-6);
-	border-radius: 4px;
+	border-radius: 8px;
 	font-size: 20px;
 	letter-spacing: 0.02em;
 	line-height: 1.6em;
