@@ -902,7 +902,7 @@ ul.writing-list li:hover {
 
 .masonry {
 	column-count: 2;
-	column-gap: 0.8em;
+	/* column-gap: 0.8em; */
 }
 
 .masonry .quote-card:first-child {
