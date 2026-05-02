@@ -784,6 +784,18 @@ hr {
 	max-width: 860px;
 }
 
+.about-photo-gallery {
+	background: var(--color-light-blue);
+	width: 100%;
+	padding: 6em 0em;
+}
+
+.about-photo-gallery-inner {
+	width: 62%;
+	margin: 0 auto;
+	max-width: 860px;
+}
+
 .writing ul {
 	list-style-type: none;
 	padding-left: var(--spacing-0);
@@ -893,6 +905,11 @@ ul.writing-list li:hover {
 }
 
 .masonry .quote-card:first-child {
+    column-span: all;
+	display: block;
+}
+
+.masonry img:first-child { /* ABOUT PG IMG GALLERY */
     column-span: all;
 	display: block;
 }
