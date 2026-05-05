@@ -1,6 +1,8 @@
 {
-  "name": "jeremy-ford",
-  "lockfileVersion": 3,
-  "requires": true,
-  "packages": {}
+  "name": "jeremy-ford-site",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "preview": "python3 -m http.server 5173"
+  }
 }
