@@ -908,7 +908,6 @@ ul.writing-list li:hover {
 .masonry .quote-card:first-child {
     column-span: all;
 	display: block;
-	background-color: var(--color-medium-gray);
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
@@ -937,6 +936,12 @@ ul.writing-list li:hover {
 	font-weight: 300;
 	display: inline-block;
 	margin: 0 0 1em;
+}
+
+.quote-card .material-symbols-outlined {
+	font-size: 40px;
+	color: var(--color-medium-gray);
+	transform: scaleX(-1);
 }
 
 .project-tag {
