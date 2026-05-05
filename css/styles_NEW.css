@@ -908,7 +908,7 @@ ul.writing-list li:hover {
 .masonry .quote-card:first-child {
     column-span: all;
 	display: block;
-	background-color: var(--color-light-blue);
+	background-color: var(--color-medium-gray);
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
