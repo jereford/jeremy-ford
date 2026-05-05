@@ -2043,5 +2043,10 @@ p.image-caption {
 .masonry {
 	column-count: 1;
 }
+
+.quote-card .material-symbols-outlined {
+	display: none;
+}
+
 }
 /* MEDIA QUERIES END */
