@@ -1488,14 +1488,11 @@ li.li-body::marker {
 }
 
 .mobilenav-icon {
-  	position: fixed;
   	display: none;
   	padding: 9px;
   	height: 32px;
   	width: 32px;
   	margin: 0px;
-  	top: var(--spacing-2);
-  	right: var(--spacing-1);
 }
 
 .mobilenav {
