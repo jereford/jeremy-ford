@@ -152,7 +152,7 @@ h1 {
 
 h2 {
 	font-family: 'DM Sans', sans-serif;
-	padding: 36px 0px 20px 0px;
+	padding: var(--spacing-12) 0px var(--spacing-5) 0px;
 	font-size: 36px;
 	line-height: 1.2em;
 	font-weight: 500;
