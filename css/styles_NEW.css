@@ -2074,5 +2074,9 @@ p.image-caption {
 	font-size: 1.25em;
 }
 
+.about-photo-gallery-inner {
+	width: 90%;
+}
+
 }
 /* MEDIA QUERIES END */
