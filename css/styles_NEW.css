@@ -806,12 +806,12 @@ hr {
 	/* Mirrors your gradient: grain is strongest at top (white),
      fades to nothing at bottom (where the tint takes over) */
 	-webkit-mask-image: linear-gradient(
-		to bottom,
+		to top,
 		rgba(0, 0, 0, 0.4) 0%,
 		rgba(0, 0, 0, 0.0) 100%
 	);
 	mask-image: linear-gradient(
-		to bottom,
+		to top,
 		rgba(0, 0, 0, 0.4) 0%,
 		rgba(0, 0, 0, 0.0) 100%
 	);
