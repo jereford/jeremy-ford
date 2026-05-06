@@ -911,7 +911,7 @@ ul.writing-list li:hover {
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
-	gap: var(--spacing-4);
+	gap: var(--spacing-3);
 }
 
 .masonry img:first-child { /* ABOUT PG IMG GALLERY */
@@ -1838,6 +1838,10 @@ body {
 	width: 90%;
 }
 
+.project-hero {
+	padding: 5em 0em;
+}
+
 .project-hero-inner{
 	width: 90%;
 }
@@ -2046,6 +2050,13 @@ p.image-caption {
 
 .quote-card .material-symbols-outlined {
 	display: none;
+}
+
+.about-photo-gallery {
+	background: var(--color-white);
+	width: 100%;
+	padding: 5em 0em;
+	font-size: 1.25em;
 }
 
 }
