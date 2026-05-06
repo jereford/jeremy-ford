@@ -226,9 +226,9 @@ h4 {
 	text-transform: uppercase;
 	font-size: 14px;
 	font-weight: 300;
-	letter-spacing: 0.05em;
 	color: var(--color-blue);
 	margin-bottom: var(--spacing-5);
+	letter-spacing: 0.075em;
 }
 
 .quote-large-inner p {
@@ -254,6 +254,7 @@ h4 {
 	text-transform: uppercase;
 	font-weight: 300;
 	color: var(--color-blue);
+	letter-spacing: 0.075em;
 }
 
 a.info-button {
@@ -458,7 +459,7 @@ hr {
 	font-family: 'DM Mono', monospace;
 	font-size: 12px;
 	text-transform: uppercase;
-	letter-spacing: 0.05em;
+	letter-spacing: 0.075em;
 	font-weight: 300;
 	display: flex;
 	align-items: center;
@@ -762,7 +763,7 @@ hr {
 	display: block;
 	color: var(--color-blue);
 	text-transform: uppercase;
-	letter-spacing: 0.05em;
+	letter-spacing: 0.075em;
 }
 
 .project-hero #project-hero-eyebrow {
@@ -773,7 +774,7 @@ hr {
 	color: var(--color-blue);
 	margin-bottom: var(--spacing-1);
 	text-transform: uppercase;
-	letter-spacing: 0.05em;
+	letter-spacing: 0.075em;
 }
 
 .project_title_left {
@@ -971,7 +972,7 @@ ul.writing-list li:hover {
 	font-size: 12px;
 	text-align: left;
 	margin-right: var(--spacing-2);
-	letter-spacing: 0.05em;
+	letter-spacing: 0.075em;
 	padding: var(--spacing-2) var(--spacing-3);
 	white-space: nowrap;
 	text-transform: uppercase;
@@ -984,7 +985,7 @@ ul.writing-list li:hover {
 	font-family: 'DM Mono', monospace;
 	font-weight: 300;
 	font-size: 12px;
-	letter-spacing: 0.05em;
+	letter-spacing: 0.075em;
 	padding: var(--spacing-2) var(--spacing-3);
 	text-transform: uppercase;
 }
@@ -1159,7 +1160,7 @@ ul.writing-list li:hover {
 	font-family: 'DM Mono', monospace;
 	font-weight: 300;
 	text-transform: uppercase;
-	letter-spacing: 0.05em;
+	letter-spacing: 0.075em;
 	line-height: 1em;
 	display: inline-block; /* PREVENTS UNNECESSARY EXCESSIVE LINE HEIGHT */
 	line-height: 1.5em;
@@ -1277,16 +1278,15 @@ li.li-body::marker {
 	text-align: left;
 	background-color: var(--color-light-gray);
 	cursor: pointer;
-	letter-spacing: 0.05em;
 	-o-transition: all .2s ease-in-out;
 	-ms-transition: all .2s ease-in-out,;
 	-moz-transition: all .2s ease-in-out;
 	-webkit-transition: all .2s ease-in-out;
 	transition: all .2s ease-in-out;
 	text-transform: uppercase;
-	letter-spacing: 0.05em;
+	letter-spacing: 0.075em;
 	display: inline-flex;
-	gap: 4px;
+	gap: var(--spacing-1);
 	align-items: center;
 }
   
