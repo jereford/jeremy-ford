@@ -1571,7 +1571,7 @@ li.li-body::marker {
   animation-iteration-count: infinite;  /* Never stop waving :) */
   transform-origin: bottom; /* Pivot around the bottom-left palm */
   display: inline-block;
-  margin: var(--spacing-0) var(--spacing-3);
+  margin: var(--spacing-0) var(--spacing-2);
   font-variation-settings: 'wght' 700, 'GRAD' 0, 'opsz' 20;
   vertical-align: -2px;
 }
