@@ -1104,7 +1104,7 @@ ul.writing-list li:hover {
 	margin-top: var(--spacing-3);
 }
 
-.home-tag-container {
+.tag-container {
 	letter-spacing: 0.02em;
 	font-weight: 300;
 	margin-top: 1em;
@@ -1112,7 +1112,7 @@ ul.writing-list li:hover {
 	padding-bottom: 0;
 	line-height: normal;
 	display: flex;
-	gap: var(--spacing-3);
+	gap: var(--spacing-2);
 	align-items: center;
 	flex-wrap: wrap;
 }
