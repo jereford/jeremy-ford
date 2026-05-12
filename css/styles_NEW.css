@@ -969,24 +969,11 @@ ul.writing-list li:hover {
 	color: var(--color-black);
 	font-family: 'DM Mono', monospace;
 	font-weight: 300;
-	font-size: 12px;
+	font-size: 11px;
 	text-align: left;
-	margin-right: var(--spacing-2);
 	letter-spacing: 0.075em;
-	padding: var(--spacing-2) var(--spacing-3);
+	padding: var(--spacing-1) var(--spacing-2);
 	white-space: nowrap;
-	text-transform: uppercase;
-}
-
-.project-tag-home {
-	border-radius: 8px;
-	border: 1px solid var(--color-medium-gray);
-	color: var(--color-black);
-	font-family: 'DM Mono', monospace;
-	font-weight: 300;
-	font-size: 12px;
-	letter-spacing: 0.075em;
-	padding: var(--spacing-2) var(--spacing-3);
 	text-transform: uppercase;
 }
 
