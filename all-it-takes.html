@@ -37,17 +37,14 @@
 
 <body>
 
-<!-- START DIV CLASS WRAP -->
-<div class="wrap">
+<div class="wrap"> <!-- START DIV CLASS WRAP -->
 
-<!-- Start nav header -->
-<div id="nav-header"></div>
+<div id="nav-header"></div> <!-- START NAV HEADER -->
 <script>
 $(function(){
   $("#nav-header").load("includes/header.html");
 });
-</script>
-<!-- end nav header -->
+</script> <!-- END NAV HEADER -->
 
 <section class="project-hero">
   <div class="project-hero-inner">
@@ -65,64 +62,58 @@ $(function(){
   </div>
 </section>
 
-<!-- START DIV PROJECT -->
-<div class="project fade-in">
+<div class="project fade-in"> <!-- START DIV PROJECT -->
+  <div class="project_images"> <!-- START DIV PROJECT_IMAGES -->
+    <img src="images/all-it-takes-sleeve.png" class="image-border">
+  </div>
+</div>
 
-	<!-- START PROJECT TITLE -->
-	<div class="project_title">
+<div class="project fade-in"> <!-- START DIV PROJECT -->
+	<div class="project_title"> <!-- START PROJECT TITLE -->
     <div class="project_title_left">
       <p>The artwork features a gradient-duotoned vintage photograph of international children listening intently to vinyl records outdoors (we can assume they're students). Conceptually, I really liked the idea of Vic's music being so good that people from all over the world enjoy it, in any environment, at any age. I also liked the notion that his lyricism and wordplay is so poetic and intricate that teachers use his music as educational material. The awe-struck expression on the girl's face in the foreground was especially charming and I imagined a similar expression on the faces of Vic's listeners. However the imagery may be interpreted, the implication is that the children are listening to Vic's music.</p>
       <p>The song title lockup was executed by customizing a handwritten-style typeface and adding "paint drips," which intended to make it look graffitied. For applications of the artwork that had a larger area, like the YouTube graphic, I moved the title lockup to a "hype sticker," which occupied additional real estate and also gave the artwork more texture and depth.</p>
       <iframe class="bandcamp-player" src="https://bandcamp.com/EmbeddedPlayer/album=3430724513/size=large/bgcol=ffffff/linkcol=50638A/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://jeremyford.bandcamp.com/album/all-it-takes-feat-little-vic">All It Takes (feat. Little Vic) by Jeremy Ford</a></iframe>
     </div>
-	</div><!-- END DIV PROJECT_TITLE -->
-
-    <!-- START DIV PROJECT_IMAGES -->
-    <div class="project_images">
-      <img src="images/all-it-takes-sleeve.png" class="image-border">
-    	<img src="images/all-it-takes-artwork-youtube.png" class="image-border">
-    	<img src="images/all-it-takes-hype-sticker-detail.png" class="image-border">
-      <div class="video-container" style="margin-bottom: var(--spacing-5);">
-        <iframe class="video" src="https://www.youtube.com/embed/3y48phruvm8?si=s2E_RCHwIZxCGm0d" title="Little Vic opens for Benny the Butcher at hip hop concert in Philadelphia" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
+	</div> <!-- END DIV PROJECT_TITLE -->
+  <div class="project_images"> <!-- START DIV PROJECT_IMAGES -->
+    <img src="images/all-it-takes-artwork-youtube.png" class="image-border">
+    <img src="images/all-it-takes-hype-sticker-detail.png" class="image-border">
+    <div class="video-container" style="margin-bottom: var(--spacing-5);">
+      <iframe class="video" src="https://www.youtube.com/embed/3y48phruvm8?si=s2E_RCHwIZxCGm0d" title="Little Vic opens for Benny the Butcher at hip hop concert in Philadelphia" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
-    <!-- END DIV PROJECT_IMAGES -->
-
+  </div> <!-- END DIV PROJECT_IMAGES -->
 </div><!-- END DIV PROJECT -->
 
   <!-- PAGINATION START -->
-   <div id="pagination"
-     data-previous-href="the-wean-foundation.html"
-     data-previous-title="The Wean Foundation brand identity and responsive site"
-     data-next-href="honeycomb-alert-scheduling.html"
-     data-next-title="Giving DevOps teams more control over their alerts with Custom Trigger Scheduling">
+  <div id="pagination"
+    data-previous-href="the-wean-foundation.html"
+    data-previous-title="The Wean Foundation brand identity and responsive site"
+    data-next-href="honeycomb-alert-scheduling.html"
+    data-next-title="Giving DevOps teams more control over their alerts with Custom Trigger Scheduling">
   </div>
 
   <script>
   $(function(){
     $("#pagination").load("includes/pagination.html");
   });
-  </script>
-  <!-- PAGINATION END -->
+  </script> <!-- PAGINATION END -->
 
-  <!-- FOOTER START -->
-  <div id="footer"></div>
+  <div id="footer"></div> <!-- FOOTER START -->
   <script>
   $(function(){
     $("#footer").load("includes/footer.html");
   });
-  </script>
-  <!-- FOOTER END -->
+  </script> <!-- FOOTER END -->
 
   <!-- FLOATING TOC START -->
   <nav class="floating-toc" id="floating-toc" aria-label="Page sections">
     <a href="#top" class="smoothScroll">Top<span class="material-symbols-outlined">arrow_upward</span></a>
-  </nav>
-  <!-- FLOATING TOC END -->
+  </nav> <!-- FLOATING TOC END -->
 
 </div><!-- END DIV WRAP -->
 
-  <!-- FLOATING TOC END -->
+  <!-- FLOATING TOC START -->
   <script>
     // Show the case study nav after the user scrolls 300px
     (function () {
@@ -139,8 +130,7 @@ $(function(){
   
       window.addEventListener('scroll', onScroll, { passive: true });
     })();
-  </script>
-  <!-- FLOATING TOC END -->
+  </script> <!-- FLOATING TOC END -->
 
 </body>
 </html>
