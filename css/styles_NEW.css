@@ -2080,6 +2080,10 @@ p.image-caption {
 	justify-content: center;
 }
 
+.quote-large-inner {
+	width: 90%;
+}
+
 /* FOOTER */
 .footer_inner {
 	padding: var(--spacing-5) var(--spacing-0);
