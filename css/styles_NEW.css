@@ -101,7 +101,7 @@ body {
 p {
 	margin: var(--spacing-0) var(--spacing-0) var(--spacing-6) var(--spacing-0);
 	padding: var(--spacing-0);
-	letter-spacing: 0.02em;
+	letter-spacing: 0.01em;
 	font-weight: 300;
 	line-height: 1.6em;
 }
@@ -253,7 +253,7 @@ h4 {
 	padding: 0;
 	/* font-size: 20px; */
 	font-size: var(--fs-md);
-	letter-spacing: 0.02em;
+	letter-spacing: 0.01em;
 	line-height: 1.6em;
 	margin-bottom: 0;
 }
@@ -568,7 +568,7 @@ hr {
 	color: var(--color-black);
 	display: inline-block;
 	transition: all 0.2s ease-in-out;
-	letter-spacing: 0.02em;
+	letter-spacing: 0.01em;
 	background-color: var(--color-white);
 }
 
@@ -861,7 +861,7 @@ hr {
 }
 
 .writing a {
-	letter-spacing: 0.02em;
+	letter-spacing: 0.01em;
 }
 
 ul.writing-list li {
