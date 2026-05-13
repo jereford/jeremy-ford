@@ -104,10 +104,11 @@ p {
 	letter-spacing: 0.01em;
 	font-weight: 300;
 	line-height: 1.6em;
+	color: var(--color-dark-gray);
 }
 
 a {
-	color: var(--color-black);
+	color: var(--dark-gray);
 	text-decoration: none;
 	cursor: pointer !important;
 	-o-transition: all .2s ease-in-out;
@@ -118,7 +119,7 @@ a {
 }
 
 a:visited {
-	color: #11182B;
+	color: var(--dark-gray);
 }
 
 a:hover {
@@ -128,14 +129,14 @@ a:hover {
 
 p a:link {
 	text-decoration: none;
-	border-bottom: 1px dotted var(--color-black);
+	border-bottom: 1px dotted var(--color-dark-gray);
 	font-weight: 300;
 	cursor: pointer;
 }
 
 p a:visited {
 	text-decoration: none;
-	border-bottom: 1px dotted var(--color-black);
+	border-bottom: 1px dotted var(--color-dark-gray);
 	font-weight: 300;
 	cursor: pointer;
 }
@@ -158,11 +159,16 @@ h1 {
 
 h2 {
 	font-family: 'DM Sans', sans-serif;
-	padding: var(--spacing-12) 0px var(--spacing-5) 0px;
+	padding: 
+		var(--spacing-12) 
+		0
+		var(--spacing-5)
+		0;
 	font-size: 36px;
 	line-height: 1.2em;
 	font-weight: 500;
 	letter-spacing: -0.02em;
+	color: var(--color-black);
 }
 
 h2 a:link {
@@ -182,19 +188,26 @@ h2 a:hover {
 
 h3 {
 	font-family: 'DM Sans', sans-serif;
-	padding: 32px 0px 16px 0px;
+	padding:
+		var(--spacing-8)
+		0
+		var(--spacing-4)
+		0;
 	font-size: 28px;
 	line-height: 1.3em;
 	font-weight: 500;
 	letter-spacing: -0.02em;
+	color: var(--color-black);
 }
 
 h4 {
 	font-family: 'DM Sans', sans-serif;
 	padding: var(--spacing-7) 0px var(--spacing-4) 0px;
 	font-size: var(--fs-md);
-	line-height: 1.3em;
+	line-height: 1.4em;
 	font-weight: 400;
+	letter-spacing: -0.0075em;
+	color: var(--color-black);
 }
 
 .bold {
@@ -214,6 +227,7 @@ h4 {
 	line-height: 1.15em;
 	max-width: 80%;
 	text-wrap: balance;
+	color: var(--color-black);
 }
 
 .quote .material-symbols-outlined {
@@ -672,6 +686,7 @@ hr {
 
 .footer_inner p {
 	margin-bottom: var(--spacing-0);
+	color: var(--color-light-gray);
 }
 
 .footer_inner_left {
@@ -895,6 +910,10 @@ ul.writing-list li:hover {
 	margin-bottom: 0;
 }
 
+.writing h4 {
+	padding-top: var(--spacing-1);
+}
+
 .project_images {
 	margin: 0px auto;
 	padding-top: var(--spacing-12);
@@ -1005,6 +1024,10 @@ ul.writing-list li:hover {
 	font-size: 40px;
 	color: var(--color-medium-gray);
 	transform: scaleX(-1);
+}
+
+.quote-card-gray p, .quote-card-white p {
+	color: var(--color-black);
 }
 
 .project-tag {
@@ -1164,6 +1187,7 @@ ul.writing-list li:hover {
 .home-title {
 	text-align: left;
 	padding: 0;
+	color: var(--color-black);
 }
 
 /* END WORK GRID
@@ -1485,6 +1509,7 @@ li.li-body::marker {
 	font-weight: 400;
 	margin-bottom: 0;
 	letter-spacing: 0;
+	color: var(--color-black);
 }
 
 .pagination .material-symbols-outlined {
