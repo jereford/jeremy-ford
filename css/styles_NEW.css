@@ -424,7 +424,7 @@ hr {
 ----------------- */
 .header_wrap {
 	width: 100%;
-	padding: 8px 0px;
+	padding: var(--spacing-2) 0px;
 	top: 0;
 	position: fixed;
 	background-color: var(--color-white);
@@ -452,7 +452,8 @@ hr {
 	width: 85%;
 	max-width: 1148px;
 	margin: auto auto;
-	font-size: 1em;
+	/* font-size: 1em; */
+	font-size: var(--fs-base);
 	word-spacing: -0.1em;
 	display: flex;
 	align-items: center;
@@ -493,7 +494,7 @@ hr {
 
 .inline-new-badge {
   	border-radius: 4px;
-	padding: 4px 6px;
+	padding: var(--spacing-1) 6px;
 	background-color: var(--color-blue);
   	color: var(--color-white);
 	font-size: 12px;
@@ -546,14 +547,15 @@ hr {
 }
 
 .arrow_link {
-	font-size: 14px;
+	/* font-size: 14px; */
+	font-size: var(--fs-sm);
 	padding-left: var(--spacing-1);
 }
 
 .button-container {
 	display: flex;
 	align-items: center;
-	gap: 12px;
+	gap: var(--spacing-3);
 	margin-top: var(--spacing-12);
 }
 
@@ -576,8 +578,9 @@ hr {
 }
 
 .button-outline .material-symbols-outlined {
-	font-size: 16px;
-	margin-left: 8px;
+	/* font-size: 16px; */
+	font-size: var(--fs-base);
+	margin-left: var(--spacing-2);
 	font-variation-settings: 'wght' 300;
 }
 
@@ -614,7 +617,7 @@ hr {
 	max-width: 1148px;
 	font-size: 1.2em;
 	line-height: 1.7em;
-	margin: 0px auto;
+	margin: var(--spacing-0) auto;
 	width: 85%;
 }
 
@@ -635,7 +638,8 @@ hr {
 	margin-bottom: 0;
 	margin-left: auto;
 	margin-right: auto;
-	font-size: 14px;
+	/* font-size: 14px; */
+	font-size: var(--fs-sm);
 	line-height: 1.7em;
 	color: var(--color-dark-gray);
 	width: 75%;
@@ -657,7 +661,8 @@ hr {
 	width: 85%;
 	margin: 0 auto;
 	padding: var(--spacing-5) var(--spacing-0);
-	font-size: 16px;
+	/* font-size: 16px; */
+	font-size: var(--fs-base);
 	line-height: 1.4em;
 	overflow: auto;
 	letter-spacing: 0.02em;
@@ -698,7 +703,8 @@ hr {
 }
 
 .footer .material-symbols-outlined {
-	font-size: 16px;
+	/* font-size: 16px; */
+	font-size: var(--fs-base);
 }
 
 /* FLOATING TOC START */
@@ -709,7 +715,7 @@ hr {
 	transform: translateX(-50%);
 	display: flex;
 	align-items: center;
-	padding: 4px;
+	padding: var(--spacing-1);
 	background: var(--color-white);
 	border: 1px solid var(--color-light-gray);
 	border-radius: 100px;
@@ -729,11 +735,12 @@ hr {
   
 .floating-toc a {
 	display: block;
-	padding: 8px 16px;
+	padding: var(--spacing-2) var(--spacing-4);
 	border-radius: 100px;
 	color: var(--color-black);
 	font-family: 'DM Sans', sans-serif;
-	font-size: 16px;
+	/* font-size: 16px; */
+	font-size: var(--fs-base);
 	font-weight: 400;
 	text-decoration: none;
 	white-space: nowrap;
@@ -765,12 +772,13 @@ hr {
 	max-width: 1148px;
 	font-size: 1.25em;
 	line-height: 1.7em;
-	margin: 0px auto;
+	margin: var(--spacing-0) auto;
 	width: 100%;
 }
 
 .project_title #project-title-eyebrow {
-	font-size: 14px;
+	/* font-size: 14px; */
+	font-size: var(--fs-sm);
 	font-family: 'DM Mono', monospace;
 	font-weight: 300;
 	display: block;
@@ -780,7 +788,8 @@ hr {
 }
 
 .project-hero #project-hero-eyebrow {
-	font-size: 14px;
+	/* font-size: 14px; */
+	font-size: var(--fs-sm);
 	font-family: 'DM Mono', monospace;
 	font-weight: 300;
 	display: block;
@@ -802,7 +811,7 @@ hr {
 		rgba(255, 255, 255, 1.0) 100%
 		);
 	width: 100%;
-	padding: 6em 0em;
+	padding: 6rem 0em;
 	font-size: 1.25em;
 	line-height: 1.7em;
 	position: relative;
@@ -819,7 +828,7 @@ hr {
 .about-photo-gallery {
 	background: var(--color-white);
 	width: 100%;
-	padding: 6em 0em;
+	padding: 6rem 0em;
 	font-size: 1.25em;
 }
 
@@ -874,7 +883,8 @@ ul.writing-list li:hover {
 }
 
 .writing-list .material-symbols-outlined {
-	font-size: 20px;
+	/* font-size: 20px; */
+	font-size: var(--fs-md);
 	font-weight: 300;
 	margin-left: auto;
 }
@@ -961,7 +971,7 @@ ul.writing-list li:hover {
 .masonry img {
 	border-radius: 8px;
 	display: block;
-	margin: 0 0 1em 0;
+	margin: 0 0 1rem 0;
 	width: 100%;
 }
 
@@ -969,7 +979,8 @@ ul.writing-list li:hover {
 	background-color: var(--color-light-gray);
 	padding: var(--spacing-6);
 	border-radius: 8px;
-	font-size: 20px;
+	/* font-size: 20px; */
+	font-size: var(--fs-md);
 	letter-spacing: 0.02em;
 	line-height: 1.6em;
 	font-weight: 300;
@@ -981,7 +992,8 @@ ul.writing-list li:hover {
 	background-color: var(--color-white);
 	padding: var(--spacing-6);
 	border-radius: 8px;
-	font-size: 20px;
+	/* font-size: 20px; */
+	font-size: var(--fs-md);
 	letter-spacing: 0.02em;
 	line-height: 1.6em;
 	font-weight: 300;
@@ -1066,7 +1078,7 @@ ul.writing-list li:hover {
 ------------------- */
 .work {
 	background-color: var(--color-white);
-	width:100%;
+	width: 100%;
 	margin: 0 auto;
 	overflow: hidden;
 	padding-bottom: 76px;
@@ -1145,8 +1157,8 @@ ul.writing-list li:hover {
 .tag-container {
 	letter-spacing: 0.02em;
 	font-weight: 300;
-	margin-top: 1em;
-	margin-bottom: 0.75em;
+	margin-top: 1rem;
+	margin-bottom: 0.75rem;
 	padding-bottom: 0;
 	line-height: normal;
 	display: flex;
