@@ -219,13 +219,14 @@ h4 {
 	font-size: 46px;
 }
 
-.quote-large { /* ABOUT PG TESTIMONIALS */
+.quote-large { /* ABOUT PG */
 	width: 100%;
 	background-color: var(--color-light-gray);
 	padding: 6rem 0;
 }
 
 .quote-large-inner {
+	width: 85%;
 	max-width: 860px;
 	text-align: center;
 	margin: 0 auto;
