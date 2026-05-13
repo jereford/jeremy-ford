@@ -932,7 +932,7 @@ ul.writing-list li:hover {
     column-span: all;
 	display: block;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	align-items: flex-start;
 	gap: var(--spacing-3);
 }
