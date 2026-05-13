@@ -928,7 +928,16 @@ ul.writing-list li:hover {
 	/* column-gap: 0.8em; */
 }
 
-.masonry .quote-card:first-child {
+.masonry .quote-card-gray:first-child {
+    column-span: all;
+	display: block;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: var(--spacing-3);
+}
+
+.masonry .quote-card-white:first-child {
     column-span: all;
 	display: block;
 	display: flex;
@@ -949,7 +958,7 @@ ul.writing-list li:hover {
 	width: 100%;
 }
 
-.quote-card {
+.quote-card-gray {
 	background-color: var(--color-light-gray);
 	padding: var(--spacing-6);
 	border-radius: 8px;
@@ -961,7 +970,25 @@ ul.writing-list li:hover {
 	margin: 0 0 1em;
 }
 
-.quote-card .material-symbols-outlined {
+.quote-card-white {
+	background-color: var(--color-white);
+	padding: var(--spacing-6);
+	border-radius: 8px;
+	font-size: 20px;
+	letter-spacing: 0.02em;
+	line-height: 1.6em;
+	font-weight: 300;
+	display: inline-block;
+	margin: 0 0 1em;
+}
+
+.quote-card-gray .material-symbols-outlined {
+	font-size: 40px;
+	color: var(--color-medium-gray);
+	transform: scaleX(-1);
+}
+
+.quote-card-white .material-symbols-outlined {
 	font-size: 40px;
 	color: var(--color-medium-gray);
 	transform: scaleX(-1);
@@ -2057,7 +2084,11 @@ p.image-caption {
 	column-count: 1;
 }
 
-.quote-card .material-symbols-outlined {
+.quote-card-gray .material-symbols-outlined {
+	display: none;
+}
+
+.quote-card-white .material-symbols-outlined {
 	display: none;
 }
 
