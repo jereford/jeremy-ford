@@ -71,6 +71,12 @@ html {
 	--color-black: #11182B;
 	--color-light-blue: #7C8AA7;
 	--color-blue: #50638A;
+	/* FONT SIZE */
+	--fs-sm: 0.875rem;
+	--fs-base: 1rem; /* TYPICALLY 16PX */
+	--fs-md: 1.25rem;
+	--fs-lg: 1.5rem;
+	--fs-xl: 2rem;
 }
 
 :target:before {
@@ -83,7 +89,7 @@ html {
 body {
 	height: 100%;
 	font-family: 'Lato', sans-serif;
-	font-size: 1em;
+	font-size: (var(--fs-base));
 	font-weight: 300;
 	color: var(--color-black);
 	margin: var(--spacing-0);
@@ -185,10 +191,18 @@ h3 {
 
 h4 {
 	font-family: 'DM Sans', sans-serif;
-	padding: 28px 0px 16px 0px;
-	font-size: 20px;
+	padding: var(--spacing-7) 0px var(--spacing-4) 0px;
+	font-size: var(--fs-md);
 	line-height: 1.3em;
 	font-weight: 400;
+}
+
+.bold {
+	font-weight: 400;
+}
+
+.italic {
+	font-style: italic;
 }
 
 .quote { /* HOME HEADING */
@@ -208,7 +222,7 @@ h4 {
 .quote-large { /* ABOUT PG TESTIMONIALS */
 	width: 100%;
 	background-color: var(--color-light-gray);
-	padding: 6em 0;
+	padding: 6rem 0;
 }
 
 .quote-large-inner {
@@ -224,7 +238,8 @@ h4 {
 .quote-large-inner p.eyebrow {
 	font-family: 'DM Mono', monospace;
 	text-transform: uppercase;
-	font-size: 14px;
+	/* font-size: 14px; */
+	font-size: var(--fs-sm);
 	font-weight: 300;
 	color: var(--color-blue);
 	margin-bottom: var(--spacing-5);
@@ -234,7 +249,8 @@ h4 {
 .quote-large-inner p {
 	color: var(--color-black);
 	padding: 0;
-	font-size: 20px;
+	/* font-size: 20px; */
+	font-size: var(--fs-md);
 	letter-spacing: 0.02em;
 	line-height: 1.6em;
 	margin-bottom: 0;
@@ -243,14 +259,6 @@ h4 {
 .wrap {
 	width: 100%;
 	margin: 0 auto;
-}
-
-.bold {
-	font-weight: 400;
-}
-
-.italic {
-	font-style: italic;
 }
 
 .monospace {
@@ -265,7 +273,8 @@ a.info-button {
 	display: block;
 	font-family: inherit;
 	border-radius: 4px;
-	font-size: 20px;
+	/* font-size: 20px; */
+	font-size: var(--fs-md);
 	letter-spacing: 0.04em;
 	font-weight: 700;
 	color: var(--black);
