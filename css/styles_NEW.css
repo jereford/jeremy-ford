@@ -982,10 +982,6 @@ ul.writing-list li:hover {
 	padding: var(--spacing-6);
 	border-radius: 8px;
 	/* font-size: 20px; */
-	font-size: var(--fs-md);
-	letter-spacing: 0.02em;
-	line-height: 1.6em;
-	font-weight: 300;
 	display: inline-block;
 	margin: 0 0 1em;
 }
@@ -995,10 +991,6 @@ ul.writing-list li:hover {
 	padding: var(--spacing-6);
 	border-radius: 8px;
 	/* font-size: 20px; */
-	font-size: var(--fs-md);
-	letter-spacing: 0.02em;
-	line-height: 1.6em;
-	font-weight: 300;
 	display: inline-block;
 	margin: 0 0 1em;
 }
