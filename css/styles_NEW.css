@@ -65,12 +65,13 @@ html {
 	--spacing-16: 64px;
 	/* COLOR */
 	--color-white: #FFFFFF;
+	--color-black: #11182B;
 	--color-light-gray: #EDEFF3;
 	--color-medium-gray: #C2C8D6;
 	--color-dark-gray: #585D6A;
-	--color-black: #11182B;
-	--color-light-blue: #7C8AA7;
-	--color-blue: #50638A;
+	--color-light-blue: #E1E9F4;
+	--color-med-blue: #7C8AA7;
+	--color-dark-blue: #50638A;
 	/* FONT SIZE */
 	--fs-sm: 0.875rem;
 	--fs-base: 1rem; /* TYPICALLY 16PX */
@@ -105,6 +106,7 @@ p {
 	font-weight: 300;
 	line-height: 1.6em;
 	color: var(--color-dark-gray);
+
 }
 
 a {
@@ -123,7 +125,7 @@ a:visited {
 }
 
 a:hover {
-	color: var(--color-blue);
+	color: var(--color-dark-blue);
 	cursor: pointer !important;
 }
 
@@ -211,6 +213,30 @@ h4 {
 	color: var(--color-black);
 }
 
+.bg-gray {
+	background-color: var(--color-light-gray);
+}
+
+.bg-black {
+	background-color: var(--color-black);
+}
+
+.bg-.white {
+	background-color: var(--color-white);
+}
+
+.section-inner-narrow {
+	width: 62%;
+	margin: 0 auto;
+	padding: 6rem 0;
+}
+
+.section-inner-wide {
+	width: 85%;
+	margin: 0 auto;
+	padding: 6rem 0;
+}
+
 .bold {
 	font-weight: 400;
 }
@@ -258,7 +284,7 @@ h4 {
 	/* font-size: 14px; */
 	font-size: var(--fs-sm);
 	font-weight: 300;
-	color: var(--color-blue);
+	color: var(--color-dark-blue);
 	margin-bottom: var(--spacing-5);
 	letter-spacing: 0.075em;
 }
@@ -282,7 +308,7 @@ h4 {
 	font-family: 'DM Mono', monospace;
 	text-transform: uppercase;
 	font-weight: 300;
-	color: var(--color-blue);
+	color: var(--color-dark-blue);
 	letter-spacing: 0.075em;
 }
 
@@ -298,13 +324,13 @@ a.info-button {
 	text-align: center;
 	padding: 8px 12px;
 	margin-top: 40px;
-	border: 1px solid var(--color-blue);
+	border: 1px solid var(--color-dark-blue);
 	text-transform: uppercase;
 	width: 20%;
 }
 
 a.info-button:hover {
-	background-color: var(--color-blue);
+	background-color: var(--color-dark-blue);
 	color: var(--color-white);
 }
 
@@ -458,7 +484,7 @@ hr {
 }
 
 .header_wrap a:hover {
-	color: var(--color-blue);
+	color: var(--color-dark-blue);
 }
 
 .header_wrap .button-tag:hover { /* MAINTAIN BLACK FOR SPOTIFY PLAYLIST TEXT HOVER */
@@ -502,7 +528,7 @@ hr {
   	right: -6px;
   	padding: 2px 3px;
   	border-radius: 2px;
-  	background-color: var(--color-blue);
+  	background-color: var(--color-dark-blue);
   	color: var(--color-white);
 	font-size: 8px;
 	font-weight: 500;
@@ -512,7 +538,7 @@ hr {
 .inline-new-badge {
   	border-radius: 4px;
 	padding: var(--spacing-1) 6px;
-	background-color: var(--color-blue);
+	background-color: var(--color-dark-blue);
   	color: var(--color-white);
 	font-size: 12px;
 	font-weight: 400;
@@ -543,23 +569,23 @@ hr {
 }
 
 .contact_wrap a:hover {
-	color: var(--color-blue);
+	color: var(--color-dark-blue);
 }
 
 .footnote a:link {
 	color: var(--color-dark-gray);
-	border-bottom: 1px dotted var(--color-light-blue);
+	border-bottom: 1px dotted var(--color-med-blue);
 	padding-bottom: 2px;
 }
 
 .footnote a:visited {
 	color: var(--color-dark-gray);
-	border-bottom: 1px dotted var(--color-light-blue);
+	border-bottom: 1px dotted var(--color-med-blue);
 	padding-bottom: 2px;
 }
 
 .footnote a:hover {
-	color: var(--color-blue);
+	color: var(--color-dark-blue);
 	border: none;
 }
 
@@ -588,10 +614,10 @@ hr {
 }
 
 .button-outline:hover {
-	background-color: var(--color-blue);
+	background-color: var(--color-dark-blue);
 	color: var(--color-white);
 	border-radius: 24px;
-	border: 1px solid var(--color-blue);
+	border: 1px solid var(--color-dark-blue);
 }
 
 .button-outline .material-symbols-outlined {
@@ -799,7 +825,7 @@ hr {
 	font-family: 'DM Mono', monospace;
 	font-weight: 300;
 	display: block;
-	color: var(--color-blue);
+	color: var(--color-dark-blue);
 	text-transform: uppercase;
 	letter-spacing: 0.075em;
 }
@@ -810,7 +836,7 @@ hr {
 	font-family: 'DM Mono', monospace;
 	font-weight: 300;
 	display: block;
-	color: var(--color-blue);
+	color: var(--color-dark-blue);
 	margin-bottom: var(--spacing-1);
 	text-transform: uppercase;
 	letter-spacing: 0.075em;
@@ -829,7 +855,8 @@ hr {
 		);
 	width: 100%;
 	padding: 8rem 0 6rem 0;
-	font-size: 1.25em;
+	/* font-size: 1.25em; */
+	font-size: var(--fs-md);
 	line-height: 1.7em;
 	position: relative;
 }
@@ -1208,7 +1235,7 @@ ul.writing-list li:hover {
 	/* font-size: 16px; */
 	font-size: var(--fs-base);
 	line-height: 1.7em;
-	color: var(--color-light-blue);
+	color: var(--color-med-blue);
 	margin-bottom: 60px;
 	margin-top: var(--spacing-0);
 }
@@ -1216,7 +1243,7 @@ ul.writing-list li:hover {
 .footnote-date {
 	/* font-size: 14px; */
 	font-size: var(--fs-sm);
-	color: var(--color-blue);
+	color: var(--color-dark-blue);
 	font-family: 'DM Mono', monospace;
 	font-weight: 300;
 	text-transform: uppercase;
@@ -1305,17 +1332,17 @@ li.li-body::marker {
 }
 
 ::selection {
-	background: var(--color-blue);
+	background: var(--color-dark-blue);
 	color: var(--color-white)/* Safari */
 }
 
 ::-moz-selection {
-	background: var(--color-blue);
+	background: var(--color-dark-blue);
 	color: var(--color-white)/* Firefox */
 }
 
 .paypal-box .material-symbols-outlined {
-	color: var(--color-blue);
+	color: var(--color-dark-blue);
 	font-size: 28px;
 }
 
@@ -1359,7 +1386,7 @@ li.li-body::marker {
   
 .button-tag.active {
 	border: none;
-	background-color: var(--color-blue);
+	background-color: var(--color-dark-blue);
 	color: var(--color-white);
 	-o-transition: all .2s ease-in-out;
 	-ms-transition: all .2s ease-in-out;
@@ -1371,7 +1398,7 @@ li.li-body::marker {
 .button-tag .material-symbols-outlined {
 	/* font-size: 16px; */
 	font-size: var(--fs-base);
-	color: var(--color-blue);
+	color: var(--color-dark-blue);
 }
 
 #myBtnContainer {
@@ -1389,7 +1416,7 @@ li.li-body::marker {
 	padding: var(--spacing-5) var(--spacing-6);
 	margin-bottom: var(--spacing-8);
 	border-radius: 8px;
-	border-left: 4px solid var(--color-blue);
+	border-left: 4px solid var(--color-dark-blue);
 }
 
 .paypal-box .footnote {
@@ -1400,7 +1427,7 @@ li.li-body::marker {
 	background-color: var(--color-white);
 	padding: var(--spacing-5) var(--spacing-6);
 	border-radius: 8px;
-	border-left: 4px solid var(--color-blue);
+	border-left: 4px solid var(--color-dark-blue);
 	border-top: 1px solid var(--color-light-gray);
 	border-right: 1px solid var(--color-light-gray);
 	border-bottom: 1px solid var(--color-light-gray);
@@ -1412,7 +1439,7 @@ li.li-body::marker {
 }	
 
 .insight-box-with-icon .material-symbols-outlined {
-	color: var(--color-blue);
+	color: var(--color-dark-blue);
 	/* font-size: 24px; */
 	font-size: var(--fs-lg);
 	margin-right: var(--spacing-3);
@@ -1440,11 +1467,11 @@ li.li-body::marker {
 }
 
 .paypal-button:hover {
-	background-color: var(--color-blue);
+	background-color: var(--color-dark-blue);
 	color: var(--color-white);
 	cursor: pointer !important;
 	border-radius: 24px;
-	border: 1px solid var(--color-blue);
+	border: 1px solid var(--color-dark-blue);
 }
 
 /* PAGINATION */
@@ -1517,7 +1544,7 @@ li.li-body::marker {
 .pagination .material-symbols-outlined {
 	/* font-size: 16px; */
 	font-size: var(--fs-base);
-	color: var(--color-blue);
+	color: var(--color-dark-blue);
 }
 /* PAGINATION */
 
