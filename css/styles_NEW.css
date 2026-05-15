@@ -1097,14 +1097,14 @@ ul.writing-list li:hover {
 }
 
 .quote-card-gray .material-symbols-outlined {
-	font-size: 40px;
+	font-size: 48px;
 	color: var(--color-medium-gray);
 	transform: scaleX(-1);
 }
 
 .quote-card-white .material-symbols-outlined {
-	font-size: 40px;
-	color: var(--color-medium-gray);
+	font-size: 48px;
+	color: var(--color-light-gray);
 	transform: scaleX(-1);
 }
 
