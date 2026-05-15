@@ -299,6 +299,13 @@ h4 {
 	margin-bottom: 0;
 }
 
+.pull-quote {
+	max-width: 860px;
+	width: 85%;
+	margin: 0 auto;
+	padding: 6rem 0;
+}
+
 .wrap {
 	width: 100%;
 	margin: 0 auto;
@@ -1968,6 +1975,10 @@ body {
 
 .quote .material-symbols-outlined {
 	font-size: 32px !important;
+}
+
+.pull-quote {
+	width: 90%;
 }
 
 h1 {
