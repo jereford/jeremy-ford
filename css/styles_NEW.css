@@ -73,6 +73,7 @@ html {
 	--color-med-blue: #7C8AA7;
 	--color-dark-blue: #50638A;
 	/* FONT SIZE */
+	--fs-xsm: 0.75rem;
 	--fs-sm: 0.875rem;
 	--fs-base: 1rem; /* TYPICALLY 16PX */
 	--fs-md: 1.25rem;
@@ -208,7 +209,7 @@ h4 {
 	padding: var(--spacing-7) 0px var(--spacing-4) 0px;
 	font-size: var(--fs-md);
 	line-height: 1.4em;
-	font-weight: 400;
+	font-weight: 500;
 	letter-spacing: -0.0075em;
 	color: var(--color-black);
 }
@@ -304,6 +305,11 @@ h4 {
 	width: 62%;
 	margin: 0 auto;
 	padding: 6rem 0;
+}
+
+.pull-quote-inner {
+	border-left: 8px solid var(--color-light-gray);
+	padding-left: var(--spacing-6);
 }
 
 .quote-carousel { /* QUOTE CAROUSEL ABOUT */
@@ -1294,7 +1300,6 @@ ul.writing-list li:hover {
 }
 
 .footnote-date {
-	/* font-size: 14px; */
 	font-size: var(--fs-sm);
 	color: var(--color-dark-blue);
 	font-family: 'DM Mono', monospace;
@@ -2083,6 +2088,10 @@ img {
 	font-size: var(--fs-base);
 }
 
+.footnote-date {
+	font-size: var(--fs-xsm);
+}
+
 .col_left {
 	width: 100%;
 }
@@ -2183,6 +2192,10 @@ p.image-caption {
 	display: none;
 }
 
+.writing h4 {
+	padding-top: var(--spacing-0);
+}
+
 .button-outline {
 	display: flex;
 	width: stretch;
@@ -2215,6 +2228,24 @@ p.image-caption {
 
 .about-photo-gallery-inner {
 	width: 90%;
+}
+
+ul.writing-list li {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.writing li {
+	padding-top: var(--spacing-3);
+	padding-bottom: var(--spacing-3);
+}
+
+.pull-quote-inner {
+	padding-left: var(--spacing-4);
+}
+
+.pull-quote-inner h2 {
+	padding-top: var(--spacing-7);
 }
 
 /* FOOTER */
