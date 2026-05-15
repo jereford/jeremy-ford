@@ -1677,6 +1677,7 @@ li.li-body::marker {
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
+	list-style-type: none;
 }
 
 .mobile-nav-inner {
@@ -1685,7 +1686,6 @@ li.li-body::marker {
 
 .mobilenav li:not(:last-child) {
   	color: #ffffff;
-  	list-style-type: none;
   	margin-bottom: 0.75em;
 }
 
