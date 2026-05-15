@@ -301,7 +301,7 @@ h4 {
 
 .pull-quote {
 	max-width: 860px;
-	width: 85%;
+	width: 62%;
 	margin: 0 auto;
 	padding: 6rem 0;
 }
@@ -1803,6 +1803,10 @@ a.info-button:visited {
 	font-size: 36px !important;
 }
 
+.pull-quote {
+	width: 85%;
+}
+
 .header_wrap .button-tag { /* HIDE SPOTIFY PLAYLIST FOR TABLET AND SMALLER */
 	display: none;
 }
@@ -1994,11 +1998,11 @@ h3 {
 	font-size: 22px;
 }
 
-.project_images {
+img {
 	width: 100%;
 }
 
-img {
+.project_images {
 	width: 100%;
 }
 
@@ -2059,7 +2063,7 @@ img {
 	border: 1px solid #FFFFFF;
 }
 
-.button_533 {
+/* .button_533 {
 	display: block;
 	padding-top: 1em;
 }
@@ -2073,7 +2077,7 @@ img {
 	overflow: hidden;
 	border-radius: 4px;
 	min-width: 400px;
-}
+} */
 
 .paypal-box {
 	padding: 20px;
@@ -2144,6 +2148,29 @@ p.image-caption {
 	width: 90%;
 }
 
+.masonry {
+	column-count: 1;
+}
+
+.quote-card-gray .material-symbols-outlined {
+	display: none;
+}
+
+.quote-card-white .material-symbols-outlined {
+	display: none;
+}
+
+.about-photo-gallery {
+	background: var(--color-white);
+	width: 100%;
+	padding: 5em 0em;
+	font-size: 1.25em;
+}
+
+.about-photo-gallery-inner {
+	width: 90%;
+}
+
 /* FOOTER */
 .footer_inner {
 	padding: var(--spacing-5) var(--spacing-0);
@@ -2176,29 +2203,6 @@ p.image-caption {
 	color: #7C8AA7;
 	text-decoration: none;
 	border-bottom: none;
-}
-
-.masonry {
-	column-count: 1;
-}
-
-.quote-card-gray .material-symbols-outlined {
-	display: none;
-}
-
-.quote-card-white .material-symbols-outlined {
-	display: none;
-}
-
-.about-photo-gallery {
-	background: var(--color-white);
-	width: 100%;
-	padding: 5em 0em;
-	font-size: 1.25em;
-}
-
-.about-photo-gallery-inner {
-	width: 90%;
 }
 
 }
