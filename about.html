@@ -138,9 +138,9 @@
         <div class="quote-large-inner">
           <p class="eyebrow">Favorite design quotes</p>
           <div class="quote-dots">
-            <button type="button" class="quote-dot active" aria-label="Show next quote"></button>
-            <button type="button" class="quote-dot" aria-label="Show next quote"></button>
-            <button type="button" class="quote-dot" aria-label="Show next quote"></button>
+            <button type="button" class="quote-dot active" aria-label="Show quote 1"></button>
+            <button type="button" class="quote-dot" aria-label="Show quote 2"></button>
+            <button type="button" class="quote-dot" aria-label="Show quote 3"></button>
           </div>
           <!-- CAROUSEL -->
           <div class="quote-carousel">
@@ -156,8 +156,8 @@
               <h1>"The <span class="highlight">details</span> are not the details. They make the design."</h1>
               <p>Charles Eames</p>
             </div>
-          </div>
-        </div>
+          </div> <!-- CAROUSEL END -->
+        </div> <!-- QUOTE LARGE INNER END -->
       </section>
     </main>
     <footer>
@@ -175,7 +175,6 @@
       const dots   = document.querySelectorAll('.quote-dot');
       let current  = 0;
       let timer;
-
       function goTo(next) {
         slides[current].classList.remove('active');
         dots[current].classList.remove('active');
@@ -183,23 +182,20 @@
         slides[current].classList.add('active');
         dots[current].classList.add('active');
       }
-
       function advance() {
         goTo((current + 1) % slides.length);
       }
-
       function resetTimer() {
         clearInterval(timer);
         timer = setInterval(advance, 5000);
       }
-
-      dots.forEach(function (dot) {
+      dots.forEach(function (dot, index) {
         dot.addEventListener('click', function () {
-          advance();
+          if (index === current) return;
+          goTo(index);
           resetTimer();
         });
       });
-
       timer = setInterval(advance, 5000);
     })();
   </script>
