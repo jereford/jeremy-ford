@@ -306,6 +306,52 @@ h4 {
 	padding: 6rem 0;
 }
 
+.quote-carousel { /* QUOTE CAROUSEL ABOUT */
+	position: relative;
+	min-height: 300px; /* prevents layout shift during transition */
+}
+  
+.quote-slide {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transition: opacity 0.6s ease;
+	pointer-events: none;
+}
+
+.quote-slide.active {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.quote-dots {
+	display: flex;
+	justify-content: center;
+	gap: 12px;
+	margin-bottom: var(--spacing-7);
+}
+
+.quote-dot {
+	width: 12px;
+	height: 12px;
+	padding: 0;
+	border: none;
+	border-radius: 50%;
+	background-color: var(--color-medium-gray);
+	cursor: pointer;
+	transition: background-color 0.4s ease, transform 0.4s ease;
+}
+
+.quote-dot.active {
+	background-color: var(--color-dark-blue);
+	transform: scale(1.25);
+}
+
 .wrap {
 	width: 100%;
 	margin: 0 auto;

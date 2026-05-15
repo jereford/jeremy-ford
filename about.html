@@ -64,8 +64,8 @@
         <div class="pull-quote">
           <div style="border-left: 8px solid var(--color-light-gray); padding-left: var(--spacing-6);"> <!-- WRAP FOR BORDER LEFT-->
             <p class="monospace" style="font-size: var(--fs-sm); margin-bottom: var(--spacing-4);">Manifesto</p>
-            <h2 style="padding: 0;"><span style="font-style: italic;">"It's not about the destination, it's about the journey!”</span> &mdash; said no user ever. The best user experiences don't feel like journeys at all. They know their role as the vehicle to connect motivation and action, and guide users from A to B as efficiently as possible. Optimizing flows to reach this level of efficiency isn't easy, but it's what I do. After all, nothing worth doing comes easy.</h2>
-            <h2>With 8 years of startup SaaS experience gaining a deep understanding of users' motivations, I've delivered flows that effectively transport users to their destinations. <span class="highlight">The result is a win-win for both users and businesses.</span></h2>
+            <h2 style="padding: 0;"><span style="font-style: italic;">"It's not about the destination, it's about the journey!”</span> &mdash; said no user ever. The best user experiences don't feel like journeys at all. They know their role as the vehicle that connects motivation to action, and guides users from A to B as efficiently as possible.</h2>
+            <h2>Optimizing flows to reach this level of efficiency isn't easy, but it's what I do. After all, nothing worth doing comes easy. With 8 years of startup SaaS experience gaining a deep understanding of users' goals, I've delivered flows that effectively transport them to their destinations. <span class="highlight">The result is a win-win for both users and businesses.</span></h2>
           </div>
         </div>
       </section>
@@ -136,9 +136,27 @@
       </section><!-- END DIV PROJECT -->
       <section class="quote-large">
         <div class="quote-large-inner">
-          <p class="eyebrow">Favorite design quote</p>
-          <h1>"Design is so <span class="highlight">simple</span> that's why it is so <span class="highlight">complicated</span>."</h1>
-          <p>Paul Rand, 1914-1996</p>
+          <p class="eyebrow">Favorite design quotes</p>
+          <div class="quote-dots">
+            <button type="button" class="quote-dot active" aria-label="Show next quote"></button>
+            <button type="button" class="quote-dot" aria-label="Show next quote"></button>
+            <button type="button" class="quote-dot" aria-label="Show next quote"></button>
+          </div>
+          <!-- CAROUSEL -->
+          <div class="quote-carousel">
+            <div class="quote-slide active">
+              <h1>"Design is so <span class="highlight">simple</span> that's why it is so <span class="highlight">complicated</span>."</h1>
+              <p>Paul Rand</p>
+            </div>
+            <div class="quote-slide">
+              <h1>"Good design is actually a lot harder to notice than poor design, in part because good designs fit our needs so well that the <span class="highlight">design is invisible.</span>"</h1>
+              <p>Don Norman</p>
+            </div>
+            <div class="quote-slide">
+              <h1>"The <span class="highlight">details</span> are not the details. They make the design."</h1>
+              <p>Charles Eames</p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -151,5 +169,39 @@
         </script> <!-- end footer -->
     </footer>
   </div><!-- END DIV WRAP -->
+  <script>
+    (function () {
+      const slides = document.querySelectorAll('.quote-slide');
+      const dots   = document.querySelectorAll('.quote-dot');
+      let current  = 0;
+      let timer;
+
+      function goTo(next) {
+        slides[current].classList.remove('active');
+        dots[current].classList.remove('active');
+        current = next;
+        slides[current].classList.add('active');
+        dots[current].classList.add('active');
+      }
+
+      function advance() {
+        goTo((current + 1) % slides.length);
+      }
+
+      function resetTimer() {
+        clearInterval(timer);
+        timer = setInterval(advance, 5000);
+      }
+
+      dots.forEach(function (dot) {
+        dot.addEventListener('click', function () {
+          advance();
+          resetTimer();
+        });
+      });
+
+      timer = setInterval(advance, 5000);
+    })();
+  </script>
 </body>
 </html>
