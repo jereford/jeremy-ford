@@ -73,12 +73,12 @@ html {
 	--color-med-blue: #7C8AA7;
 	--color-dark-blue: #50638A;
 	/* FONT SIZE */
-	--fs-xsm: 0.75rem;
-	--fs-sm: 0.875rem;
-	--fs-base: 1rem; /* TYPICALLY 16PX */
-	--fs-md: 1.25rem;
-	--fs-lg: 1.5rem;
-	--fs-xl: 2rem;
+	--fs-xsm: 0.75rem; /* TYPICALLY 12PX */
+	--fs-sm: 0.875rem; /* TYPICALLY 14PX */
+	--fs-base: 1rem; /* TYPICALLY 16PX; DEFINED BY BROWSER */
+	--fs-md: 1.25rem; /* TYPICALLY 20PX */
+	--fs-lg: 1.5rem; /* TYPICALLY 24PX */
+	--fs-xl: 2rem; /* TYPICALLY 32PX */
 }
 
 :target:before {
@@ -281,7 +281,6 @@ h4 {
 .quote-large-inner p.eyebrow {
 	font-family: 'DM Mono', monospace;
 	text-transform: uppercase;
-	/* font-size: 14px; */
 	font-size: var(--fs-sm);
 	font-weight: 300;
 	color: var(--color-dark-blue);
@@ -292,7 +291,6 @@ h4 {
 .quote-large-inner p {
 	color: var(--color-black);
 	padding: 0;
-	/* font-size: 20px; */
 	font-size: var(--fs-md);
 	letter-spacing: 0.01em;
 	line-height: 1.6em;
@@ -374,7 +372,6 @@ a.info-button {
 	display: block;
 	font-family: inherit;
 	border-radius: 4px;
-	/* font-size: 20px; */
 	font-size: var(--fs-md);
 	letter-spacing: 0.04em;
 	font-weight: 700;
@@ -553,7 +550,6 @@ hr {
 	width: 85%;
 	max-width: 1148px;
 	margin: auto auto;
-	/* font-size: 1em; */
 	font-size: var(--fs-base);
 	word-spacing: -0.1em;
 	display: flex;
@@ -739,7 +735,6 @@ hr {
 	margin-bottom: 0;
 	margin-left: auto;
 	margin-right: auto;
-	/* font-size: 14px; */
 	font-size: var(--fs-sm);
 	line-height: 1.7em;
 	color: var(--color-dark-gray);
@@ -762,7 +757,6 @@ hr {
 	width: 85%;
 	margin: 0 auto;
 	padding: var(--spacing-5) var(--spacing-0);
-	/* font-size: 16px; */
 	font-size: var(--fs-base);
 	line-height: 1.4em;
 	overflow: auto;
@@ -805,7 +799,6 @@ hr {
 }
 
 .footer .material-symbols-outlined {
-	/* font-size: 16px; */
 	font-size: var(--fs-base);
 }
 
@@ -841,7 +834,6 @@ hr {
 	border-radius: 100px;
 	color: var(--color-black);
 	font-family: 'DM Sans', sans-serif;
-	/* font-size: 16px; */
 	font-size: var(--fs-base);
 	font-weight: 400;
 	text-decoration: none;
@@ -878,7 +870,6 @@ hr {
 }
 
 .project_title #project-title-eyebrow {
-	/* font-size: 14px; */
 	font-size: var(--fs-sm);
 	font-family: 'DM Mono', monospace;
 	font-weight: 300;
@@ -889,7 +880,6 @@ hr {
 }
 
 .project-hero #project-hero-eyebrow {
-	/* font-size: 14px; */
 	font-size: var(--fs-sm);
 	font-family: 'DM Mono', monospace;
 	font-weight: 300;
@@ -913,7 +903,6 @@ hr {
 		);
 	width: 100%;
 	padding: 8rem 0 6rem 0;
-	/* font-size: 1.25em; */
 	font-size: var(--fs-md);
 	line-height: 1.7em;
 	position: relative;
@@ -985,7 +974,6 @@ ul.writing-list li:hover {
 }
 
 .writing-list .material-symbols-outlined {
-	/* font-size: 20px; */
 	font-size: var(--fs-md);
 	font-weight: 300;
 	margin-left: auto;
@@ -1085,7 +1073,6 @@ ul.writing-list li:hover {
 	background-color: var(--color-light-gray);
 	padding: var(--spacing-6);
 	border-radius: 8px;
-	/* font-size: 20px; */
 	display: inline-block;
 	margin: 0 0 1em;
 	color: var(--color-black);
@@ -1095,7 +1082,6 @@ ul.writing-list li:hover {
 	background-color: var(--color-white);
 	padding: var(--spacing-6);
 	border-radius: 8px;
-	/* font-size: 20px; */
 	display: inline-block;
 	margin: 0 0 1em;
 	color: var(--color-black);
