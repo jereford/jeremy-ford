@@ -1,3 +1,7 @@
+User-agent: *
+Disallow: /highlevel-lead-product-designer
+Disallow: /highlevel-lead-product-designer/
+
 User-agent: Googlebot-Image
 # Repeated 'disallow' rules for each image:
 Disallow: /images/honeycomb-anomaly-detection-*.png
