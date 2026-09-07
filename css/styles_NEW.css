@@ -657,8 +657,7 @@ hr {
 
 .button-outline {
 	padding: var(--spacing-1) var(--spacing-4);
-	/* border-radius: 8px; */
-	border-radius: 50%;
+	border-radius: 8px;
 	border: 1px solid var(--color-medium-gray);
 	color: var(--color-black);
 	display: inline-block;
@@ -675,7 +674,6 @@ hr {
 }
 
 .button-outline .material-symbols-outlined {
-	/* font-size: 16px; */
 	font-size: var(--fs-base);
 	margin-left: var(--spacing-2);
 	font-variation-settings: 'wght' 300;
@@ -1287,10 +1285,10 @@ ul.writing-list li:hover {
 .footnote-date {
 	font-size: var(--fs-sm);
 	color: var(--color-dark-blue);
-	font-family: 'DM Mono', monospace;
-	font-weight: 300;
+	font-family: 'DM Sans', sans-serif;
+	font-weight: 400;
 	text-transform: uppercase;
-	letter-spacing: 0.075em;
+	letter-spacing: 0.05em;
 	display: inline-block; /* PREVENTS UNNECESSARY EXCESSIVE LINE HEIGHT */
 	line-height: 1.5em;
 }
@@ -1399,8 +1397,7 @@ li.li-body::marker {
 
 .button-tag { /* Home filters */
 	border: none;
-	/* border-radius: 8px; */
-	border-radius: 50%;
+	border-radius: 8px;
 	padding: var(--spacing-2) var(--spacing-3);
 	font-family: 'DM Sans', sans-serif;
 	font-size: 12px;
@@ -1425,8 +1422,7 @@ li.li-body::marker {
 	border: none;
 	background-color: var(--color-medium-gray);
 	color: var(--color-black);
-	/* border-radius: 20px; */
-	border-radius: 50%;
+	border-radius: 20px;
 }
   
 .button-tag.active {
@@ -1441,7 +1437,6 @@ li.li-body::marker {
 }
 
 .button-tag .material-symbols-outlined {
-	/* font-size: 16px; */
 	font-size: var(--fs-base);
 	color: var(--color-dark-blue);
 }
@@ -1494,8 +1489,7 @@ li.li-body::marker {
 .paypal-button {
 	display: inline-block;
 	font-family: inherit;
-	/* border-radius: 8px; */
-	border-radius: 50%;
+	border-radius: 8px;
 	font-size: var(--fs-md);
 	letter-spacing: 0.02em;
 	font-weight: 300;
@@ -1515,8 +1509,7 @@ li.li-body::marker {
 	background-color: var(--color-dark-blue);
 	color: var(--color-white);
 	cursor: pointer !important;
-	/* border-radius: 24px; */
-	border-radius: 50%;
+	border-radius: 24px;
 	border: 1px solid var(--color-dark-blue);
 }
 
