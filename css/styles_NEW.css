@@ -1505,20 +1505,18 @@ li.li-body::marker {
 	background-color: var(--color-white);
 	padding: var(--spacing-5) var(--spacing-6);
 	border-radius: 8px;
-	border-left: 4px solid var(--color-dark-blue);
+	border-left: 1px solid var(--color-light-gray);
 	border-top: 1px solid var(--color-light-gray);
 	border-right: 1px solid var(--color-light-gray);
 	border-bottom: 1px solid var(--color-light-gray);
 	margin: var(--spacing-12) var(--spacing-0);
 	display: flex; 
 	align-items: flex-start;
-	/* font-size: 16px; */
 	font-size: var(--fs-base);
 }	
 
 .insight-box-with-icon .material-symbols-outlined {
 	color: var(--color-dark-blue);
-	/* font-size: 24px; */
 	font-size: var(--fs-lg);
 	margin-right: var(--spacing-3);
 	padding-top: 2px;
