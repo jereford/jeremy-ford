@@ -931,7 +931,7 @@ hr {
 	font-size: var(--fs-sm);
 	font-weight: 400;
 	color: var(--color-dark-blue);
-	margin-bottom: var(--spacing-5);
+	margin-bottom: var(--spacing-3);
 	letter-spacing: 0.05em;
 }
 
