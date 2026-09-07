@@ -657,7 +657,8 @@ hr {
 
 .button-outline {
 	padding: var(--spacing-1) var(--spacing-4);
-	border-radius: 8px;
+	/* border-radius: 8px; */
+	border-radius: 50%;
 	border: 1px solid var(--color-medium-gray);
 	color: var(--color-black);
 	display: inline-block;
@@ -669,7 +670,7 @@ hr {
 .button-outline:hover {
 	background-color: var(--color-dark-blue);
 	color: var(--color-white);
-	border-radius: 24px;
+	/* border-radius: 24px; */
 	border: 1px solid var(--color-dark-blue);
 }
 
@@ -1398,11 +1399,12 @@ li.li-body::marker {
 
 .button-tag { /* Home filters */
 	border: none;
-	border-radius: 8px;
+	/* border-radius: 8px; */
+	border-radius: 50%;
 	padding: var(--spacing-2) var(--spacing-3);
-	font-family: 'DM Mono', monospace;
+	font-family: 'DM Sans', sans-serif;
 	font-size: 12px;
-	font-weight: 300;
+	font-weight: 400;
 	color: var(--color-black);
 	text-align: left;
 	background-color: var(--color-light-gray);
@@ -1413,7 +1415,7 @@ li.li-body::marker {
 	-webkit-transition: all .2s ease-in-out;
 	transition: all .2s ease-in-out;
 	text-transform: uppercase;
-	letter-spacing: 0.075em;
+	letter-spacing: 0.05em;
 	display: inline-flex;
 	gap: var(--spacing-1);
 	align-items: center;
@@ -1423,7 +1425,8 @@ li.li-body::marker {
 	border: none;
 	background-color: var(--color-medium-gray);
 	color: var(--color-black);
-	border-radius: 20px;
+	/* border-radius: 20px; */
+	border-radius: 50%;
 }
   
 .button-tag.active {
@@ -1491,8 +1494,8 @@ li.li-body::marker {
 .paypal-button {
 	display: inline-block;
 	font-family: inherit;
-	border-radius: 8px;
-	/* font-size: 20px; */
+	/* border-radius: 8px; */
+	border-radius: 50%;
 	font-size: var(--fs-md);
 	letter-spacing: 0.02em;
 	font-weight: 300;
@@ -1512,7 +1515,8 @@ li.li-body::marker {
 	background-color: var(--color-dark-blue);
 	color: var(--color-white);
 	cursor: pointer !important;
-	border-radius: 24px;
+	/* border-radius: 24px; */
+	border-radius: 50%;
 	border: 1px solid var(--color-dark-blue);
 }
 
@@ -2101,22 +2105,6 @@ img {
 	font-size: 20px;
 	border: 1px solid #FFFFFF;
 }
-
-/* .button_533 {
-	display: block;
-	padding-top: 1em;
-}
-
-.button_533 a {
-	font-size: 0.75em;
-	border: 1px solid #FFFFFF;
-	color: #FFFFFF;
-	padding: .8em 1.8em;
-	text-align: center;
-	overflow: hidden;
-	border-radius: 4px;
-	min-width: 400px;
-} */
 
 .paypal-box {
 	padding: 20px;
