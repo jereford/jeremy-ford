@@ -1093,7 +1093,7 @@ ul.writing-list li:hover {
 	padding: var(--spacing-6);
 	border-radius: 8px;
 	/* display: inline-block; */
-	/* margin: 0 0 1em; */
+	margin: 0 0 1em;
 	color: var(--color-black);
 	display: flex;
 	flex-direction: column;
@@ -1106,7 +1106,7 @@ ul.writing-list li:hover {
 	padding: var(--spacing-6);
 	border-radius: 8px;
 	/* display: inline-block; */
-	/* margin: 0 0 1em; */
+	margin: 0 0 1em;
 	color: var(--color-black);
 	display: flex;
 	flex-direction: column;
