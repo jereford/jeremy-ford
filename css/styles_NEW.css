@@ -1120,6 +1120,7 @@ ul.writing-list li:hover {
 
 .quote-card-gray p, .quote-card-white p {
 	color: var(--color-black);
+	margin-bottom: 0;
 }
 
 .project-tag {
