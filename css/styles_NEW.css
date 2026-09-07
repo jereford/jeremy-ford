@@ -667,7 +667,7 @@ hr {
 }
 
 .button-outline {
-	padding: var(--spacing-2) var(--spacing-5);
+	padding: var(--spacing-2) var(--spacing-6);
 	/* border-radius: 8px; */
 	border-radius: 50vh;
 	border: 1px solid var(--color-medium-gray);
@@ -1066,6 +1066,7 @@ ul.writing-list li:hover {
 	flex-direction: column;
 	align-items: flex-start;
 	gap: var(--spacing-2);
+	break-inside: avoid;
 }
 
 .masonry .quote-card-white:first-child {
@@ -1074,6 +1075,7 @@ ul.writing-list li:hover {
 	flex-direction: column;
 	align-items: flex-start;
 	gap: var(--spacing-2);
+	break-inside: avoid;
 }
 
 .masonry img:first-child { /* ABOUT PG IMG GALLERY */
@@ -1099,6 +1101,7 @@ ul.writing-list li:hover {
 	flex-direction: column;
 	align-items: flex-start;
 	gap: var(--spacing-2);
+	break-inside: avoid;
 }
 
 .quote-card-white {
@@ -1112,6 +1115,7 @@ ul.writing-list li:hover {
 	flex-direction: column;
 	align-items: flex-start;
 	gap: var(--spacing-2);
+	break-inside: avoid;
 }
 
 .quote-card-gray .material-symbols-outlined {
@@ -1530,7 +1534,7 @@ li.li-body::marker {
 	font-weight: 300;
 	color: var(--color-black);
 	text-align: center;
-	padding: var(--spacing-2) var(--spacing-5);
+	padding: var(--spacing-2) var(--spacing-6);
 	margin: 0!important;
 	border: 1px solid var(--color-medium-gray);
 	background-color: var(--color-white);
