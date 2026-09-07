@@ -279,13 +279,13 @@ h4 {
 }
 
 .quote-large-inner p.eyebrow {
-	font-family: 'DM Mono', monospace;
+	font-family: 'DM Sans', sans-serif;
 	text-transform: uppercase;
 	font-size: var(--fs-sm);
-	font-weight: 300;
+	font-weight: 400;
 	color: var(--color-dark-blue);
 	margin-bottom: var(--spacing-5);
-	letter-spacing: 0.075em;
+	letter-spacing: 0.05em;
 }
 
 .quote-large-inner p {
@@ -565,13 +565,12 @@ hr {
 }
 
 .nav {
-	/* float: right; */
 	letter-spacing: 0.02em;
-	font-family: 'DM Mono', monospace;
-	font-size: 12px;
+	font-family: 'DM Sans', sans-serif;
+	font-size: var(--fs-xsm);
 	text-transform: uppercase;
-	letter-spacing: 0.075em;
-	font-weight: 300;
+	letter-spacing: 0.05em;
+	font-weight: 400;
 	display: flex;
 	align-items: center;
 }
@@ -871,23 +870,23 @@ hr {
 
 .project_title #project-title-eyebrow {
 	font-size: var(--fs-sm);
-	font-family: 'DM Mono', monospace;
-	font-weight: 300;
+	font-family: 'DM Sans', sans-serif;
+	font-weight: 400;
 	display: block;
 	color: var(--color-dark-blue);
 	text-transform: uppercase;
-	letter-spacing: 0.075em;
+	letter-spacing: 0.05em;
 }
 
 .project-hero #project-hero-eyebrow {
 	font-size: var(--fs-sm);
-	font-family: 'DM Mono', monospace;
-	font-weight: 300;
+	font-family: 'DM Sans', sans-serif;
+	font-weight: 400;
 	display: block;
 	color: var(--color-dark-blue);
 	margin-bottom: var(--spacing-1);
 	text-transform: uppercase;
-	letter-spacing: 0.075em;
+	letter-spacing: 0.05em;
 }
 
 .project_title_left {
