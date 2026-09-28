@@ -1,6 +1,8 @@
 User-agent: *
 Disallow: /highlevel-lead-product-designer
 Disallow: /highlevel-lead-product-designer/
+Disallow: /watershed-product-designer
+Disallow: /watershed-product-designer/
 
 User-agent: Googlebot-Image
 # Repeated 'disallow' rules for each image:
