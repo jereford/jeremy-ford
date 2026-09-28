@@ -9,3 +9,4 @@ User-agent: Googlebot-Image
 Disallow: /images/honeycomb-anomaly-detection-*.png
 Disallow: /images/honeycomb-anomaly-detection-*.mov
 Disallow: /images/logos/license2plate.jpg
+Disallow: /watershed-product-designer/images/watershed-logo.svg
