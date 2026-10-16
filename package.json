@@ -4,6 +4,6 @@
   "private": true,
   "scripts": {
     "dev": "npx live-server",
-    "preview": "python3 -m http.server 5173"
+    "preview": "python3 -m http.server 8000"
   }
 }
