@@ -1787,8 +1787,8 @@ li.li-body::marker {
 	--ambient-blue: #9DB6DE;
 	--ambient-gray: #C2C8D6;   /* same as --color-medium-gray */
 	--ambient-light-blue: #B4CDEB;
-	--ambient-speed: 1;        /* higher = slower; 0.5 = twice as fast */
-	--ambient-intensity: 0.22; /* 0.15 = quieter, 0.3 = stronger */
+	--ambient-speed: 0.5; /* higher = slower; 0.5 = twice as fast */
+	--ambient-intensity: 0.3; /* 0.15 = quieter, 0.3 = stronger */
 }
 
 .ambient {
@@ -1860,19 +1860,11 @@ li.li-body::marker {
 	.ambient i { animation: none; }
 }
 
-/* IMPORTANT: your home page sections have solid white backgrounds that would
-   hide the effect. Make them transparent (scope to the home page if you want
-   other pages unchanged, e.g. body.home .hero). */
-.hero,
-.work {
-	background-color: transparent;
-}
-
 /* OPTIONAL: slightly translucent header so color shifts softly behind it */
 .header_wrap {
-	background-color: rgba(255, 255, 255, 0.8);
+	background-color: rgba(255, 255, 255, 0.96);
 	-webkit-backdrop-filter: blur(12px);
-	backdrop-filter: blur(12px);
+	/* backdrop-filter: blur(12px); */
 }
 /* AMBIENT BACKGROUND END
 ---------------------------- */
