@@ -1297,6 +1297,10 @@ ul.writing-list li:hover {
 	color: var(--color-black);
 }
 
+.home-title:hover {
+	color: var(--color-dark-blue);
+}
+
 /* END WORK GRID
 ------------------- */
 
