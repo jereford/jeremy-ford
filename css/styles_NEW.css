@@ -1295,6 +1295,12 @@ ul.writing-list li:hover {
 	text-align: left;
 	padding: 0;
 	color: var(--color-black);
+	line-height: 1.25em;
+	-o-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out,;
+	-moz-transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
 }
 
 .home-title:hover {
