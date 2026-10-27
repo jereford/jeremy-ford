@@ -258,7 +258,8 @@ h4 {
 }
 
 .quote .material-symbols-outlined {
-	font-size: 46px;
+	font-size: 48px !important;
+	color: var(--color-dark-blue);
 }
 
 .quote-large { /* ABOUT PG */
@@ -1760,10 +1761,9 @@ li.li-body::marker {
    60% { transform: rotate( 0.0deg) } /* Reset for the last half to pause */
   100% { transform: rotate( 0.0deg) }
 }
-.wave .material-symbols-outlined {
+/* .wave .material-symbols-outlined {
 	font-size: 56px !important;
-	color: var(--color-dark-blue);
-}
+} */
 /* HAND WAVE END */
 
 /* EMOJI HOVERS START */
