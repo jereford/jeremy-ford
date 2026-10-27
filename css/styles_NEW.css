@@ -1368,7 +1368,7 @@ li.li-body::marker {
 	background-image: linear-gradient(to right, rgba(80, 99, 138, 0.1), rgba(124, 138, 167, 0.3));
 	background-repeat: no-repeat;
 	background-position: left center;
-	background-size: 0% 100%;
+	background-size: 0% 0.9em;
 	border-radius: 4px;
 	animation: highlight-wipe 0.5s ease forwards;
 	animation-delay: 0.5s;
@@ -1761,7 +1761,7 @@ li.li-body::marker {
   100% { transform: rotate( 0.0deg) }
 }
 .wave .material-symbols-outlined {
-	font-size: 48px !important;
+	font-size: 52px !important;
 }
 /* HAND WAVE END */
 
