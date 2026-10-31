@@ -358,7 +358,7 @@ h4 {
 	padding: 0;
 	border: none;
 	border-radius: 50%;
-	background-color: var(--color-medium-gray);
+	background-color: var(--color-medium-green);
 	cursor: pointer;
 	transition: background-color 0.4s ease, transform 0.4s ease;
 }
@@ -673,7 +673,7 @@ hr {
 	padding: var(--spacing-2) var(--spacing-6);
 	/* border-radius: 8px; */
 	border-radius: 50vh;
-	border: 1px solid var(--color-medium-gray);
+	border: 1px solid var(--color-medium-green);
 	color: var(--color-black);
 	display: inline-block;
 	transition: all 0.2s ease-in-out;
@@ -908,7 +908,7 @@ hr {
 .project-hero {
 	background: linear-gradient(
 		to top,
-		rgba(124, 138, 167, 0.10) 0%,
+		rgba(38, 123, 81, 0.10) 0%,
 		rgba(255, 255, 255, 1.0) 100%
 		);
 	width: 100%;
@@ -1120,7 +1120,7 @@ ul.writing-list li:hover {
 
 .quote-card-gray .material-symbols-outlined {
 	font-size: 48px;
-	color: var(--color-medium-gray);
+	color: var(--color-medium-green);
 	transform: scaleX(-1);
 }
 
@@ -1466,7 +1466,7 @@ li.li-body::marker {
   
 .button-tag:hover {
 	border: none;
-	background-color: var(--color-medium-gray);
+	background-color: var(--color-medium-green);
 	color: var(--color-black);
 	border-radius: 20px;
 	border-radius: 50vh;
@@ -1543,7 +1543,7 @@ li.li-body::marker {
 	text-align: center;
 	padding: var(--spacing-2) var(--spacing-6);
 	margin: 0!important;
-	border: 1px solid var(--color-medium-gray);
+	border: 1px solid var(--color-medium-green);
 	background-color: var(--color-white);
 	cursor: pointer !important;
 	outline: none;
