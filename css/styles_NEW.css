@@ -1145,7 +1145,7 @@ ul.writing-list li:hover {
 	font-size: var(--fs-sm);
 	text-align: left;
 	letter-spacing: 0.01em;
-	padding: var(--spacing-1) var(--spacing-2);
+	padding: var(--spacing-1) var(--spacing-3);
 	white-space: nowrap;
 }
 
