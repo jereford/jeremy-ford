@@ -317,7 +317,6 @@ h4 {
 	font-weight: 400;
 	display: block;
 	color: var(--color-dark-green);
-	text-transform: uppercase;
 	letter-spacing: 0.05em;
 }
 
@@ -886,7 +885,6 @@ hr {
 	font-weight: 400;
 	display: block;
 	color: var(--color-dark-green);
-	text-transform: uppercase;
 	letter-spacing: 0.05em;
 }
 
@@ -897,7 +895,6 @@ hr {
 	display: block;
 	color: var(--color-dark-green);
 	margin-bottom: var(--spacing-1);
-	text-transform: uppercase;
 	letter-spacing: 0.05em;
 }
 
@@ -929,7 +926,6 @@ hr {
 
 .hero_inner .eyebrow {
 	font-family: 'DM Sans', sans-serif;
-	text-transform: uppercase;
 	font-size: var(--fs-sm);
 	font-weight: 400;
 	color: var(--color-dark-green);
@@ -1757,7 +1753,7 @@ li.li-body::marker {
   transform-origin: bottom; /* Pivot around the bottom-left palm */
   display: inline-block;
   margin: var(--spacing-0) var(--spacing-2);
-  font-variation-settings: 'wght' 700, 'GRAD' 0, 'opsz' 20;
+  font-variation-settings: 'wght' 400, 'GRAD' 0, 'opsz' 20;
   vertical-align: -2px;
 }
 
