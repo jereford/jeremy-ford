@@ -1440,7 +1440,7 @@ li.li-body::marker {
 .button-tag { /* Home filters */
 	border: none;
 	border-radius: 50vh;
-	padding: var(--spacing-2) var(--spacing-3);
+	padding: var(--spacing-2) var(--spacing-4);
 	font-family: 'DM Sans', sans-serif;
 	font-size: var(--fs-sm);
 	font-weight: 400;
