@@ -1221,15 +1221,15 @@ ul.writing-list li:hover {
   transition: opacity 0.4s ease;
 }
 
-.duotone-container img:hover {
+.duotone-container::before img:hover {
 	background-color: var(--color-dark-green);
 	mix-blend-mode: darken;
 	opacity: 1;
   }
 
-.duotone-container img:hover {
+.duotone-container::after img:hover {
 	background-color: var(--color-white);
-	mix-blend-mode: darken;
+	mix-blend-mode: lighten;
 	opacity: 1;
 }
 
