@@ -1193,6 +1193,7 @@ ul.writing-list li:hover {
 } /* YOUTUBE EMBED END */
 
 .headshot-duo-container {
+	transition: opacity 0.3s ease-in-out;
 }
 
 .headshot-duo-container img {
@@ -1201,7 +1202,16 @@ ul.writing-list li:hover {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	object-fit: cover;    /* Ensures images don't distort */
+	object-fit: cover; /* Ensures images don't distort */
+}
+
+.headshot-duo-container .headshot-default {
+	opacity: 1;
+	pointer-events: none; /* Prevents flickering issues */
+}
+
+.headshot-duo-container:hover .headshot-default {
+	opacity: 0;
 }
 
 .headshot-duo-container .headshot-hover {
