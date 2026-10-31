@@ -1197,14 +1197,15 @@ ul.writing-list li:hover {
 	position: relative;
   	display: inline-block;
   	overflow: hidden;
-  	background-color: #000; /* Dark base ensures proper blending */
 }
 
 .duotone-container img:hover {
 	display: block;
 	width: 100%;
 	height: auto;
+	/* Step 1: Strip original colors and boost contrast */
 	filter: grayscale(100%) contrast(120%);
+	transition: filter 0.4s ease;
 }
 
 .duotone-container::before,
@@ -1217,14 +1218,32 @@ ul.writing-list li:hover {
   height: 100%;
 }
 
-.duotone-container::before:hover {
-	background-color: var(--color-dark-green); /* Example: Deep Purple */
-	mix-blend-mode: lighten;
+.duotone-container::before,
+.duotone-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Allows cursor to interact with container */
+  opacity: 1;
+  transition: opacity 0.4s ease;
 }
+
+.duotone-container::before {
+	background-color: var(--color-dark-green); /* Deep Purple */
+	mix-blend-mode: darken;
+  }
 
 .duotone-container::after:hover {
 	background-color: var(--color-white); /* Example: Bright Pink / Neon Magenta */
 	mix-blend-mode: darken;
+}
+
+.duotone-container:hover::before,
+.duotone-container:hover::after {
+  opacity: 0;
 }
 
 /* DIVS END
