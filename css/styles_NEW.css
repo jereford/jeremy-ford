@@ -1192,6 +1192,14 @@ ul.writing-list li:hover {
     border-radius: 8px;
 } /* YOUTUBE EMBED END */
 
+img.headshot {
+	margin-bottom: var(--spacing-14);
+	width: 256px;
+	height: 256px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
 /* DIVS END
 ------------------ */
 
