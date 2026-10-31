@@ -844,7 +844,7 @@ hr {
 }
   
 .floating-toc a {
-	display: block;
+	display: flex;
 	padding: var(--spacing-2) var(--spacing-4);
 	border-radius: 100px;
 	color: var(--color-black);
@@ -862,7 +862,7 @@ hr {
 
 .floating-toc .material-symbols-outlined {
 	margin-left: var(--spacing-1);
-	font-size: 12px;
+	font-size: var(--fs-base);
 }
 /* FLOATING TOC END */
 
