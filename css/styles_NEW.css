@@ -1193,6 +1193,40 @@ ul.writing-list li:hover {
     border-radius: 8px;
 } /* YOUTUBE EMBED END */
 
+.duotone-container {
+	position: relative;
+  	display: inline-block;
+  	overflow: hidden;
+  	background-color: #000; /* Dark base ensures proper blending */
+}
+
+.duotone-container img:hover {
+	display: block;
+	width: 100%;
+	height: auto;
+	filter: grayscale(100%) contrast(120%);
+}
+
+.duotone-container::before,
+.duotone-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.duotone-container::before:hover {
+	background-color: var(--color-dark-green); /* Example: Deep Purple */
+	mix-blend-mode: lighten;
+}
+
+.duotone-container::after:hover {
+	background-color: var(--color-white); /* Example: Bright Pink / Neon Magenta */
+	mix-blend-mode: darken;
+}
+
 /* DIVS END
 ------------------ */
 
