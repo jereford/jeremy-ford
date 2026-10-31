@@ -71,7 +71,7 @@ html {
 	--color-light-green: #E9F2EE;
 	/* --color-medium-gray: #C2C8D6; */
 	--color-medium-green: #BED7CB;
-	--color-dark-gray: #585D6A;
+	--color-dark-gray: #38443E;
 	--color-light-blue: #E1E9F4;
 	--color-med-blue: #7C8AA7;
 	/* --color-dark-blue: #50638A; */
@@ -172,10 +172,10 @@ h2 {
 		0
 		var(--spacing-5)
 		0;
-	font-size: 36px;
+	font-size: 40px;
 	line-height: 1.2em;
 	font-weight: 500;
-	letter-spacing: -0.02em;
+	letter-spacing: -0.04em;
 	color: var(--color-black);
 }
 
