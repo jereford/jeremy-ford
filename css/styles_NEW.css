@@ -579,10 +579,9 @@ hr {
 }
 
 .nav {
-	letter-spacing: 0.02em;
 	font-size: var(--fs-base);
-	letter-spacing: -0.01em;
 	font-weight: 400;
+	letter-spacing: 0.01em;
 	display: flex;
 	align-items: center;
 }
