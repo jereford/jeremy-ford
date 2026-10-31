@@ -958,7 +958,7 @@ hr {
 }
 
 .writing li {
-	padding: var(--spacing-8) var(--spacing-0);
+	padding: var(--spacing-10) var(--spacing-0);
 	border-top: 1px solid var(--color-light-green);
 	border-bottom: 1px solid var(--color-light-green);
 }
@@ -1216,34 +1216,21 @@ ul.writing-list li:hover {
   left: 0;
   width: 100%;
   height: 100%;
-}
-
-.duotone-container::before,
-.duotone-container::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   pointer-events: none; /* Allows cursor to interact with container */
-  opacity: 1;
+  opacity: 0;
   transition: opacity 0.4s ease;
 }
 
-.duotone-container::before {
-	background-color: var(--color-dark-green); /* Deep Purple */
+.duotone-container::before:hover {
+	background-color: var(--color-dark-green);
 	mix-blend-mode: darken;
+	opacity: 1;
   }
 
 .duotone-container::after:hover {
-	background-color: var(--color-white); /* Example: Bright Pink / Neon Magenta */
+	background-color: var(--color-white);
 	mix-blend-mode: darken;
-}
-
-.duotone-container:hover::before,
-.duotone-container:hover::after {
-  opacity: 0;
+	opacity: 1;
 }
 
 /* DIVS END
