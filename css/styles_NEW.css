@@ -287,7 +287,6 @@ h4 {
 	font-weight: 400;
 	color: var(--color-dark-green);
 	margin-bottom: var(--spacing-5);
-	letter-spacing: 0.05em;
 }
 
 .quote-large-inner p {
@@ -312,12 +311,11 @@ h4 {
 }
 
 .pull-quote-inner .eyebrow {
-	font-size: var(--fs-sm);
+	font-size: var(--fs-md);
 	font-family: 'DM Sans', sans-serif;
 	font-weight: 400;
 	display: block;
 	color: var(--color-dark-green);
-	letter-spacing: 0.05em;
 }
 
 .quote-carousel { /* QUOTE CAROUSEL ABOUT */
@@ -885,7 +883,6 @@ hr {
 	font-weight: 400;
 	display: block;
 	color: var(--color-dark-green);
-	letter-spacing: 0.05em;
 }
 
 .project-hero #project-hero-eyebrow {
@@ -895,7 +892,6 @@ hr {
 	display: block;
 	color: var(--color-dark-green);
 	margin-bottom: var(--spacing-1);
-	letter-spacing: 0.05em;
 }
 
 .project_title_left {
@@ -926,11 +922,10 @@ hr {
 
 .hero_inner .eyebrow {
 	font-family: 'DM Sans', sans-serif;
-	font-size: var(--fs-sm);
+	font-size: var(--fs-md);
 	font-weight: 400;
 	color: var(--color-dark-green);
 	margin-bottom: var(--spacing-3);
-	letter-spacing: 0.05em;
 }
 
 .about-photo-gallery {
