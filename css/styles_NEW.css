@@ -1181,7 +1181,6 @@ ul.writing-list li:hover {
 	mask-image: linear-gradient(to bottom, black var(--fade-amount), black calc(100% - var(--fade-amount)), transparent);
 }
 
-
 .video-container { /* YOUTUBE EMBED START */
 	width: 100%;
     aspect-ratio: 16 / 9;
@@ -1193,43 +1192,25 @@ ul.writing-list li:hover {
     border-radius: 8px;
 } /* YOUTUBE EMBED END */
 
-.duotone-container {
-	position: relative;
-  	display: inline-block;
-  	overflow: hidden;
+.headshot-duo-container {
 }
 
-.duotone-container img:hover {
-	display: block;
+.headshot-duo-container img {
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 100%;
-	height: auto;
-	/* Step 1: Strip original colors and boost contrast */
-	filter: grayscale(100%) contrast(120%);
-	transition: filter 0.4s ease;
+	height: 100%;
+	object-fit: cover;    /* Ensures images don't distort */
 }
 
-.duotone-container::before,
-.duotone-container::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none; /* Allows cursor to interact with container */
-  opacity: 0;
-  transition: opacity 0.4s ease;
+.headshot-duo-container .headshot-hover {
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+	pointer-events: none; /* Prevents flickering issues */
 }
 
-.duotone-container::before img:hover {
-	background-color: var(--color-dark-green);
-	mix-blend-mode: darken;
-	opacity: 1;
-  }
-
-.duotone-container::after img:hover {
-	background-color: var(--color-white);
-	mix-blend-mode: lighten;
+.headshot-duo-container:hover .headshot-hover {
 	opacity: 1;
 }
 
