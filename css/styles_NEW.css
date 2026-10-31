@@ -601,6 +601,10 @@ hr {
 	text-transform: uppercase;
 }
 
+.nav .button-tag {
+	font-size: var(--fs-base);
+}
+
 .inline-new-badge {
   	border-radius: 4px;
 	padding: var(--spacing-1) 6px;
