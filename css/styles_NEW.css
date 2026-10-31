@@ -882,7 +882,7 @@ hr {
 }
 
 .project_title #project-title-eyebrow {
-	font-size: var(--fs-sm);
+	font-size: var(--fs-md);
 	font-family: 'DM Sans', sans-serif;
 	font-weight: 400;
 	display: block;
@@ -891,7 +891,7 @@ hr {
 }
 
 .project-hero #project-hero-eyebrow {
-	font-size: var(--fs-sm);
+	font-size: var(--fs-md);
 	font-family: 'DM Sans', sans-serif;
 	font-weight: 400;
 	display: block;
@@ -1108,7 +1108,6 @@ ul.writing-list li:hover {
 	background-color: var(--color-white);
 	padding: var(--spacing-8) var(--spacing-6);
 	border-radius: 8px;
-	/* display: inline-block; */
 	margin: 0 0 1em;
 	color: var(--color-black);
 	display: flex;
@@ -1136,9 +1135,8 @@ ul.writing-list li:hover {
 }
 
 .project-tag {
-	/* border-radius: 8px; */
 	border-radius: 50vh;
-	border: 1px solid var(--color-medium-gray);
+	border: 1px solid var(--color-medium-green);
 	color: var(--color-black);
 	font-family: 'DM Sans', sans-serif;
 	font-weight: 400;
