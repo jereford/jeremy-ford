@@ -65,13 +65,15 @@ html {
 	--spacing-16: 64px;
 	/* COLOR */
 	--color-white: #FFFFFF;
-	--color-black: #11182B;
+	/* --color-black: #11182B; */
+	--color-black: #06150E;
 	--color-light-gray: #EDEFF3;
 	--color-medium-gray: #C2C8D6;
 	--color-dark-gray: #585D6A;
 	--color-light-blue: #E1E9F4;
 	--color-med-blue: #7C8AA7;
-	--color-dark-blue: #50638A;
+	/* --color-dark-blue: #50638A; */
+	--color-dark-green: #267B51;
 	/* FONT SIZE */
 	--fs-xsm: 0.75rem; /* TYPICALLY 12PX */
 	--fs-sm: 0.875rem; /* TYPICALLY 14PX */
@@ -157,7 +159,7 @@ h1 {
 	font-size: 52px;
 	line-height: 1.1em;
 	font-weight: 500;
-	letter-spacing: -0.03em;
+	letter-spacing: -0.04em;
 	color: var(--color-black);
 }
 
@@ -250,7 +252,7 @@ h4 {
 	font-family: 'DM Sans', sans-serif;
 	margin-bottom: 0px;
 	font-weight: 500;
-	letter-spacing: -0.03em;
+	letter-spacing: -0.04em;
 	line-height: 1.1em;
 	max-width: 80%;
 	text-wrap: balance;
@@ -281,10 +283,9 @@ h4 {
 
 .quote-large-inner p.eyebrow {
 	font-family: 'DM Sans', sans-serif;
-	text-transform: uppercase;
-	font-size: var(--fs-sm);
+	font-size: var(--fs-md);
 	font-weight: 400;
-	color: var(--color-dark-blue);
+	color: var(--color-dark-green);
 	margin-bottom: var(--spacing-5);
 	letter-spacing: 0.05em;
 }
@@ -315,7 +316,7 @@ h4 {
 	font-family: 'DM Sans', sans-serif;
 	font-weight: 400;
 	display: block;
-	color: var(--color-dark-blue);
+	color: var(--color-dark-green);
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
 }
@@ -362,7 +363,7 @@ h4 {
 }
 
 .quote-dot.active {
-	background-color: var(--color-dark-blue);
+	background-color: var(--color-dark-green);
 	transform: scale(1.25);
 }
 
@@ -375,7 +376,7 @@ h4 {
 	font-family: 'DM Mono', monospace;
 	text-transform: uppercase;
 	font-weight: 300;
-	color: var(--color-dark-blue);
+	color: var(--color-dark-green);
 	letter-spacing: 0.075em;
 }
 
@@ -391,13 +392,13 @@ a.info-button {
 	text-align: center;
 	padding: 8px 12px;
 	margin-top: 40px;
-	border: 1px solid var(--color-dark-blue);
+	border: 1px solid var(--color-dark-green);
 	text-transform: uppercase;
 	width: 20%;
 }
 
 a.info-button:hover {
-	background-color: var(--color-dark-blue);
+	background-color: var(--color-dark-green);
 	color: var(--color-white);
 }
 
@@ -551,7 +552,7 @@ hr {
 }
 
 .header_wrap a:hover {
-	color: var(--color-dark-blue);
+	color: var(--color-dark-green);
 }
 
 .header_wrap .button-tag:hover { /* MAINTAIN BLACK FOR SPOTIFY PLAYLIST TEXT HOVER */
@@ -593,7 +594,7 @@ hr {
   	right: -8px;
   	padding: 2px 3px;
   	border-radius: 2px;
-  	background-color: var(--color-dark-blue);
+  	background-color: var(--color-dark-green);
   	color: var(--color-white);
 	font-size: 8px;
 	font-weight: 400;
@@ -603,7 +604,7 @@ hr {
 .inline-new-badge {
   	border-radius: 4px;
 	padding: var(--spacing-1) 6px;
-	background-color: var(--color-dark-blue);
+	background-color: var(--color-dark-green);
   	color: var(--color-white);
 	font-size: 12px;
 	font-weight: 400;
@@ -634,7 +635,7 @@ hr {
 }
 
 .contact_wrap a:hover {
-	color: var(--color-dark-blue);
+	color: var(--color-dark-green);
 }
 
 .footnote a:link {
@@ -650,7 +651,7 @@ hr {
 }
 
 .footnote a:hover {
-	color: var(--color-dark-blue);
+	color: var(--color-dark-green);
 	border: none;
 }
 
@@ -680,9 +681,9 @@ hr {
 }
 
 .button-outline:hover {
-	background-color: var(--color-dark-blue);
+	background-color: var(--color-dark-green);
 	color: var(--color-white);
-	border: 1px solid var(--color-dark-blue);
+	border: 1px solid var(--color-dark-green);
 }
 
 .button-outline .material-symbols-outlined {
@@ -884,7 +885,7 @@ hr {
 	font-family: 'DM Sans', sans-serif;
 	font-weight: 400;
 	display: block;
-	color: var(--color-dark-blue);
+	color: var(--color-dark-green);
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
 }
@@ -894,7 +895,7 @@ hr {
 	font-family: 'DM Sans', sans-serif;
 	font-weight: 400;
 	display: block;
-	color: var(--color-dark-blue);
+	color: var(--color-dark-green);
 	margin-bottom: var(--spacing-1);
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
@@ -931,7 +932,7 @@ hr {
 	text-transform: uppercase;
 	font-size: var(--fs-sm);
 	font-weight: 400;
-	color: var(--color-dark-blue);
+	color: var(--color-dark-green);
 	margin-bottom: var(--spacing-3);
 	letter-spacing: 0.05em;
 }
@@ -1304,7 +1305,7 @@ ul.writing-list li:hover {
 }
 
 .home-title:hover {
-	color: var(--color-dark-blue);
+	color: var(--color-dark-green);
 }
 
 /* END WORK GRID
@@ -1330,7 +1331,7 @@ ul.writing-list li:hover {
 
 .footnote-date {
 	font-size: var(--fs-sm);
-	color: var(--color-dark-blue);
+	color: var(--color-dark-green);
 	font-family: 'DM Sans', sans-serif;
 	font-weight: 400;
 	text-transform: uppercase;
@@ -1376,7 +1377,7 @@ li.li-body::marker {
 
 .highlight {
 	background-color: transparent;
-	background-image: linear-gradient(to right, rgba(80, 99, 138, 0.1), rgba(124, 138, 167, 0.3));
+	background-image: linear-gradient(to right, rgba(38, 123, 81, 0.1), rgba(38, 123, 81, 0.3));
 	background-repeat: no-repeat;
 	background-position: left center;
 	background-size: 0% 100%;
@@ -1418,17 +1419,17 @@ li.li-body::marker {
 }
 
 ::selection {
-	background: var(--color-dark-blue);
+	background: var(--color-dark-green);
 	color: var(--color-white)/* Safari */
 }
 
 ::-moz-selection {
-	background: var(--color-dark-blue);
+	background: var(--color-dark-green);
 	color: var(--color-white)/* Firefox */
 }
 
 .paypal-box .material-symbols-outlined {
-	color: var(--color-dark-blue);
+	color: var(--color-dark-green);
 	font-size: 28px;
 }
 
@@ -1475,7 +1476,7 @@ li.li-body::marker {
   
 .button-tag.active {
 	border: none;
-	background-color: var(--color-dark-blue);
+	background-color: var(--color-dark-green);
 	color: var(--color-white);
 	-o-transition: all .2s ease-in-out;
 	-ms-transition: all .2s ease-in-out;
@@ -1486,7 +1487,7 @@ li.li-body::marker {
 
 .button-tag .material-symbols-outlined {
 	font-size: var(--fs-base);
-	color: var(--color-dark-blue);
+	color: var(--color-dark-green);
 }
 
 #myBtnContainer {
@@ -1504,7 +1505,7 @@ li.li-body::marker {
 	padding: var(--spacing-5) var(--spacing-6);
 	margin-bottom: var(--spacing-8);
 	border-radius: 8px;
-	border-left: 4px solid var(--color-dark-blue);
+	border-left: 4px solid var(--color-dark-green);
 }
 
 .paypal-box .footnote {
@@ -1526,7 +1527,7 @@ li.li-body::marker {
 }	
 
 .insight-box-with-icon .material-symbols-outlined {
-	color: var(--color-dark-blue);
+	color: var(--color-dark-green);
 	font-size: var(--fs-lg);
 	margin-right: var(--spacing-3);
 	padding-top: 2px;
@@ -1553,12 +1554,12 @@ li.li-body::marker {
 }
 
 .paypal-button:hover {
-	background-color: var(--color-dark-blue);
+	background-color: var(--color-dark-green);
 	color: var(--color-white);
 	cursor: pointer !important;
 	/* border-radius: 24px; */
 	border-radius: 50vh;
-	border: 1px solid var(--color-dark-blue);
+	border: 1px solid var(--color-dark-green);
 }
 
 /* PAGINATION */
@@ -1631,7 +1632,7 @@ li.li-body::marker {
 .pagination .material-symbols-outlined {
 	/* font-size: 16px; */
 	font-size: var(--fs-base);
-	color: var(--color-dark-blue);
+	color: var(--color-dark-green);
 }
 /* PAGINATION */
 
