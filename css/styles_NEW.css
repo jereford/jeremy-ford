@@ -1404,7 +1404,7 @@ li.li-body::marker {
 			background-size: 0% 100%;
 		}
 		to {
-			background-size: 100% 1em;
+			background-size: 100% 0%;
 		}
 }
 
