@@ -49,6 +49,31 @@
     </div><!-- END CLASS HEADER_INNER -->
   </div><!-- END DIV CLASS HEADER_WRAP -->
   <script src="js/mobilenav.js"></script>
+  <script>
+    (function () {
+      // Normalize so /about, /about.html, /index.html and / all compare cleanly
+      function normalize(pathname) {
+        return pathname
+          .replace(/\/index\.html$/, '/')
+          .replace(/\.html$/, '')
+          .replace(/\/$/, '') || '/';
+      }
+  
+      var current = normalize(location.pathname);
+  
+      document.querySelectorAll('.nav a, .mobilenav a').forEach(function (link) {
+        if (link.target === '_blank') return; // skip external links (Store, Contact, Playlist)
+  
+        // Resolve relative to the page (not includes/header.html), ignoring #hash
+        var linkPath = normalize(new URL(link.getAttribute('href'), location.href).pathname);
+  
+        if (linkPath === current) {
+          link.classList.add('active');
+          link.setAttribute('aria-current', 'page');
+        }
+      });
+    })();
+  </script>
 </body>
 
 </html>
