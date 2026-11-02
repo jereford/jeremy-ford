@@ -1254,16 +1254,6 @@ img.headshot {
 	vertical-align: top;
 }
 
-.grid-box img {
-	background-color: #267B51;
-}
-
-.grid-box:hover img {
-	opacity: 0.5;
-	filter: grayscale(100%);
-	transition: all .2s ease-in-out;
-}
-
 .info {
 	opacity: 0;
 	top: 0;
