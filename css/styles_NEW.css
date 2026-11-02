@@ -65,16 +65,12 @@ html {
 	--spacing-16: 64px;
 	/* COLOR */
 	--color-white: #FFFFFF;
-	/* --color-black: #11182B; */
 	--color-black: #06150E;
-	/* --color-light-gray: #EDEFF3; */
 	--color-light-green: #E9F2EE;
-	/* --color-medium-gray: #C2C8D6; */
 	--color-medium-green: #BED7CB;
 	--color-dark-gray: #38443E;
 	--color-light-blue: #E1E9F4;
 	--color-med-blue: #7C8AA7;
-	/* --color-dark-blue: #50638A; */
 	--color-dark-green: #267B51;
 	/* FONT SIZE */
 	--fs-xsm: 0.75rem; /* TYPICALLY 12PX */
@@ -800,9 +796,7 @@ hr {
 }
 
 .footer_inner {
-	max-width: 1148px;
-	width: 85%;
-	margin: 0 auto;
+	margin: 0 var(--spacing-6);
 	padding: var(--spacing-5) var(--spacing-0);
 	font-size: var(--fs-base);
 	line-height: 1.4em;
@@ -1422,7 +1416,7 @@ li.li-body::marker {
 
 .highlight {
 	/* background-color: transparent; */
-	background-image: linear-gradient(to top, var(--color-light-green) 50%, transparent 50%);
+	background-image: linear-gradient(to top, var(--color-light-green) 75%, transparent 75%);
 	background-repeat: no-repeat;
 	background-position: left center;
 	background-size: 0% 1em;
