@@ -329,7 +329,7 @@ h4 {
 	display: block;
 	color: var(--color-dark-green);
 	letter-spacing: -0.01em;
-	margin: 0;
+	margin-bottom: var(--spacing-2);
 }
 
 .quote-carousel { /* QUOTE CAROUSEL ABOUT */
@@ -1226,6 +1226,10 @@ img.headshot {
 
 #section-problem, #section-solution, #section-results {
 	padding: 0;
+}
+
+section {
+	margin-top: var(--spacing-6);
 }
 /* DIVS END
 ------------------ */
