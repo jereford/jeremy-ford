@@ -1116,7 +1116,7 @@ ul.writing-list li:hover {
 .masonry img {
 	border-radius: 12px;
 	display: block;
-	margin: 0 0 1rem 0;
+	margin: 0 0 1.25rem 0;
 	width: 100%;
 }
 
