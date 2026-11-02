@@ -322,6 +322,15 @@ h4 {
 	letter-spacing: -0.01em;
 }
 
+.body-eyebrow {
+	font-size: var(--fs-md);
+	font-family: 'DM Sans', sans-serif;
+	font-weight: 400;
+	display: block;
+	color: var(--color-dark-green);
+	letter-spacing: -0.01em;
+}
+
 .quote-carousel { /* QUOTE CAROUSEL ABOUT */
 	position: relative;
 	min-height: 300px; /* prevents layout shift during transition */
@@ -563,6 +572,7 @@ hr {
 	/* width: 85%; */
 	/* max-width: 1148px; */
 	/* margin: auto auto; */
+	width: 100%;
 	margin: 0 var(--spacing-6);
 	font-size: var(--fs-base);
 	word-spacing: -0.1em;
