@@ -1416,7 +1416,7 @@ li.li-body::marker {
 
 .highlight {
 	/* background-color: transparent; */
-	background-image: linear-gradient(to top, var(--color-light-green) 75%, transparent 75%);
+	background-image: linear-gradient(to top, var(--color-light-green) 100%, transparent 100%);
 	background-repeat: no-repeat;
 	background-position: left center;
 	background-size: 0% 1em;
