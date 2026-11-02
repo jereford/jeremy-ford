@@ -1349,6 +1349,10 @@ section {
 	color: var(--color-dark-green);
 }
 
+h3 .home-title {
+	margin: 0;
+}
+
 /* END WORK GRID
 ------------------- */
 
