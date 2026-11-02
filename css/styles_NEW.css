@@ -921,7 +921,7 @@ hr {
 	font-weight: 400;
 	display: block;
 	color: var(--color-dark-green);
-	margin-bottom: var(--spacing-1);
+	margin-bottom: var(--spacing-3);
 	letter-spacing: -0.01em;
 }
 
@@ -1224,7 +1224,9 @@ img.headshot {
 }
 
 #section-problem, #section-solution, #section-results {
-	padding-top: 0;
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 0;
 }
 
 section {
@@ -1409,8 +1411,8 @@ li.li-body::marker {
 }
 
 .highlight {
-	background-color: transparent;
-	background-image: linear-gradient(to right, rgba(38, 123, 81, 0.1), rgba(38, 123, 81, 0.3));
+	/* background-color: transparent; */
+	background-color: var(--color-light-green);
 	background-repeat: no-repeat;
 	background-position: left center;
 	background-size: 0% 1em;
