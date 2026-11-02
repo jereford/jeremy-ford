@@ -1420,7 +1420,6 @@ li.li-body::marker {
 }
 
 .highlight {
-	/* background-color: transparent; */
 	background-image: linear-gradient(to top, var(--color-light-green) 100%, transparent 100%);
 	background-repeat: no-repeat;
 	background-position: left center;
