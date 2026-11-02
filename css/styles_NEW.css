@@ -168,7 +168,7 @@ h1 {
 h2 {
 	font-family: 'DM Sans', sans-serif;
 	margin:
-		var(--spacing-12)
+		var(--spacing-10)
 		var(--spacing-0);
 	font-size: 40px;
 	line-height: 1.2em;
@@ -337,7 +337,7 @@ h4 {
 	display: block;
 	color: var(--color-dark-green);
 	letter-spacing: -0.01em;
-	margin-top: var(--spacing-10);
+	margin-top: var(--spacing-12);
 	margin-bottom: var(--spacing-2);
 }
 
