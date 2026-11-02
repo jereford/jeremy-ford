@@ -169,7 +169,6 @@ h2 {
 	font-family: 'DM Sans', sans-serif;
 	margin:
 		var(--spacing-12)
-		var(--spacing-5);
 	font-size: 40px;
 	line-height: 1.2em;
 	font-weight: 500;
