@@ -560,9 +560,10 @@ hr {
 }
 
 .header_inner {
-	width: 85%;
-	max-width: 1148px;
-	margin: auto auto;
+	/* width: 85%; */
+	/* max-width: 1148px; */
+	/* margin: auto auto; */
+	margin: 0 var(--spacing-6);
 	font-size: var(--fs-base);
 	word-spacing: -0.1em;
 	display: flex;
