@@ -233,10 +233,9 @@ h4 {
     left: 0;
     right: 0;
     bottom: -30vh;
-    background: linear-gradient(45deg, #92BDA8, #36e4da 50%, #0047e1);
+    background: linear-gradient(45deg, #92BDA8, #F3CA40);
     filter: blur(20vh);
     height: 40vh;
-    z-index: 10;
 }
 
 .section-inner-narrow {
