@@ -71,7 +71,8 @@ html {
 	--color-dark-gray: #38443E;
 	--color-light-blue: #E1E9F4;
 	--color-med-blue: #7C8AA7;
-	--color-dark-green: #267B51;
+	--color-dark-green: #036448;
+	--color-bright-green: #BAC000;
 	/* FONT SIZE */
 	--fs-xsm: 0.75rem; /* TYPICALLY 12PX */
 	--fs-sm: 0.875rem; /* TYPICALLY 14PX */
