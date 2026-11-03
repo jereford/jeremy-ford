@@ -939,7 +939,7 @@ hr {
 	background: linear-gradient(
 		to top,
 		rgba(38, 123, 81, 0.10) 0%,
-		rgba(255, 255, 255, 1.0) 100%
+		rgba(255, 255, 255, 1.0) 75%
 		);
 	width: 100%;
 	padding: 8rem 0 6rem 0;
