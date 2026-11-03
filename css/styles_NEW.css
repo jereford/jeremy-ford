@@ -1350,7 +1350,7 @@ section {
 	color: var(--color-dark-green);
 }
 
-h3 .home-title {
+h3.home-title {
 	margin: 0;
 }
 
