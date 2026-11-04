@@ -66,13 +66,12 @@ html {
 	/* COLOR */
 	--color-white: #FFFFFF;
 	--color-black: #06150E;
-	--color-light-green: #DCE6E3;
-	--color-medium-green: #ACC9C1;
+	--color-light-green: #E9F2EE;
+	--color-medium-green: #BED7CB;
 	--color-dark-gray: #38443E;
 	--color-light-blue: #E1E9F4;
 	--color-med-blue: #7C8AA7;
-	--color-dark-green: #036448;
-	--color-bright-green: #BAC000;
+	--color-dark-green: #267B51;
 	/* FONT SIZE */
 	--fs-xsm: 0.75rem; /* TYPICALLY 12PX */
 	--fs-sm: 0.875rem; /* TYPICALLY 14PX */
