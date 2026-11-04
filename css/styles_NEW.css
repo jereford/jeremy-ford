@@ -955,6 +955,10 @@ hr {
 	z-index: 1;
 }
 
+.project-images {
+	margin-bottom: var(--spacing-4);
+}
+
 .hero_inner .eyebrow {
 	font-family: 'DM Sans', sans-serif;
 	font-size: var(--fs-md);
