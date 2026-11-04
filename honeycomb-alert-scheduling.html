@@ -57,8 +57,8 @@
     <div class="project_title">
       <div class="project_title_left">
         <section>
-          <h2>Overview</h2>
-          <h3>Honeycomb Triggers</h3>
+          <p class="body-eyebrow">Problem</p>
+          <h2>What are Honeycomb Triggers?</h2>
           <p>Alerts in <a href="https://honeycomb.io" target="_blank">Honeycomb</a> are typically configured by a Site Reliability Engineer (SRE) who is responsible for the health and availability of their application. For these users, alerts are a critical entry point into a troubleshooting flow to address an underlying problem and ensure a smooth experience for their customers. The <a href="https://docs.honeycomb.io/working-with-your-data/triggers/trigger-examples/" target="_blank">most common scenarios</a> for alerting in Honeycomb revolve around latency ("I want to know when our application is performing slowly") and errors ("I want to know how often our customers encounter errors").</p>
           <p>SREs configure their alerts using the <a href="https://docs.honeycomb.io/working-with-your-data/triggers/" target="_blank">Triggers feature</a>. When crafting a new Trigger, the user writes a query to be run and evaluated at a desired frequency. If the query result passes the threshold the user defines, recipients are notified via any combination of: Email, Slack, PagerDuty, or Webhooks.</p>
           <!-- <p>Many DevOps teams sign up for Honeycomb in order to take advantage of its alerting capabilities. And those teams are quite active &mdash; between mid May and mid June 2023 (one month before this case study was written), <span class="highlight">~300 Triggers</span> were created across Enterprise and Self-Serve teams, by <span class="highlight">~150 unique users</span>, and the Trigger detail page (where alerts are created, edited, or viewed) was loaded over <span class="highlight">5,000 times</span>.</p> -->
@@ -142,12 +142,12 @@
           <p>We released the MVP for Custom Trigger Scheduling behind a feature flag for the teams who had requested more control over their alert scheduling, and collected feedback over the next two weeks.</p>
           <p>With net positive qualitative feedback, we were confident our MVP solved the immediate user need and <a href="https://docs.honeycomb.io/working-with-your-data/triggers/#custom-scheduling-option" target="_blank">released the feature to GA</a> shortly after. As the usage data continues to roll in, our team is excited to learn how sticky (or not) the feature has become, as well as what other enhancements could be made to improve it. We have already received wonderful feedback about the feature that may inform our strategy for version 2.0 (some of which we anticipated and some we did not).</p>
           <div style="margin-top: 60px;" class="masonry">
-            <div class="quote-card-gray"><p>"So far everything looks good 👍 UI was clear to set up and it's definitely producing less triggered states than without scheduling.."</p></div>
-            <div class="quote-card-gray"><p>"Hey thanks, this feature seemed to come out of nowhere, just when we needed it!"</p></div>
-            <div class="quote-card-gray"><p>"We likely want to be able to set a different schedule on weekends to weekdays. I think right now we'd need multiple triggers to get the right combination of schedules to achieve this, which I can see being a nightmare to maintain."</p></div>
-            <div class="quote-card-gray"><p>"If I wanted a trigger that runs every day, but wanted to exclude a time period (for example, a maintenance window), then I would have to create multiple triggers, this is frustrating."</p></div>
-            <div class="quote-card-gray"><p>"Better timezone support; everything is in UTC which means users have to do their own calculations when crafting a trigger schedule."</p></div>
-            <div class="quote-card-gray"><p>"Is there a possibility to change the time zone, at least in the UI?"</p></div>
+            <div class="quote-card-gray"><h4>"So far everything looks good 👍 UI was clear to set up and it's definitely producing less triggered states than without scheduling.."</h4></div>
+            <div class="quote-card-gray"><h4>"Hey thanks, this feature seemed to come out of nowhere, just when we needed it!"</h4></div>
+            <div class="quote-card-gray"><h4>"We likely want to be able to set a different schedule on weekends to weekdays. I think right now we'd need multiple triggers to get the right combination of schedules to achieve this, which I can see being a nightmare to maintain."</h4></div>
+            <div class="quote-card-gray"><h4>"If I wanted a trigger that runs every day, but wanted to exclude a time period (for example, a maintenance window), then I would have to create multiple triggers, this is frustrating."</h4></div>
+            <div class="quote-card-gray"><h4>"Better timezone support; everything is in UTC which means users have to do their own calculations when crafting a trigger schedule."</h4></div>
+            <div class="quote-card-gray"><h4>"Is there a possibility to change the time zone, at least in the UI?"</h4></div>
           </div>
           <div style="text-align:center; margin: 0 auto; line-height: 1.2em; margin-top: 10px">
             <span class="footnote">Real user feedback we received about the MVP, which captured opportunities for future iterations.</span>
