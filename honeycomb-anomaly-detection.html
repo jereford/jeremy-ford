@@ -144,36 +144,23 @@
           <li class="li-body">How would this experience stack up against others participants had used? What was missing?</li>
         </ul>
         <div class="masonry" style="margin-top: var(--spacing-12); margin-bottom: var(--spacing-10);">
-          <div class="quote-card-gray">
-            <span class="material-symbols-outlined">format_quote</span>
-            <span>"This is just one signal. But are there other things that happened at the same time? That can help tell the story. And that's what I'd be looking for. Like, what is the context?"</span>
-          </div>
-          <div class="quote-card-gray">
-            <h4>"One thing that would be weird is lack of signal. If we stop getting signal or the volume of a service significantly decreases, that would be really interesting."</h4>
-          </div>
-          <div class="quote-card-gray">
-            <h4>"Would I then be able to go back into other parts of HNY with this event?"</h4>
-          </div>
-          <div class="quote-card-gray">
-            <h4>"Want ability to fine-tune the thresholds."</h4>
-          </div>
-          <div class="quote-card-gray">
-            <h4>"Need ability to view historical anomalies beyond current 2-hour window."</h4>
-          </div>
-          <div class="quote-card-gray">
-            <h4>"I would want to start not in an alerting state because I don't want false positives."</h4>
-          </div>
+          <div class="quote-card-gray"><h4 class="material-symbols-outlined">format_quote</span><h4>"This is just one signal. But are there other things that happened at the same time? That can help tell the story. And that's what I'd be looking for. Like, what is the context?"</h4></div>
+          <div class="quote-card-gray"><h4>"One thing that would be weird is lack of signal. If we stop getting signal or the volume of a service significantly decreases, that would be really interesting."</h4></div>
+          <div class="quote-card-gray"><h4>"Would I then be able to go back into other parts of HNY with this event?"</h4></div>
+          <div class="quote-card-gray"><h4>"Want ability to fine-tune the thresholds."</h4></div>
+          <div class="quote-card-gray"><h4>"Need ability to view historical anomalies beyond current 2-hour window."</h4></div>
+          <div class="quote-card-gray"><h4>"I would want to start not in an alerting state because I don't want false positives."</h4></div>
         </div>
         <p>Using Dovetail's AI summarization feature as a starting point, I synthesized the feedback into themes:</p>
         <ul class="ul-body">
           <li class="li-body">Users wanted to understand how irregularies fit into the bigger picture; to tell a story about who is impacted and the level of severity.</li>
           <li class="li-body">Users wondered how the feature would connect with the rest of Honeycomb.</li>
-          <!-- <li class="li-body">Users tried to navigate to the previous or next service by clicking on the list view, which would close the detail drawer.</li> -->
           <li class="li-body">Users wanted to adjust the algorithm's sensitivity (common use case: seasonality).</li>
           <li class="li-body">Users wanted to increase the time window to show anomalies beyond the previous two hours.</li>
           <li class="li-body">Users voiced concerns about noisy alerts. They also expected "is this a valid anomaly?" to train the underlying algorithm and reduce noise over time.</li>
-          <!-- <li class="li-body">Users liked how we visualized the threshold and wanted it carried over to Query page.</li> -->
           <li class="li-body">Users expected to be able to see all notification channels and recipients up front in the list view.</li>
+          <!-- <li class="li-body">Users tried to navigate to the previous or next service by clicking on the list view, which would close the detail drawer.</li> -->
+          <!-- <li class="li-body">Users liked how we visualized the threshold and wanted it carried over to Query page.</li> -->        
         </ul>
         <h4>Data presence as a potential signal type</h4>
         <p>Alerting users about a drop in data or an absence of data was something we were particularly excited about because of its impact/effort ratio. Knowing whether events are flowing from a service is a valuable signal that can launch an investigation, and engineering estimated a relatively low level of effort to enable this.</p>
@@ -198,22 +185,11 @@
           <h3>Qualitative outcomes</h3>
           <p>The announcement reiterated interest in the feature and generated positive sentiment. Beyond the sign-ups, we captured feedback from DevOps professionals who posted on LinkedIn and wrote about Honeycomb Intelligence in various articles:</p>
           <div style="margin-top: var(--spacing-10); margin-bottom: var(--spacing-8);" class="masonry">
-            <div class="quote-card-gray">
-              <span class="material-symbols-outlined">format_quote</span>
-              <h4>"By tying real-time data, AI-guided investigation, and proactive detection into a single loop, Honeycomb is building toward something bigger: a world where systems explain themselves."</h4>
-            </div>
-            <div class="quote-card-gray">
-              <h4>"I think this is the right direction for the future: from traditional monitoring ("I know what I need"), to complementing it with observability ("let me explore my telemetry"), landing to this "what do I need to know?"."</h4>  
-            </div>
-            <div class="quote-card-gray">
-              <h4>"The approach to anomaly detection you're sharing really highlights how observability can transform the investigative process for engineers."</h4>
-            </div>
-            <div class="quote-card-gray">
-              <h4>"It sounds like a powerful way to simplify investigations."</h4>
-            </div>
-            <div class="quote-card-gray">
-              <h4>"Love how you're handling detection at the source instead of just patching symptoms. Proactive anomaly detection is so needed, especially as systems get more complex."</h4>
-            </div>
+            <div class="quote-card-gray"><span class="material-symbols-outlined">format_quote</span><h4>"By tying real-time data, AI-guided investigation, and proactive detection into a single loop, Honeycomb is building toward something bigger: a world where systems explain themselves."</h4></div>
+            <div class="quote-card-gray"><h4>"I think this is the right direction for the future: from traditional monitoring ("I know what I need"), to complementing it with observability ("let me explore my telemetry"), landing to this "what do I need to know?"."</h4></div>
+            <div class="quote-card-gray"><h4>"The approach to anomaly detection you're sharing really highlights how observability can transform the investigative process for engineers."</h4></div>
+            <div class="quote-card-gray"><h4>"It sounds like a powerful way to simplify investigations."</h4></div>
+            <div class="quote-card-gray"><h4>"Love how you're handling detection at the source instead of just patching symptoms. Proactive anomaly detection is so needed, especially as systems get more complex."</h4></div>
           </div>
 
           <h3>Takeaways</h3>
