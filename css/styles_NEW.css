@@ -270,7 +270,7 @@ h4 {
 	color: var(--color-black);
 }
 
-h1.material-symbols-outlined {
+h1 .material-symbols-outlined {
 	font-size: 48px;
 	padding: 0 var(--spacing-2);
 	vertical-align: -2px;
