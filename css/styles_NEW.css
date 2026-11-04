@@ -270,6 +270,13 @@ h4 {
 	color: var(--color-black);
 }
 
+h1.material-symbols-outlined {
+	font-size: 48px;
+	padding: 0 var(--spacing-2);
+	vertical-align: -2px;
+	font-variation-settings: 'wght' 300, 'GRAD' 0, 'opsz' 20;
+}
+
 .quote-large { /* ABOUT PG */
 	width: 100%;
 	background-color: var(--color-light-green);
