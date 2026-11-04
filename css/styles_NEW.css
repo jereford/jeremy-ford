@@ -1148,13 +1148,13 @@ ul.writing-list li:hover {
 }
 
 .quote-card-gray .material-symbols-outlined {
-	font-size: 48px;
+	font-size: 56px;
 	color: var(--color-medium-green);
 	transform: scaleX(-1);
 }
 
 .quote-card-white .material-symbols-outlined {
-	font-size: 48px;
+	font-size: 56px;
 	color: var(--color-light-green);
 	transform: scaleX(-1);
 }
