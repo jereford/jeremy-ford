@@ -334,7 +334,7 @@ h4 {
 	display: block;
 	color: var(--color-dark-green);
 	letter-spacing: -0.01em;
-	margin-top: var(--spacing-12);
+	margin-top: var(--spacing-14);
 	margin-bottom: var(--spacing-2);
 }
 
@@ -1165,7 +1165,8 @@ ul.writing-list li:hover {
 }
 
 .quote-card-gray h4, .quote-card-white h4 {
-padding-top: 0;	
+padding-top: 0;
+padding-bottom: 0;
 text-indent: -4px;
 font-weight: 400;
 }
