@@ -269,8 +269,8 @@ h4 {
 	font-size: 0.8em;
 	color: var(--color-black);
 	padding: 0 var(--spacing-2);
-	font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 20;
-	vertical-align: -2px;
+	font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0, 'opsz' 20;
+	vertical-align: -3px;
 }
 
 h1 .material-symbols-outlined {
