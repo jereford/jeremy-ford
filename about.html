@@ -165,13 +165,21 @@
       </section>
     </main>
     <footer>
-      <div id="footer"></div> <!-- Start footer -->
+      <div id="footer"></div> <!-- START FOOTER -->
         <script>
         $(function(){
           $("#footer").load("includes/footer.html");
         });
-        </script> <!-- end footer -->
+        </script> <!-- END FOOTER -->
     </footer>
+    <!-- FLOATING TOC START -->
+    <nav class="floating-toc" id="floating-toc" aria-label="Page sections">
+      <a href="#section-problem" class="smoothScroll">Problem</a>
+      <a href="#section-solution" class="smoothScroll">Solution</a>
+      <a href="#section-results" class="smoothScroll">Results</a>
+      <a href="#top" class="smoothScroll">Top<span class="material-symbols-outlined">arrow_upward</span></a>
+    </nav>
+  <!-- FLOATING TOC END -->
   </div><!-- END DIV WRAP -->
   <script>
     (function () {
