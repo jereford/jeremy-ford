@@ -164,6 +164,7 @@
         </div> <!-- QUOTE LARGE INNER END -->
       </section>
     </main>
+
     <footer>
       <div id="footer"></div> <!-- START FOOTER -->
         <script>
@@ -172,15 +173,32 @@
         });
         </script> <!-- END FOOTER -->
     </footer>
-    <!-- FLOATING TOC START -->
-    <nav class="floating-toc" id="floating-toc" aria-label="Page sections">
-      <a href="#section-problem" class="smoothScroll">Problem</a>
-      <a href="#section-solution" class="smoothScroll">Solution</a>
-      <a href="#section-results" class="smoothScroll">Results</a>
+
+    <nav class="floating-toc" id="floating-toc" aria-label="Page sections"> <!-- FLOATING TOC START -->
       <a href="#top" class="smoothScroll">Top<span class="material-symbols-outlined">arrow_upward</span></a>
-    </nav>
-  <!-- FLOATING TOC END -->
+    </nav> <!-- FLOATING TOC END -->
+
   </div><!-- END DIV WRAP -->
+
+  <!-- FLOATING TOC START -->
+  <script>
+    // Show the case study nav after the user scrolls 300px
+    (function () {
+      var nav = document.getElementById('floating-toc');
+      if (!nav) return;
+
+      function onScroll() {
+        if (window.scrollY > 300) {
+          nav.classList.add('is-visible');
+        } else {
+          nav.classList.remove('is-visible');
+        }
+      }
+
+      window.addEventListener('scroll', onScroll, { passive: true });
+    })();
+  </script> <!-- FLOATING TOC END -->
+
   <script>
     (function () {
       const slides = document.querySelectorAll('.quote-slide');
