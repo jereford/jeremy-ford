@@ -631,20 +631,6 @@ hr {
 	font-size: var(--fs-base);
 }
 
-/* NAV ACTIVE STATE */
-.header_wrap .nav a[aria-current="page"],
-.header_wrap .nav a[aria-current="page"]:link,
-.header_wrap .nav a[aria-current="page"]:visited {
-	color: var(--color-dark-green);
-}
-
-/* Mobile menu has a black background, so use a lighter green for contrast */
-.header_wrap .mobilenav li a[aria-current="page"],
-.header_wrap .mobilenav li a[aria-current="page"]:link,
-.header_wrap .mobilenav li a[aria-current="page"]:visited {
-	color: var(--color-medium-green);
-}
-
 .inline-new-badge {
   	border-radius: 4px;
 	padding: var(--spacing-1) 6px;
