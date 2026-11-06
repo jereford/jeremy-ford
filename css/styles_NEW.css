@@ -224,14 +224,45 @@ h4 {
 	background-color: var(--color-white);
 }
 
-.bg-blur {
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: -30vh;
-    background: linear-gradient(45deg, #92BDA8, #F3CA40);
-    filter: blur(20vh);
-    height: 40vh;
+.bg-texture {
+	position: fixed;
+	inset: 0;
+	z-index: -1;
+	overflow: hidden;
+	background: linear-gradient(160deg, #FFFFFF 0%, #FFFFFF 55%, #E9F2EE 100%);
+}
+	
+/* Two big diagonal strips (top-right, bottom-left), heavily blurred */
+.bg-texture::before {
+	content: "";
+	position: absolute;
+	inset: -40%;
+	filter: blur(55px);
+	background:
+		radial-gradient(ellipse 60% 14% at 66% 25%, #BED7CB 99%, transparent 100%),
+		radial-gradient(ellipse 28% 7% at 76% 22%, #267B51 99%, transparent 100%),
+		radial-gradient(ellipse 58% 15% at 30% 78%, #BED7CB 99%, transparent 100%),
+		radial-gradient(ellipse 26% 7.5% at 22% 80%, #267B51 99%, transparent 100%);
+	animation: drift 18s ease-in-out infinite alternate;
+}
+
+/* Film grain */
+.bg-texture::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	opacity: .7;
+	mix-blend-mode: overlay;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+@keyframes drift {
+	from { transform: translate(3%, -2%) rotate(-15deg) scale(1); }
+	to { transform: translate(-5%, 4%) rotate(-7deg) scale(1.1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.bg-texture::before { animation: none; }
 }
 
 .section-inner-narrow {
