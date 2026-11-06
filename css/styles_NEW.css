@@ -605,6 +605,7 @@ hr {
 	letter-spacing: -0.01em;
 	display: flex;
 	align-items: center;
+	color: var(--color-dark-gray);
 }
 
 .nav-new-badge {
