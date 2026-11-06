@@ -384,6 +384,57 @@ h1 .material-symbols-outlined {
 	transform: scale(1.25);
 }
 
+/* Eyebrow greeting swap on home */
+.greeting-cycle {
+	display: grid;
+}
+
+/* Stack all greetings in the same position */
+.greeting-cycle span {
+	grid-area: 1 / 1;
+	opacity: 0;
+	animation: greetingFade 20s infinite;
+}
+
+/* Stagger the start of each greeting */
+.greeting-cycle span:nth-child(1) {
+	animation-delay: 0s;
+}
+  
+.greeting-cycle span:nth-child(2) {
+	animation-delay: 4s;
+}
+  
+.greeting-cycle span:nth-child(3) {
+	animation-delay: 8s;
+}
+  
+.greeting-cycle span:nth-child(4) {
+	animation-delay: 12s;
+}
+  
+.greeting-cycle span:nth-child(5) {
+	animation-delay: 16s;
+}
+	  
+@keyframes greetingFade {
+	0% {
+		opacity: 0;
+	}
+	5% {
+		opacity: 1;
+	}
+	20% {
+		opacity: 1;
+	}
+	25% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
 .wrap {
 	width: 100%;
 	margin: 0 auto;
@@ -1817,7 +1868,7 @@ li.li-body::marker {
 /* HAND WAVE START */
 .wave {
   animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
-  animation-duration: 2.5s; /* Change to speed up or slow down */
+  animation-duration: 4s; /* Change to speed up or slow down */
   animation-iteration-count: infinite;  /* Never stop waving :) */
   transform-origin: bottom; /* Pivot around the bottom-left palm */
   display: inline-block;
@@ -1833,9 +1884,6 @@ li.li-body::marker {
    60% { transform: rotate( 0.0deg) } /* Reset for the last half to pause */
   100% { transform: rotate( 0.0deg) }
 }
-/* .wave .material-symbols-outlined {
-	font-size: 56px !important;
-} */
 /* HAND WAVE END */
 
 /* EMOJI HOVERS START */
