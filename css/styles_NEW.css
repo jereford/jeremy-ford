@@ -592,6 +592,12 @@ hr {
 	letter-spacing: -0.01em;
 }
 
+.logo-title {
+	display: inline-block;
+	color: var(--color-dark-gray);
+	font-weight: 400;"
+}
+
 .nav {
 	font-size: var(--fs-base);
 	font-weight: 400;
@@ -2077,6 +2083,10 @@ body {
 }
 
 .nav {
+	display: none;
+}
+
+.logo-title {
 	display: none;
 }
 
