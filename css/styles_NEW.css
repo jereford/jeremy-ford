@@ -1624,7 +1624,7 @@ li.li-body::marker {
 ---------------- */
 .paypal-box {
 	background-color: var(--color-light-green);
-	padding: var(--spacing-5) var(--spacing-6);
+	padding: var(--spacing-8) var(--spacing-10);
 	margin-bottom: var(--spacing-8);
 	border-radius: 12px;
 	border-top: 4px solid var(--color-dark-green);
