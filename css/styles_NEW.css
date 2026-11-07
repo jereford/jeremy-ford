@@ -393,7 +393,7 @@ h1 .material-symbols-outlined {
 .greeting-cycle p {
 	grid-area: 1 / 1;
 	opacity: 0;
-	animation: greetingFade 10s infinite;
+	animation: greetingFade 12s infinite;
 }
 
 /* Stagger the start of each greeting */
@@ -415,6 +415,10 @@ h1 .material-symbols-outlined {
   
 .greeting-cycle p:nth-child(5) {
 	animation-delay: 8s;
+}
+
+.greeting-cycle p:nth-child(6) {
+	animation-delay: 10s;
 }
 	  
 @keyframes greetingFade {
