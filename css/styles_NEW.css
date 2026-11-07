@@ -1970,7 +1970,6 @@ img {
 }
 
 #button a {
-	/* font-size: 20px; */
 	font-size: var(--fs-md);
 }
 
@@ -2328,7 +2327,7 @@ p.image-caption {
 	padding-top: var(--spacing-0);
 }
 
-.button-outline {
+.button-outline, .button-solid {
 	display: flex;
 	width: stretch;
 	align-items: center;
