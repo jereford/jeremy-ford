@@ -393,7 +393,7 @@ h1 .material-symbols-outlined {
 .greeting-cycle p {
 	grid-area: 1 / 1;
 	opacity: 0;
-	animation: greetingFade 15s infinite;
+	animation: greetingFade 10s infinite;
 }
 
 /* Stagger the start of each greeting */
@@ -402,19 +402,19 @@ h1 .material-symbols-outlined {
 }
   
 .greeting-cycle p:nth-child(2) {
-	animation-delay: 3s;
+	animation-delay: 2s;
 }
   
 .greeting-cycle p:nth-child(3) {
-	animation-delay: 6s;
+	animation-delay: 4s;
 }
   
 .greeting-cycle p:nth-child(4) {
-	animation-delay: 9s;
+	animation-delay: 6s;
 }
   
 .greeting-cycle p:nth-child(5) {
-	animation-delay: 12s;
+	animation-delay: 8s;
 }
 	  
 @keyframes greetingFade {
@@ -1868,7 +1868,7 @@ li.li-body::marker {
 /* HAND WAVE START */
 .wave {
   animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
-  animation-duration: 3s; /* Change to speed up or slow down; needs to match greeting-cycle */
+  animation-duration: 2s; /* Change to speed up or slow down; needs to match greeting-cycle */
   animation-iteration-count: infinite;  /* Never stop waving :) */
   transform-origin: bottom; /* Pivot around the bottom-left palm */
   display: inline-block;
