@@ -1841,12 +1841,12 @@ li.li-body::marker {
 
 .mobilenav li:not(:last-child) {
   	color: #ffffff;
-  	margin-bottom: 0.75em;
+  	margin-bottom: 0.6em;
 }
 
 .mobilenav li a,
 .mobilenav li a:link {
-  	font-size: 48px;
+  	font-size: 52px;
   	color: var(--color-white);
   	text-decoration: none;
   	width: 100%;
