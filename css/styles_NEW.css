@@ -1863,7 +1863,7 @@ li.li-body::marker {
 
 .mobilenav li a .material-symbols-outlined {
 	font-size: 28px;
-	color: var(--color-light-blue);
+	color: var(--color-medium-green);
 	font-weight: 300;
 	transform: translateY(4px);
 }
